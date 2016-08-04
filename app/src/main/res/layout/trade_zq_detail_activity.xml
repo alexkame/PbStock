@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trade_detail_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/zq_trade_header" />
+
+    <RadioGroup
+        android:id="@+id/head_navigation_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/trade_detail_xh_mairu"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/zq_trade_groud_selector"
+            android:button="@null"
+            android:gravity="center|center_horizontal"
+            android:paddingBottom="@dimen/zq_trade_group_pading_top"
+            android:paddingTop="@dimen/zq_trade_group_pading_bottom"
+            android:singleLine="true"
+            android:text="买入"
+            android:textColor="@color/white"
+            android:textSize="@dimen/zq_trade_detail_A" />
+
+        <RadioButton
+            android:id="@+id/trade_detail_xh_maichu"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/zq_trade_groud_selector"
+            android:button="@null"
+            android:gravity="center|center_horizontal"
+            android:paddingBottom="@dimen/zq_trade_group_pading_top"
+            android:paddingTop="@dimen/zq_trade_group_pading_bottom"
+            android:singleLine="true"
+            android:text="卖出"
+            android:textColor="@color/white"
+            android:textSize="@dimen/zq_trade_detail_A" />
+
+        <RadioButton
+            android:id="@+id/trade_detail_xh_chedan"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/zq_trade_groud_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center|center_horizontal"
+            android:paddingBottom="@dimen/zq_trade_group_pading_top"
+            android:paddingTop="@dimen/zq_trade_group_pading_bottom"
+            android:singleLine="true"
+            android:text="撤单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/zq_trade_detail_A" />
+
+        <RadioButton
+            android:id="@+id/trade_detail_xh_weituo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/zq_trade_groud_selector"
+            android:button="@null"
+            android:gravity="center|center_horizontal"
+            android:paddingBottom="@dimen/zq_trade_group_pading_top"
+            android:paddingTop="@dimen/zq_trade_group_pading_bottom"
+            android:singleLine="true"
+            android:text="委托"
+            android:textColor="@color/white"
+            android:textSize="@dimen/zq_trade_detail_A"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/trade_detail_xh_more"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/zq_trade_groud_selector"
+            android:button="@null"
+            android:gravity="center|center_horizontal"
+            android:paddingBottom="@dimen/zq_trade_group_pading_top"
+            android:paddingTop="@dimen/zq_trade_group_pading_bottom"
+            android:singleLine="true"
+            android:text="更多"
+            android:textColor="@color/white"
+            android:textSize="@dimen/zq_trade_detail_A"
+            android:visibility="visible" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/trade_detail_xh_frame"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</LinearLayout>

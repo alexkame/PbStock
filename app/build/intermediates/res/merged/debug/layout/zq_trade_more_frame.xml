@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/setting_zq_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout_bkg_setting_selector"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/IDS_zq_lswt"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/zq_trade_detail_D" />
+
+        <ImageView
+            android:id="@+id/zq_more_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/zq_more_btn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.3dp"
+        android:background="#90909090" />
+
+    <RelativeLayout
+        android:id="@+id/setting_zq_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout_bkg_setting_selector"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/IDS_zq_drcj"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/zq_trade_detail_D" />
+
+        <ImageView
+            android:id="@+id/zq_more_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/zq_more_btn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.3dp"
+        android:background="#90909090" />
+
+    <RelativeLayout
+        android:id="@+id/setting_zq_layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout_bkg_setting_selector"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/IDS_zq_lscj"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/zq_trade_detail_D" />
+
+        <ImageView
+            android:id="@+id/zq_more_img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/zq_more_btn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.3dp"
+        android:background="#90909090" />
+
+    <RelativeLayout
+        android:id="@+id/setting_zq_layout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout_bkg_setting_selector"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/IDS_zq_yhzz"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/zq_trade_detail_D" />
+
+        <ImageView
+            android:id="@+id/zq_more_img4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/zq_more_btn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.3dp"
+        android:background="#90909090" />
+
+    <RelativeLayout
+        android:id="@+id/setting_zq_layout5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout_bkg_setting_selector"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/IDS_zq_zjls"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/zq_trade_detail_D" />
+
+        <ImageView
+            android:id="@+id/zq_more_img5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/zq_more_btn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.3dp"
+        android:background="#90909090" />
+
+    <RelativeLayout
+        android:id="@+id/setting_zq_layout6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout_bkg_setting_selector"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/IDS_zq_xgsged"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/zq_trade_detail_D" />
+
+        <ImageView
+            android:id="@+id/zq_more_img6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/zq_more_btn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.3dp"
+        android:background="#90909090"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/setting_zq_layout7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout_bkg_setting_selector"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/IDS_zq_xgjymm"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/zq_trade_detail_D" />
+
+        <ImageView
+            android:id="@+id/zq_more_img7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/zq_more_btn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.3dp"
+        android:background="#90909090" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zq_trade_gray" >
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/zq_logoutbtn"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

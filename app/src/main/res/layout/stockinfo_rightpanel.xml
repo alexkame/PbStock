@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_rightpanel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/five_detail_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/detail_ffffff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiobutton_five"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/shape_optiondetail_selected"
+            android:gravity="center"
+            android:text="@string/IDS_WuDang"
+            android:textColor="@drawable/classify_text_selector_detail"
+            android:textSize="@dimen/font_screen_C" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_detail"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableBottom="@drawable/shape_optiondetail_selected"
+            android:gravity="center"
+            android:text="@string/IDS_MingXi"
+            android:textColor="@drawable/classify_text_selector_detail"
+            android:textSize="@dimen/font_screen_C" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/five_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@+id/five_detail_radiogroup" >
+
+        <com.pengbo.mhdzq.tools.ScrollLayout
+            android:id="@+id/scrollLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <include
+                android:id="@+id/fiveprice_panel"
+                layout="@layout/stockinfo_fiveprice" />
+
+           <include
+                android:id="@+id/detail_panel"
+                layout="@layout/stockinfo_detail" />
+        </com.pengbo.mhdzq.tools.ScrollLayout>
+    </FrameLayout>
+
+</RelativeLayout>

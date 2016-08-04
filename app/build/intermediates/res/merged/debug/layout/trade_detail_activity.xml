@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/head_navigation_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim_165px"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/trade_detail_activity_order"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:drawableBottom="@drawable/shape_drawable_bottom_wudang"
+            android:gravity="center|center_horizontal"
+            android:singleLine="true"
+            android:text="@string/IDS_XiaDan"
+            android:textColor="@drawable/classify_text_selector_trade_detail_tab"
+            android:textSize="@dimen/font_trade_query_A" 
+            android:background="@android:color/transparent"/>
+
+        <RadioButton
+            android:id="@+id/trade_detail_activity_query"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:drawableBottom="@drawable/shape_drawable_bottom_wudang"
+             android:gravity="center|center_horizontal"
+            android:singleLine="true"
+            android:text="@string/IDS_ChaXun"
+            android:textColor="@drawable/classify_text_selector_trade_detail_tab"
+            android:textSize="@dimen/font_trade_query_A"
+            android:background="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/trade_detail_activity_position"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/shape_drawable_bottom_wudang"
+             android:gravity="center|center_horizontal"
+            android:singleLine="true"
+            android:text="@string/IDS_ChiCang"
+            android:textColor="@drawable/classify_text_selector_trade_detail_tab"
+            android:textSize="@dimen/font_trade_query_A" 
+            android:background="@android:color/transparent"/>
+        
+        <RadioButton
+            android:id="@+id/trade_detail_activity_xingquan"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:drawableBottom="@drawable/shape_drawable_bottom_wudang"
+            android:gravity="center|center_horizontal"
+            android:singleLine="true"
+            android:text="@string/IDS_XingQuan"
+            android:textColor="@drawable/classify_text_selector_trade_detail_tab"
+            android:textSize="@dimen/font_trade_query_A"
+            android:visibility="visible" 
+            android:background="@android:color/transparent"/>
+
+        <RadioButton
+            android:id="@+id/trade_detail_activity_more"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:drawableBottom="@drawable/shape_drawable_bottom_wudang"
+            android:gravity="center|center_horizontal"
+            android:singleLine="true"
+            android:text="@string/IDS_GengDuo"
+            android:textColor="@drawable/classify_text_selector_trade_detail_tab"
+            android:textSize="@dimen/font_trade_query_A"
+            android:visibility="visible" 
+            android:background="@android:color/transparent"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/framelayout_trade_detail_activity"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_demand" >
+    </FrameLayout>
+
+</LinearLayout>

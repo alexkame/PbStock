@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dim_100px"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="@drawable/xh_hrz_item_background_selector"
+       >
+    <TextView
+        android:id="@+id/hlv_tv"
+        android:layout_width="@dimen/list_item_width_mid_100dp"
+        android:layout_height="fill_parent"
+        android:gravity="center|center_horizontal"
+        android:enabled="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:button="@null"
+        android:clickable="true"       
+        android:textSize="@dimen/font_trade_C"      
+        android:textColor="@drawable/selector_tabtext"  
+        />
+    <!-- android:drawableBottom="@drawable/img24_updown" -->
+
+</RelativeLayout>

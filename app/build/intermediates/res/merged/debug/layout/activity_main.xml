@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <include
+        android:id="@+id/mainhome_head"
+        layout="@layout/zq_dbzq_public_head_black" />
+
+    <ScrollView
+        android:id="@+id/scrollview_mainhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainhome_head"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zq_shouye_lunbo_height"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zq_mainhome_head_viewpager_A" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_homepage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white" />
+
+                <com.pengbo.mhdzq.control.indecator.CirclePageIndicator
+                    android:id="@+id/CPIndicator_homepage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/vp_homepage"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/zq_mainhome_viewpagerIndecator_A"
+                    android:padding="@dimen/zq_mainhome_viewpagerIndecator_B" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zq_mainhome_scrolllayout" >
+
+                <com.pengbo.mhdzq.tools.ScrollLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/scrolllayout_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white" >
+                </com.pengbo.mhdzq.tools.ScrollLayout>
+
+                <com.pengbo.mhdzq.view.PageControlView
+                    android:id="@+id/pageControl_home"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/scrolllayout_home"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="@dimen/zq_mainhome_pagecontrolview" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/rg_homepager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_todaynews"
+                        style="@style/MiddleTabStyle"
+                        android:background="@drawable/zq_btn_vphome_selector"
+                        android:text="@string/todaynews"
+                        android:textSize="@dimen/zq_shouye_news_C" />
+
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/rb_info"
+                        style="@style/MiddleTabStyle"
+                        android:background="@drawable/zq_btn_vphome_selector"
+                        android:text="@string/info"
+                        android:textSize="@dimen/zq_shouye_news_C" />
+
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/rb_things"
+                        style="@style/MiddleTabStyle"
+                        android:background="@drawable/zq_btn_vphome_selector"
+                        android:text="@string/dbactivity"
+                        android:textSize="@dimen/zq_shouye_news_C" />
+                </RadioGroup>
+
+                <com.pengbo.mhdzq.view.ListViewForScrollView
+                    android:id="@+id/zq_home_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rg_homepager"
+                    android:background="@android:color/white"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="#00000000" >
+                </com.pengbo.mhdzq.view.ListViewForScrollView>
+
+                <TextView
+                    android:id="@+id/tv_findmore"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/zq_home_listview"
+                    android:background="@color/zq_cccccc"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/zq_findmore"
+                    android:textColor="@color/zq_5d5d5d"
+                    android:textSize="@dimen/zq_shouye_news_C"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zq_hangqing_navbar_height"
+                    android:layout_below="@id/tv_findmore" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/rb_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zq_hangqing_navbar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/zq_mainhome_radiobutton"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/zq_btn_home_pressed_selector"
+            android:drawableTop="@drawable/zq_btn_home_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_qiquan"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/zq_btn_home_pressed_selector"
+            android:drawableTop="@drawable/zq_btn_qiquan_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_zhengquan"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/zq_btn_home_pressed_selector"
+            android:drawableTop="@drawable/zq_btn_zhengquan_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/zq_btn_home_pressed_selector"
+            android:drawableTop="@drawable/zq_btn_xinwen_selector" />
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/hv_head1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/t_offer_height_title"
+        android:background="@color/t_offer_cfd0d1"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:id="@+id/hv_head_item1"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/IDS_Vega"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+
+        <TextView
+            android:id="@+id/hv_head_item2"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/IDS_Theta"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+
+        <TextView
+            android:id="@+id/hv_head_item3"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/IDS_Rho"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+
+        <TextView
+            android:id="@+id/hv_head_item4"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/IDS_Gamma"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+
+        <TextView
+            android:id="@+id/hv_head_item5"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/IDS_Delta"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+
+        <TextView
+            android:id="@+id/hv_head_item6"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/IDS_YiJiaLv"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+
+        <TextView
+            android:id="@+id/hv_head_item7"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/IDS_ZhenShiGangGanLv"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+
+        <TextView
+            android:id="@+id/hv_head_item8"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/IDS_GangGanLv"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+
+        <TextView
+            android:id="@+id/hv_head_item9"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minLines="2"
+            android:text="@string/IDS_LiLunJia"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+        
+        <TextView
+            android:id="@+id/hv_head_item10"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minLines="2"
+            android:text="@string/IDS_YinHanBoDongLv"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+        
+        <TextView
+            android:id="@+id/hv_head_item11"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minLines="2"
+            android:text="@string/IDS_ChiCangLiang"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+        
+        <TextView
+            android:id="@+id/hv_head_item12"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minLines="2"
+            android:text="@string/IDS_ZongLiang"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+        
+        <TextView
+            android:id="@+id/hv_head_item13"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minLines="2"
+            android:text="@string/IDS_SellJia"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+        
+        <TextView
+            android:id="@+id/hv_head_item14"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minLines="2"
+            android:text="@string/IDS_BuyJia"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+        
+        <TextView
+            android:id="@+id/hv_head_item15"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minLines="2"
+            android:text="@string/IDS_ZhangDieFu"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+        
+        <TextView
+            android:id="@+id/hv_head_item16"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minLines="2"
+            android:text="@string/IDS_ZhangDieE"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+        
+        <TextView
+            android:id="@+id/hv_head_item17"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minLines="2"
+            android:text="@string/IDS_ZuiXinJia"
+            android:textColor="@color/t_offer_3a3838"
+            android:textSize="@dimen/font_t_offer_D" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/t_offer_e0dcdc" />
+    </LinearLayout>
+
+</LinearLayout>

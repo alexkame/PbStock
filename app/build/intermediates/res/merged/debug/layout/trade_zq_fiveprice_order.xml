@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zq_gudong_choose_biankuang">
+
+    <com.pengbo.mhdzq.view.ZQ_Trade_Ctrl_Trend_FivePrice
+        
+        android:id="@+id/layout_fiveprice"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:orientation="vertical" >
+
+        <!--
+         卖5 android:layout_marginLeft="@dimen/stockinfo_fiveprice_gap"
+        android:layout_marginRight="@dimen/stockinfo_fiveprice_gap"
+        android:layout_marginTop="@dimen/stockinfo_fiveprice_gap"
+        android:layout_marginBottom="@dimen/stockinfo_fiveprice_gap"
+        -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maic5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/IDS_SellWu"
+                android:textColor="@color/zq_414141"
+		    	android:textSize="@dimen/zq_trade_detail_C" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/maic5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maic5_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+
+                <TextView
+                    android:id="@+id/maic5_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 卖4 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maic4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/IDS_SellSi"
+                android:textColor="@color/zq_414141"
+		    	android:textSize="@dimen/zq_trade_detail_C" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/maic4"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maic4_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+
+                <TextView
+                    android:id="@+id/maic4_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 卖3 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maic3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/IDS_SellSan"
+                android:textColor="@color/zq_414141"
+		    	android:textSize="@dimen/zq_trade_detail_C" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/maic3"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maic3_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+
+                <TextView
+                    android:id="@+id/maic3_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 卖2 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/IDS_SellEr"
+                android:textColor="@color/zq_414141"
+		    	android:textSize="@dimen/zq_trade_detail_C"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/maic2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maic2_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+
+                <TextView
+                    android:id="@+id/maic2_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 卖1 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/IDS_Sellyi"
+                android:textColor="@color/zq_414141"
+		    	android:textSize="@dimen/zq_trade_detail_C"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/maic1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maic1_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+
+                <TextView
+                    android:id="@+id/maic1_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 分割线 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/zq_414141" />
+        </LinearLayout>
+        <!-- 买1 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maij1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/IDS_BuyYi"
+                android:textColor="@color/zq_414141"
+		    	android:textSize="@dimen/zq_trade_detail_C" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/maij1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maij1_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C"/>
+
+                <TextView
+                    android:id="@+id/maij1_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 买2 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maij2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/IDS_BuyEr"
+                android:textColor="@color/zq_414141"
+		    	android:textSize="@dimen/zq_trade_detail_C" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/maij2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maij2_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+
+                <TextView
+                    android:id="@+id/maij2_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 买三 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maij3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/IDS_BuySan"
+                android:textColor="@color/zq_414141"
+		    	android:textSize="@dimen/zq_trade_detail_C" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/maij3"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maij3_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+
+                <TextView
+                    android:id="@+id/maij3_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 买四 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maij4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/IDS_BuySi"
+                android:textColor="@color/zq_414141"
+		    	android:textSize="@dimen/zq_trade_detail_C" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/maij4"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maij4_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+
+                <TextView
+                    android:id="@+id/maij4_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 买五 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maij5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/IDS_BuyWu"
+                android:textColor="@color/zq_414141"
+		    	android:textSize="@dimen/zq_trade_detail_C" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/maij5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maij5_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+
+                <TextView
+                    android:id="@+id/maij5_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/zq_trade_detail_C" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.pengbo.mhdzq.view.ZQ_Trade_Ctrl_Trend_FivePrice>
+
+</FrameLayout>

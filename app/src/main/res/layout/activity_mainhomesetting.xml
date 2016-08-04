@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.pengbo.mhdzq"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_demand" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="@dimen/zq_param_margin_A"
+                android:background="@color/gray_demand_one" />
+
+            <RelativeLayout
+                android:id="@+id/llayout_set_jxcssz"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:background="@drawable/linearlayout_bkg_setting_selector"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/trade_margin_B"
+                    android:text="@string/ZQ_JXCSSZ"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/zq_setpager_font_A" />
+
+                <ImageView
+                    android:id="@+id/img_jxcssz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/trade_margin_B"
+                    android:contentDescription="@string/IDS_TuPianMiaoShu"
+                    android:src="@drawable/chevron_default" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_demand_one" />
+
+            <RelativeLayout
+                android:id="@+id/rlayout_qyzdjp"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:background="@drawable/linearlayout_bkg_setting_selector"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/trade_margin_B"
+                    android:text="@string/ZQ_QYZNJP"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/zq_setpager_font_A" />
+
+                <com.pengbo.mhdcx.widget.SwitchButton
+                    android:id="@+id/switchbutton_qyzdjp"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/trade_margin_B"
+                    android:gravity="right"
+                    app:onColor="#43d95d" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_demand_one" 
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_xdwxqr"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:background="@drawable/linearlayout_bkg_setting_selector"
+                android:clickable="true"
+                android:orientation="horizontal" 
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/trade_margin_B"
+                    android:text="@string/ZQ_XDWXQR"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_gainloss_C" />
+
+                <com.pengbo.mhdcx.widget.SwitchButton
+                    android:id="@+id/switchbutton_xdwxqr"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/trade_margin_B"
+                    android:gravity="right"
+                    app:onColor="#43d95d" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_demand_one" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

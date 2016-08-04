@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_demand"
+    android:orientation="vertical" >
+
+	<include 	    
+	    layout="@layout/zq_dbzq_public_head_black"
+	    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zq_bank_radiogroup_out_height"
+        android:paddingTop="@dimen/zq_bank_margin_A"
+        android:paddingBottom="@dimen/zq_bank_margin_A"
+        >
+
+        <RadioGroup
+            android:id="@+id/zq_rg_bank_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/bank_margin_A"   
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/zq_rb_bank_security1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_blue_left_selected_unselected"
+                android:button="@null"
+                android:gravity="center"
+                android:text="银行转证券 "
+                android:textColor="@drawable/classify_text_selector_bank_security"
+                android:textSize="@dimen/font_bank_B"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/zq_rb_bank_security2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_blue_middle_selected_unselected"
+                android:button="@null"
+                android:gravity="center"
+                android:text="证券转银行"
+                android:checked="true"
+                android:textColor="@drawable/classify_text_selector_bank_security"
+                android:textSize="@dimen/font_bank_B"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/zq_rb_bank_security3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_blue_middle_selected_unselected"
+                android:button="@null"
+                android:gravity="center"
+                android:text="银行余额"
+                android:textColor="@drawable/classify_text_selector_bank_security"
+                android:textSize="@dimen/font_bank_B"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/zq_rb_bank_security5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_blue_right_selected_unselected"
+                android:button="@null"
+                android:gravity="center"
+                android:text="查询"
+                android:textColor="@drawable/classify_text_selector_bank_security"
+                android:textSize="@dimen/font_bank_B"
+                android:textStyle="normal" />
+        </RadioGroup>
+    </RelativeLayout>
+     <FrameLayout
+        android:id="@+id/zq_framelayout_bank"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_demand" >
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_demand" >
+
+    <include
+        android:id="@+id/option_list_head_content"
+        layout="@layout/trade_option_list_fragment_head" />
+
+    <View
+        android:id="@+id/divider_item1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/option_list_head_content"
+        android:background="@color/demand_e5e5e5" />
+
+    <com.pengbo.mhdcx.view.PullToRefreshView
+        android:id="@+id/trade_optionlist_pull_refreshview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/divider_item1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/divider_item"
+            android:clickable="true"
+            android:divider="@null"
+            android:fadingEdge="none" >
+        </ListView>
+    </com.pengbo.mhdcx.view.PullToRefreshView>
+
+</RelativeLayout>

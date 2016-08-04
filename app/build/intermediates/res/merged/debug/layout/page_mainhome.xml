@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_homepage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+       <com.pengbo.mhdzq.control.indecator.CirclePageIndicator
+            android:id="@+id/CPIndicator_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vp_homepage"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/rg_homepager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_todaynews"
+                style="@style/MiddleTabStyle"
+                android:background="@drawable/zq_btn_vphome_selector"
+                android:text="@string/todaynews" />
+
+            <RadioButton
+                android:id="@+id/rb_info"
+                style="@style/MiddleTabStyle"
+                android:background="@drawable/zq_btn_vphome_selector"
+                android:text="@string/info" />
+
+            <RadioButton
+                android:id="@+id/rb_things"
+                style="@style/MiddleTabStyle"
+                android:background="@drawable/zq_btn_vphome_selector"
+                android:text="@string/dbactivity" />
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_newsinfothing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

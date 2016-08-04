@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_demand"
+    android:orientation="vertical" >
+
+    <include layout="@layout/maintab_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/qq_height_A"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_SZZS"
+                android:textColor="@color/black"
+                android:textSize="@dimen/qq_font_C" />
+
+            <TextView
+                android:id="@+id/tv_price1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/red"
+                android:textSize="@dimen/qq_font_D" />
+
+            <TextView
+                android:id="@+id/tv_zf1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/red"
+                android:textSize="@dimen/qq_font_D" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_SZCZ"
+                android:textColor="@color/black"
+                android:textSize="@dimen/qq_font_C" />
+
+            <TextView
+                android:id="@+id/tv_price2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/red"
+                android:textSize="@dimen/qq_font_D" />
+
+            <TextView
+                android:id="@+id/tv_zf2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textSize="@dimen/qq_font_D" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_SZWL"
+                android:textColor="@color/black"
+                android:textSize="@dimen/qq_font_C" />
+
+            <TextView
+                android:id="@+id/tv_price3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/red"
+                android:textSize="@dimen/qq_font_D" />
+
+            <TextView
+                android:id="@+id/tv_zf3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textSize="@dimen/qq_font_D" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/marketinfo_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trade_item_height"
+        android:background="@drawable/list_item_color_bg"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="@dimen/trade_left_item_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/trade_margin_B"
+            android:gravity="left"
+            android:text="@string/IDS_TXingBaoJia"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_trade_B" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/trade_margin_B"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/chevron_default" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/trade_margin_B"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/marketinfo_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trade_item_height"
+        android:background="@drawable/list_item_color_bg"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="@dimen/trade_left_item_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/trade_margin_B"
+            android:gravity="left"
+            android:text="@string/IDS_ReChaoHeYue"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_trade_B" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/trade_margin_B"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/chevron_default" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/trade_margin_B"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/marketinfo_layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trade_item_height"
+        android:background="@drawable/list_item_color_bg"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="@dimen/trade_left_item_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/trade_margin_B"
+            android:gravity="left"
+            android:text="@string/IDS_HeYueShaiXuanQi"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_trade_B" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/trade_margin_B"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/chevron_default" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

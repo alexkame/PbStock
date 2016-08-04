@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_color_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/tv_fast_search_item_code"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="----"
+        android:ellipsize="none"
+        android:singleLine="true"
+        android:textColor="@color/demand_333333"
+        android:textSize="@dimen/font_optional_E" />
+
+    <TextView
+        android:id="@+id/tv_fast_search_item_name"
+        android:layout_toRightOf="@id/tv_fast_search_item_code"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="----"
+        android:ellipsize="none"
+        android:singleLine="true"
+        android:textColor="@color/demand_333333"
+        android:textSize="@dimen/font_optional_E" />
+
+    <ImageView
+        android:id="@+id/img_btn_item_add_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="15dp"
+        android:paddingLeft="20dp"
+        android:background="@null"
+        android:src="@drawable/zq_bjdzbk_red_add_cut"
+        android:contentDescription="@string/IDS_TuPianMiaoShu"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/img_btn_item_add_minus_del"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="15dp"
+        android:paddingLeft="20dp"
+        android:background="@null"
+        android:src="@drawable/zq_bjdzbk_red_add_cut_a"
+        android:contentDescription="@string/IDS_TuPianMiaoShu"
+        android:focusable="false" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

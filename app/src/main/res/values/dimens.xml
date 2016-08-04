@@ -1,0 +1,347 @@
+<resources>
+
+    <!-- 期权的所有sp的值移到 这里 改为 dp  防止手机用户自己修改手机字体影响到我们的 APP内的值 -->
+
+
+    <!-- =========================================================================================== -->
+    <!-- 字体大小 -->
+    <!-- 下单顶部导航栏字体 -->
+    <dimen name="font_60px">17dp</dimen>
+    <!-- 下单期权名称 -->
+    <dimen name="font_50px">14.5dp</dimen>
+    <dimen name="font_48px">14.5dp</dimen>
+    <dimen name="font_40px">12dp</dimen>
+    <dimen name="font_36px">10.5dp</dimen>
+    <dimen name="font_24px">6.5dp</dimen>
+
+    <!-- 期权详细页中顶部导航栏字体 -->
+    <dimen name="font_screen_A">13dp</dimen>
+    <!-- 期权详细页中其他字号字体 -->
+    <dimen name="font_screen_B">10dp</dimen>
+    <dimen name="font_screen_C">12dp</dimen>
+    <dimen name="font_screen_D">42dp</dimen>
+    <dimen name="font_screen_E">14.5dp</dimen>
+    <dimen name="font_screen_F">9dp</dimen>
+    <dimen name="font_screen_G">17dp</dimen>
+
+    <!-- 字体大小  A：22px B:16px C:18px  D: 20px -->
+    <dimen name="font_gainloss_A">14.5dp</dimen>
+    <dimen name="font_gainloss_B">10.5dp</dimen>
+    <dimen name="font_gainloss_C">12dp</dimen>
+    <dimen name="font_gainloss_D">13dp</dimen>
+
+    <!-- xxhdpi 自选调整界面中 字体大小  A：60px B:50px C:34px  D: 54px E:44px -->
+    <!-- xhdpi 自选调整界面中 字体大小  A：40px B:30px C:22px  D: 36px E:30px -->
+    <!-- hdpi 自选调整界面中 字体大小  A：26px B:20px C:14px  D: 24px E:20px -->
+
+    <dimen name="font_optional_A">17.3dp</dimen>
+    <dimen name="font_optional_B">13.3dp</dimen>
+    <dimen name="font_optional_C">9.3dp</dimen>
+    <dimen name="font_optional_D">16dp</dimen>
+    <dimen name="font_optional_E">13.3dp</dimen>
+
+    <!-- hdpi    字体26px  24px     20px -->
+    <!-- xhdpi   字体 40px  36px     32px -->
+    <!-- xxhdpi   字体 60px  56px     50px -->
+
+    <dimen name="font_trade_A">17.3dp</dimen>
+    <dimen name="font_trade_B">16dp</dimen>
+    <dimen name="font_trade_C">13.3dp</dimen>
+
+    <!-- xxhdpi   交易查询中的  字体的 大小    a:60px    B:44px     C: 34px -->
+    <!-- xhdpi   交易查询中的  字体的 大小    a:40px    B:30px     C: 22px -->
+    <!-- hdpi   交易查询中的  字体的 大小    a:26px    B:20px     C: 14px -->
+    <dimen name="font_trade_query_A">17.3dp</dimen>
+    <dimen name="font_trade_query_B">13.3dp</dimen>
+    <dimen name="font_trade_query_C">9.3dp</dimen>
+
+    <!-- xxhdpi   持仓中的  字体的 大小    a:60px    B:36px     C: 44px  D：32px -->
+    <!-- xhdpi   持仓中中的  字体的 大小    a:40px    B:24px     C: 30px  D:20px -->
+    <!-- hdpi   持仓中的  字体的 大小    a:26px    B:16px     C: 20px   D:14px -->
+    <dimen name="font_trade_position_A">17.3dp</dimen>
+    <dimen name="font_trade_position_B">10.6dp</dimen>
+    <dimen name="font_trade_position_C">13.3dp</dimen>
+    <dimen name="font_trade_position_D">9.3dp</dimen>
+
+    <!-- xxhdpi   银衍转证 字体的 大小    a:60px    B:42px     C: 50px -->
+    <!-- xhdpi   银衍转证 的  字体的 大小    a:40px    B:28px     C: 32px -->
+    <!-- hdpi   银衍转证   字体的 大小    a:26px    B:18px     C: 22px -->
+    <dimen name="font_bank_A">17.3dp</dimen>
+    <dimen name="font_bank_B">12dp</dimen>
+    <dimen name="font_bank_C">14.7dp</dimen>
+
+    <!-- xxhdpi  设置  字体的 大小    a:60px    B:40px     C: 50px -->
+    <!-- xhdpi   设置  的  字体的 大小    a:40px    B:26px     C: 32px -->
+    <!-- hdpi   设置   字体的 大小    a:26px    B:18px     C: 22px -->
+    <dimen name="font_set_A">17.3dp</dimen>
+    <dimen name="font_set_C">12dp</dimen>
+    <dimen name="font_set_B">14.5dp</dimen>
+
+    <!-- hdpi  设置  字体的 大小      a:60px    B: 50px -->
+    <!-- hdpi   设置  的  字体的 大小   a:40px    B: 32px -->
+    <!-- hdpi   设置   字体的 大小            a:26px    B: 22px -->
+    <dimen name="font_trade_more_A">17.3dp</dimen>
+    <dimen name="font_trade_more_B">14.5dp</dimen>
+
+    <!-- 60px   56px   52px    44px  42px -->
+    <dimen name="font_t_offer_A">20dp</dimen>
+    <dimen name="font_t_offer_B">18.7dp</dimen>
+    <dimen name="font_t_offer_C">17dp</dimen>
+    <dimen name="font_t_offer_D">14.5dp</dimen>
+    <dimen name="font_t_offer_E">14dp</dimen>
+    <dimen name="dim_34pt">17dp</dimen>
+    <dimen name="dim_30pt">15dp</dimen>
+    <dimen name="dim_24pt">12dp</dimen>
+    <dimen name="dim_22pt">11dp</dimen>
+    <dimen name="dim_20pt">10dp</dimen>
+    <dimen name="font_xxhuge_40sp">40dp</dimen>
+    <dimen name="font_xhuge_36sp">36dp</dimen>
+    <dimen name="font_huge_24sp">24dp</dimen>
+    <dimen name="font_xhuge_22sp">22dp</dimen>
+    <dimen name="font_big_20sp">20dp</dimen>
+    <dimen name="font_xbig_18sp">18dp</dimen>
+    <dimen name="font_middle_16sp">16dp</dimen>
+    <dimen name="font_xmid_14sp">14dp</dimen>
+    <dimen name="font_small_12sp">12dp</dimen>
+    <dimen name="font_xsmall_10sp">10dp</dimen>
+    <dimen name="font_xxsmall_9sp">9dp</dimen>
+    <dimen name="position_30pt">15dp</dimen>
+    <dimen name="position_24pt">12dp</dimen>
+    <dimen name="position_22pt">11dp</dimen>
+
+    <!-- 设置中请选择及返回的字体大小 -->
+    <dimen name="set_back">17.0dp</dimen>
+    <dimen name="set_choose">20.dp</dimen>
+
+    <!-- 通用的textView 字体大小   上不导航栏中  自选  、筛选 、 交易登陆、设置  、 请选择、修改筛选条件    大小为20sp -->
+    <dimen name="custom_font_middle_20sp">20dp</dimen>
+    <!-- 编辑  搜索   保存  修改条件   取消  大小为15sp -->
+    <dimen name="custom_font_middle_17sp">17dp</dimen>
+    <!-- tab 卡中 自选筛选 交易设置的大小为 13sp -->
+    <dimen name="custom_font_tab_13sp">13dp</dimen>
+    <!-- =========================================================================================== -->
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="item_height">67dp</dimen>
+    <dimen name="dim_200dp">200dp</dimen>
+
+    <!-- 顶部和底部导航栏 高度  165px （720p） -->
+    <dimen name="dim_165px">42dp</dimen>
+
+    <!-- 持仓list 条目高度65px （720p） -->
+    <dimen name="dim_145px">43dp</dimen>
+
+    <!-- 下单button 高度 132px （720p） -->
+    <dimen name="dim_132px">22dp</dimen>
+
+    <!-- 期权名称、价格、数量显示框 110px （720p） -->
+    <dimen name="dim_110px">37dp</dimen>
+
+    <!-- 下单页面radiobutton 高度 90px （720p） -->
+    <dimen name="dim_90px">26dp</dimen>
+
+    <!-- 下单页面左右边界空隙 30px （720p） -->
+    <dimen name="order_margin_40px">8dp</dimen>
+    <dimen name="order_margin_34px">5.5dp</dimen>
+    <dimen name="order_margin_30px">5dp</dimen>
+    <!-- 下单页面控件间隙 18px （720p） -->
+    <dimen name="order_control_gap">1.5dp</dimen>
+
+    <!-- 期权详细页界面调整数据____________________ -->
+    <!-- 期权详细页中顶部标头高度 （values） -->
+    <dimen name="dim_custom_tab_up">42dp</dimen>
+
+    <!-- 详细页面中所有间隙的margin值    3个不同像素下   A：15px B:16px C:20px -->
+    <dimen name="screen_detail_margin_A">10dp</dimen>
+    <dimen name="screen_detail_margin_B">10.5dp</dimen>
+    <dimen name="screen_detail_margin_C">13dp</dimen>
+
+    <!-- 标的物的高度  40px -->
+    <dimen name="screen_detail_biaodiwu_height">26.5dp</dimen>
+
+    <!-- 标的物底下的所有 TextView的高度  180px -->
+    <dimen name="screen_detail_alltextview_height">120dp</dimen>
+
+    <!-- 分时图  日线图的 行 高度   40px -->
+    <dimen name="screen_detail_fenshitu_tab_height">26.5dp</dimen>
+    <!-- 走势及五档的高度    265px -->
+    <dimen name="screen_detail_draw_height">176.5dp</dimen>
+    <!-- 详情页中 加入自选 及交易 及盈亏分析  间隙 -->
+    <dimen name="screen_detail_control_gap">3dp</dimen>
+
+    <!-- 字体大小  A：20px B:15px C:18px  D: 78px E:22px F:14px G:26px -->
+
+
+    <!-- values 新闻     研究报告 的   item  高度    110px 70px 50px -->
+    <dimen name="screen_detail_news_item_height">33.3dp</dimen>
+
+    <!-- kline pop window -->
+    <dimen name="popupinfo_width">90dp</dimen>
+
+    <!-- ______________________________盈亏分析 调整数据 __________________________________________ -->
+    <!-- 波动预期栏layout的高度  66px -->
+    <dimen name="gainloss_bodong_height">44dp</dimen>
+
+    <!-- 页面左右边界空隙 15px -->
+    <dimen name="gainloss_margin_leftright">6dp</dimen>
+    <!-- 页面盈亏list标题栏 高度 46px -->
+    <dimen name="gainloss_ykbiaoti_height">30dp</dimen>
+    <!-- 页面下边栏显示盈利 高度 42px -->
+    <dimen name="gainloss_pjyl_height">28dp</dimen>
+
+    <!-- ______________________________ 自选页面 调整数据 __________________________________________ -->
+
+
+    <!-- （xxhdpi） -->
+    <!-- 自选调整界面中  margin 值  15px -->
+    <dimen name="optional_margin_A">10dp</dimen>
+
+    <!-- 自选调整界面中   能滑动的期权名称等 字体Tab高度   42 px -->
+    <dimen name="optional_scroll_tab">28dp</dimen>
+
+    <!-- 自选调整界面中   能滑动的 listview item 等 字体 的高度    Tab高度    70px -->
+    <dimen name="optional_scroll_tab_item">46.5dp</dimen>
+
+    <!-- ———————————————————————————————————交易登陆—————————————————————————————— -->
+
+
+    <!-- 交易登录中营业厅距离上部分的  margin 值为   50px -->
+    <dimen name="trade_margin_A">33.3dp</dimen>
+
+    <!-- 营业厅距离 左边的margin  值    30px -->
+    <dimen name="trade_margin_B">20dp</dimen>
+
+    <!-- 交易登录中 营业厅   item 的高 度     65px -->
+    <dimen name="trade_item_height">43.3dp</dimen>
+
+    <!-- 营业厅那部分的宽度     160px -->
+    <dimen name="trade_left_item_width">106dp</dimen>
+
+    <!-- ———————————————————————————————————交易 查询 —————————————————————————————— -->
+
+
+    <!-- 全部可撤  已成交  上下左右 margin 值    15px -->
+    <dimen name="trade_query_margin_A">10dp</dimen>
+
+    <!-- 全部可撤  已成交  的高度 值    40px -->
+    <dimen name="trade_query_radiogroup_height">26.7dp</dimen>
+
+    <!-- 时间   期权名称  标头高度  30px -->
+    <dimen name="trade_query_listview_tab_height">20dp</dimen>
+
+    <!-- 时间   期权名称  对应的  item 的  高度  50px -->
+    <dimen name="trade_query_listview_item_tab_height">33.3dp</dimen>
+    <!-- 时间   期权名称  对应的  item 的  padding  7px -->
+    <dimen name="trade_query_listview_item_padding_height">4.5dp</dimen>
+
+    <!-- ———————————————————————————————————交易 持仓   xxhdpi —————————————————————————————— -->
+
+
+    <!-- 持仓中 margin 值   15px   26px   44px -->
+
+    <dimen name="trade_position_margin_A">10dp</dimen>
+    <dimen name="trade_position_margin_B">17.3dp</dimen>
+    <dimen name="trade_position_margin_C">29.3dp</dimen>
+
+    <!-- 持仓中所有 textview 高度   未给 -->
+
+
+    <!-- 期权名称     持仓可用  TAB 的高度为 30px -->
+    <dimen name="trade_position_listview_tab_height">20dp</dimen>
+
+    <!-- 期权名称     持仓可用  listview item 的高度为 94px -->
+    <dimen name="trade_position_listview_tab_item_height">62.7dp</dimen>
+
+    <!-- 权利 距离标的名字的间隙 为  2dp -->
+    <dimen name="trade_position_gap">2dp</dimen>
+
+    <!-- ———————————————————————————————————筛选页   values —————————————————————————————— -->
+    <!-- 筛选页中 返回的筛选条件的高度  45px -->
+    <dimen name="screen_condition_textview_height">30dp</dimen>
+    <!-- 筛选页中其他的字体 都是和自选中一致的 直接使用那里的字号     只有item 中  D号 和E号 显示调换下 -->
+
+
+    <!-- ———————————————————————————————————银衍转证    Values —————————————————————————————— -->
+
+
+    <!-- Values  银行转证券    证券 转银行    四个 radiogroup 的   左右上下  margin 值为  15px -->
+    <dimen name="bank_margin_A">10dp</dimen>
+
+    <!-- Values   银行转证券    证券 转银行    四个 radiogroup 的   所在大布局的高度  值为  96px -->
+    <dimen name="bank_radiogroup_out_height">64dp</dimen>
+
+    <!-- Values   银衍转证     中  选择银行   银行密码  等  item  的高度为   66px -->
+    <dimen name="bank_item_height">44dp</dimen>
+
+    <!-- ———————————————————————————————————设置    hdpi —————————————————————————————— -->
+
+
+    <!-- 交易设置   其他设置   的 高度     所在大布局的高度  值为  50px -->
+    <dimen name="set_height">33.3dp</dimen>
+
+    <!-- 交易设置   其他设置  item   的 高度   的高度为   66px -->
+    <dimen name="set_item_height">44dp</dimen>
+
+    <!-- ———————————————————————————————————交易更多页面    hdpi —————————————————————————————— -->
+
+
+    <!-- hdpi  银证转账距离上面的值   46px -->
+    <dimen name="trade_more_margin_top">30.7dp</dimen>
+
+    <!-- hdpi  银证转账等  item 的高度       66px -->
+    <dimen name="trade_more_item_height">44dp</dimen>
+
+    <!-- ——————————  T 型报价页面     xxhdpi ————————————————— -->
+
+
+    <!-- 购沽高度   110px -->
+    <dimen name="t_offer_height_gou">36.7dp</dimen>
+    <!-- 高度   100px -->
+    <dimen name="t_offer_height_title">33.3dp</dimen>
+
+    <!-- 高度   104px -->
+    <dimen name="t_offer_height_item">34.6dp</dimen>
+
+    <!-- kuan du  228px -->
+    <dimen name="t_offer_title_width">76dp</dimen>
+
+    <!-- 底部导航栏 高度  88px -->
+    <dimen name="dim_120px">60dp</dimen>
+    <dimen name="dim_100px">50dp</dimen>
+    <dimen name="dim_88px">44dp</dimen>
+
+    <!-- 期权修改高度 -->
+    <dimen name="dim_60px">30dp</dimen>
+    <dimen name="dim_75px">35dp</dimen>
+    <dimen name="dim_80px">40dp</dimen>
+
+    <!-- 左右滑动的列表 上部标头高度 -->
+    <dimen name="hvlist_head_height">40dp</dimen>
+
+    <!-- 二级菜单 -->
+    <dimen name="sub_title_height">40dip</dimen>
+    <dimen name="nav_leftright_width">8dip</dimen>
+    <!-- 二级菜单左右箭头宽度 -->
+
+    <dimen name="stockinfo_fiveprice_gap">2dp</dimen>
+
+    <!-- 自选 筛选中 listheader -->
+    <dimen name="list_item_width_big_120dp">120dp</dimen>
+    <dimen name="list_item_width_mid_100dp">100dp</dimen>
+    <dimen name="list_item_width_sml_80dp">80dp</dimen>
+    <dimen name="list_item_height_30dp">30dp</dimen>
+
+    <!-- 交易持仓中的数据 -->
+
+    <dimen name="position_230pt">115dp</dimen>
+    <dimen name="position_140pt">70dp</dimen>
+    <dimen name="order_position_90pt">50dp</dimen>
+
+    <!-- 键盘高度 -->
+    <dimen name="key_height">50.0dip</dimen>
+    <dimen name="t_offer_width">160dp</dimen>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/detail_ffffff"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/tv_gain_loss_analysis_tv1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gainloss_ykbiaoti_height"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/detail_666666"
+        android:textSize="@dimen/font_gainloss_C" />
+
+    <TextView
+        android:id="@+id/tv_gain_loss_analysis_tv2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gainloss_ykbiaoti_height"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.25"
+        android:gravity="center"
+        android:textColor="@color/detail_666666"
+        android:textSize="@dimen/font_gainloss_C" />
+
+    <TextView
+        android:id="@+id/tv_gain_loss_analysis_tv3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gainloss_ykbiaoti_height"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/detail_666666"
+        android:textSize="@dimen/font_gainloss_C" />
+
+    <TextView
+        android:id="@+id/tv_gain_loss_analysis_tv4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/gainloss_ykbiaoti_height"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.45"
+        android:gravity="center"
+        android:textColor="@color/detail_666666"
+        android:textSize="@dimen/font_gainloss_C" />
+
+</LinearLayout>

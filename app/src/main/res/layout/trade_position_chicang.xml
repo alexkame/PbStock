@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_demand" >
+
+    <com.pengbo.mhdcx.view.TradePositionChiCangView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_positionchicang"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/trade_position_listview_tab_height"
+                android:background="@drawable/order_bg02"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/IDS_QiQuanName"
+                    android:textColor="@color/gray_demand_one"
+                    android:textSize="@dimen/font_trade_position_B" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/IDS_ChiCangKeYong"
+                    android:textColor="@color/gray_demand_one"
+                    android:textSize="@dimen/font_trade_position_B"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/IDS_JunJiaXianJia"
+                    android:textColor="@color/gray_demand_one"
+                    android:textSize="@dimen/font_trade_position_B" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/IDS_FuDongYingKui"
+                    android:textColor="@color/gray_demand_one"
+                    android:textSize="@dimen/font_trade_position_B" />
+            </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/trade_position_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:divider="@null"
+                        >
+                    </ListView>
+
+    </com.pengbo.mhdcx.view.TradePositionChiCangView>
+
+</LinearLayout>

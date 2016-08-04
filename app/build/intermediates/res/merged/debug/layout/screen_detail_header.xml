@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_custom_tab_up"
+    android:background="@android:color/black" 
+    android:id="@+id/t_offer_title_view">
+
+    <LinearLayout
+        android:id="@+id/middle_linearlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+			<TextView
+                android:id="@+id/header_middle_tv_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/detail_5dc1fd"
+                android:textSize="@dimen/font_optional_B" />
+
+            <TextView
+                android:id="@+id/header_middle_tv_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/detail_f0f5f8"
+                android:textSize="@dimen/font_optional_B" />
+
+        </LinearLayout>
+        
+
+        <TextView
+            android:id="@+id/header_middle_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/IDS_ShengYuTianShu"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_screen_B" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle_t_offer"
+        android:layout_width="@dimen/t_offer_width"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/t_offer_middle_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/t_down" 
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/t_offer_middle_imageview"
+            android:layout_marginRight="5dp" >
+
+            <TextView
+                android:id="@+id/t_offer_middle_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="ssss"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_optional_B" />
+
+            <TextView
+                android:id="@+id/t_offer_fudong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="ssss"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_screen_B" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/middle_rechaoheyue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/IDS_ReChaoHeYue"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_optional_A"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_out_of_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/screen_detail_header_left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/optional_margin_A"
+            android:background="@drawable/selector_back_btn"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/screen_detail_header_right_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/optional_margin_A"
+        android:clickable="true"
+        android:contentDescription="@string/IDS_TuPianMiaoShu"
+        android:src="@drawable/selector_shuaxin_btn"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/zq_all_list_item_color_selector"
+    >
+
+    <LinearLayout
+        android:id="@+id/llayout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/zq_hangqing_bottom_padding"
+        android:layout_marginBottom="@dimen/zq_hangqing_bottom_padding"
+        android:orientation="vertical" >
+
+    <com.pengbo.mhdzq.view.AutoScaleTextView
+        android:id="@+id/tv_child_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:singleLine="true"
+        android:textColor="@color/zq_374447"
+        android:textSize="@dimen/zq_detail_font_B" />
+    
+    <TextView
+        android:id="@+id/tv_child_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:singleLine="true"
+        android:textColor="@color/zq_92a0ad"
+        android:textSize="@dimen/zq_detail_font_F" />
+    
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tv_child_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:ellipsize="none"
+        android:singleLine="true"
+        android:text="----"
+        android:gravity="center"
+        android:textSize="@dimen/zq_detail_font_D" />
+    
+    <TextView
+        android:id="@+id/tv_child_zdf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zq_hangqing_bottom_padding"
+        android:layout_marginBottom="@dimen/zq_hangqing_bottom_padding"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:ellipsize="none"
+        android:singleLine="true"
+        android:text="----"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/zq_detail_font_D"/>
+
+    </LinearLayout>
+    
+    <View
+        android:layout_below="@id/llayout_item"
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

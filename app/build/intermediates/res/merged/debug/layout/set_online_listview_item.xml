@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/tv_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="@dimen/trade_position_margin_A"
+        android:paddingBottom="@dimen/trade_position_margin_A">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/trade_position_margin_B"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/qq_choose_font_A" />
+
+        <ImageView
+            android:id="@+id/imag_chose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/trade_position_margin_B"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"/>
+    </RelativeLayout>
+    
+   <ImageView 
+       android:layout_below="@id/tv_image"
+       android:id="@+id/setonline_divider"
+       android:layout_width="fill_parent"
+       android:layout_height="0.3dp"
+       android:background="@android:color/darker_gray"
+       android:contentDescription="@string/IDS_TuPianMiaoShu"
+       />
+
+</RelativeLayout>

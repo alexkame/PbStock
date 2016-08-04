@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_demand" >
+
+    <!-- background color eeeeee -->
+
+    <RelativeLayout
+        android:id="@+id/trade_option_list_actiity_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_100px"
+        android:background="@android:color/black" >
+
+        <RadioGroup
+            android:id="@+id/trade_option_list_actiity_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/screen_detail_margin_A"
+            android:layout_marginTop="@dimen/screen_detail_margin_A"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_all"
+                android:layout_width="@dimen/bank_radiogroup_out_height"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_black_left_selected_unselected"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/IDS_QuanBu"
+                android:textColor="@drawable/classify_text_selector"
+                android:textSize="@dimen/font_optional_A" />
+
+            <RadioButton
+                android:id="@+id/rb_mystock"
+                android:layout_width="@dimen/bank_radiogroup_out_height"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_black_right_selected_unselected"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/IDS_ZhiXuan"
+                android:textColor="@drawable/classify_text_selector"
+                android:textSize="@dimen/font_optional_A" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/trade_option_list_activity_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/optional_margin_A"
+            android:paddingBottom="@dimen/optional_margin_A"
+            android:paddingRight="@dimen/optional_margin_A"
+            android:paddingTop="@dimen/optional_margin_A"
+            android:text="@string/IDS_GuanBi"
+            android:textColor="@drawable/classify_custom_textview_blue_white"
+            android:textSize="@dimen/font_optional_B"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/trade_option_list_framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/trade_option_list_actiity_relativelayout" >
+    </FrameLayout>
+
+</RelativeLayout>

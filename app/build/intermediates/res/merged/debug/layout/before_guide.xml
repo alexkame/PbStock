@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_demand" >
+
+    <ImageView
+        android:id="@+id/imageview_guide"
+        android:layout_width="250dp"
+        android:layout_height="191dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/pic"
+        android:contentDescription="@string/IDS_TuPianMiaoShu" />
+
+    <TextView
+        android:id="@+id/tv_choose_model"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_guide"
+        android:layout_marginLeft="@dimen/trade_margin_B"
+        android:layout_marginTop="@dimen/set_height"
+        android:text="@string/IDS_XuanZeJiaoYiMoShi"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/font_set_B" />
+
+    <LinearLayout
+        android:id="@+id/before_guide_general_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/set_item_height"
+        android:layout_below="@id/tv_choose_model"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/trade_margin_B"
+            android:layout_weight="1.0"
+            android:text="@string/IDS_MoRenJiaoYiMoShi"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_set_C" />
+
+        <ImageView
+            android:id="@+id/berore_guide_general_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/trade_margin_B"           
+            android:src="@drawable/save02"
+            android:visibility="visible" 
+            android:contentDescription="@string/IDS_TuPianMiaoShu"/>
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/gray_demand_one"       
+        android:layout_below="@id/before_guide_general_layout" 
+        />
+
+    <LinearLayout
+        android:id="@+id/before_guide_advanced_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim_100px"
+        android:layout_below="@id/divider"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20.0dp"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/IDS_Gaojijiaoyimoshi"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_set_C" 
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/IDS_ShiHeRiNeiJiaoYiZhe"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_set_C" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/berore_guide_advanced_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/trade_margin_B"
+            android:src="@drawable/save02"
+            android:visibility="gone" 
+            android:contentDescription="@string/IDS_TuPianMiaoShu"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_before_guide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/before_guide_advanced_layout1"
+        android:layout_marginLeft="@dimen/trade_margin_B"
+        android:layout_marginRight="@dimen/trade_margin_B"
+        android:layout_marginTop="@dimen/trade_margin_B"
+        android:background="@drawable/buttonok"
+        android:text="@string/IDS_QueDing" 
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_bank_A"/>
+
+</RelativeLayout>

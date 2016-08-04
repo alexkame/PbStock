@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/optional_scroll_tab"
+    android:background="@color/demand_efefef"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="@dimen/list_item_width_mid_100dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:minLines="2"
+        android:text="@string/IDS_QiQuanName"
+        android:textColor="@color/gray_demand_one"
+        android:textSize="@dimen/font_t_offer_D" />
+
+    <com.pengbo.mhdzq.view.CHScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/hv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:overScrollMode="never" >
+
+            <TextView
+                android:id="@+id/item2"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minLines="2"
+                android:text="@string/IDS_ZuiXinJia"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item3"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_ZhangDieFu"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item4"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_YiJiaLv"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item5"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_XingQuanJia"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item6"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_BuyJia"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item7"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_BuyLiang"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item8"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_SellJia"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item9"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_SellLiang"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item10"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_ZongLiang"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item11"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_XianLiang"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item12"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_ChiCangLiang"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item13"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_CangCha"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item14"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_GangGanLv"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item15"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_ZhenShiGangGanLv"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item16"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_NeiZaiJiaZhi"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item17"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_ShiJianJiaZhi"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item18"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/IDS_ShiXuZhi"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+
+            <TextView
+                android:id="@+id/item19"
+                android:layout_width="@dimen/list_item_width_mid_100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/IDS_DaoQiRi"
+                android:textColor="@color/gray_demand_one"
+                android:textSize="@dimen/font_t_offer_D" />
+        </LinearLayout>
+
+    </com.pengbo.mhdzq.view.CHScrollView>
+
+</LinearLayout>

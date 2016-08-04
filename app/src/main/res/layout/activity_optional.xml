@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mystockactivity_head"
+        layout="@layout/maintab_header" />
+
+    <View
+        android:id="@+id/divider_item1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/demand_e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_myoption_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:drawablePadding="@dimen/trade_position_gap"
+            android:drawableTop="@drawable/add"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="添加自选"
+            android:textColor="@drawable/classify_custom_textview_blue_white"
+            android:textSize="@dimen/font_optional_A" />
+
+        <LinearLayout
+            android:id="@+id/llayout_hlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/headOfOptionList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/hscroll_head_item" />
+
+            <View
+                android:id="@+id/divider_item"
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/demand_e5e5e5" />
+
+            <com.pengbo.mhdcx.view.PullToRefreshView
+                android:id="@+id/mystock_pull_refreshview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/listView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/divider_item"
+                    android:clickable="true"
+                    android:divider="@null"
+                    android:fadingEdge="none" >
+                </ListView>
+            </com.pengbo.mhdcx.view.PullToRefreshView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="left|top"
+    android:layout_gravity="center_horizontal|top"
+    >
+
+    <!--  android:background="@drawable/actionsheet_top_normal" 
+            android:background="@drawable/actionsheet_bottom_selector"-->
+    <TextView
+        android:id="@+id/txt_mydialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"       
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/IDS_QingXuanZe"
+        android:textColor="@color/actionsheet_gray"
+        android:textSize="13sp"
+        android:visibility="gone" />
+	
+    <!--         android:divider="#00000000" -->
+    <ListView
+        android:paddingTop="10dp"
+        android:layout_weight="1.0"
+        android:id="@+id/device_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+		android:dividerHeight="0.2dp"
+		android:fadingEdge="none"
+		android:fadeScrollbars="false"
+		android:divider="@null"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/txt_mydialog_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.0"
+        android:gravity="center"
+        android:text="@string/IDS_QuXiao"
+        android:textColor="@color/t_offer_f8f8f9"
+        android:textSize="@dimen/font_optional_E"
+        android:visibility="visible" 
+        android:layout_margin="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/pop_select"/>
+
+</LinearLayout>

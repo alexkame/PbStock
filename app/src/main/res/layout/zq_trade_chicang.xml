@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zq_trade_chicang"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/zq_f3f3f3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_trade_chicang_field1_height" >
+
+        <LinearLayout
+            android:id="@+id/llayout_field1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"                
+                android:ellipsize="none"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/ZQ_ZongZiChan"
+                android:textColor="@color/zq_565656"
+                android:textSize="@dimen/zq_trade_font_C" />
+            <!-- android:layout_marginBottom="@dimen/zq_trade_chicang_margin_C"
+                android:layout_marginLeft="@dimen/zq_trade_chicang_leftmargin" -->
+
+            <TextView
+                android:id="@+id/tv_zongzichan"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/zq_trade_chicang_centermargin"
+                android:layout_gravity="center"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="----"
+                android:textColor="@color/zq_212121"
+                android:textSize="@dimen/zq_trade_font_E" />
+            <!-- android:layout_marginBottom="@dimen/zq_trade_chicang_centermargin"
+                 -->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/zq_cicang_divider" />
+
+    <LinearLayout
+        android:id="@+id/llayout_field2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/zq_trade_chicang_centermargin"
+        android:paddingLeft="@dimen/zq_trade_chicang_centermargin" 
+        android:paddingTop="@dimen/zq_trade_chicang_margin_A" >
+        <!-- android:paddingRight="@dimen/zq_trade_chicang_centermargin" -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" >
+
+            <TextView
+                android:id="@+id/tv_zongyinkui"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left|center"
+                android:ellipsize="none"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="@string/ZQ_ZongYinKui"
+                android:textColor="@color/zq_565656"
+                android:textSize="@dimen/zq_trade_font_D" />
+
+            <TextView
+                android:id="@+id/tv_kequ"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zongyinkui"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="@dimen/zq_trade_chicang_centermargin"
+                android:ellipsize="none"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="@string/ZQ_KeQu"
+                android:textColor="@color/zq_565656"
+                android:textSize="@dimen/zq_trade_font_D" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/tv_zongyinkui_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left|center"
+                android:ellipsize="none"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="----"
+                android:textColor="@color/zq_212121"
+                android:textSize="@dimen/zq_trade_font_D" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/tv_kequ_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zongyinkui_value"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="@dimen/zq_trade_chicang_centermargin"
+                android:ellipsize="none"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="----"
+                android:textColor="@color/zq_212121"
+                android:textSize="@dimen/zq_trade_font_D" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" >
+
+            <TextView
+                android:id="@+id/tv_zongshizhi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left|center"
+                android:ellipsize="none"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="@string/ZQ_ZongShiZhi"
+                android:textColor="@color/zq_565656"
+                android:textSize="@dimen/zq_trade_font_D" />
+
+            <TextView
+                android:id="@+id/tv_keyong"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zongshizhi"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="@dimen/zq_trade_chicang_centermargin"
+                android:ellipsize="none"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="@string/ZQ_KeYong"
+                android:textColor="@color/zq_565656"
+                android:textSize="@dimen/zq_trade_font_D" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/tv_zongshizhi_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left|center"
+                android:ellipsize="none"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="----"
+                android:textColor="@color/zq_212121"
+                android:textSize="@dimen/zq_trade_font_D" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/tv_keyong_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zongshizhi_value"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="@dimen/zq_trade_chicang_centermargin"
+                android:ellipsize="none"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="----"
+                android:textColor="@color/zq_212121"
+                android:textSize="@dimen/zq_trade_font_D" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_trade_chicang_margin_C"        
+        android:background="@drawable/zq_cicang_yinying" />
+    <!-- android:layout_marginTop="@dimen/zq_trade_chicang_margin_C" -->
+
+ 	<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dp"        
+        android:background="@color/zq_93939b" />
+    <LinearLayout
+        android:id="@+id/llayout_field3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zq_ffffff"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/zq_trade_chicang_margin_C"
+        android:paddingTop="@dimen/zq_trade_chicang_margin_C" >
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/zq_trade_chicang_padding_draw"
+            android:drawableTop="@drawable/zq_icon_buy"
+            android:text="@string/ZQ_MaiRu"
+            android:textColor="@color/zq_212121"
+            android:textSize="@dimen/zq_trade_font_D" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btn_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/zq_trade_chicang_padding_draw"
+            android:drawableTop="@drawable/zq_icon_sell"
+            android:text="@string/ZQ_MaiChu"
+            android:textColor="@color/zq_212121"
+            android:textSize="@dimen/zq_trade_font_D" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btn_chedan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/zq_trade_chicang_padding_draw"
+            android:drawableTop="@drawable/zq_icon_chedan"
+            android:text="@string/ZQ_CheDan"
+            android:textColor="@color/zq_212121"
+            android:textSize="@dimen/zq_trade_font_D" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btn_weituo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/zq_trade_chicang_padding_draw"
+            android:drawableTop="@drawable/zq_icon_weituo"
+            android:text="@string/ZQ_WeiTuo"
+            android:textColor="@color/zq_212121"
+            android:textSize="@dimen/zq_trade_font_D" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/zq_trade_chicang_padding_draw"
+            android:drawableTop="@drawable/zq_icon_more"
+            android:text="@string/ZQ_GengDuo"
+            android:textColor="@color/zq_212121"
+            android:textSize="@dimen/zq_trade_font_D" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dp"        
+        android:background="@color/zq_93939b" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dp" 
+        android:layout_marginTop="@dimen/zq_trade_chicang_margin_B"       
+        android:background="@color/zq_93939b" />
+    <LinearLayout
+        android:id="@+id/lLayout_chicang_list_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_chicang_margin_A"
+        android:background="@color/zq_ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ZQ_GuPiaoShiZhi"
+            android:textColor="@color/zq_212121"
+            android:textSize="@dimen/zq_trade_font_C" />
+
+        
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/zq_chicang_margin_B"
+            android:layout_marginTop="@dimen/zq_chicang_margin_B"
+            android:background="@color/zq_93939b" />
+
+        <!-- demand_cc00ff -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ZQ_YingKui"
+            android:textColor="@color/zq_212121"
+            android:textSize="@dimen/zq_trade_font_C" />
+
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/zq_chicang_margin_B"
+            android:layout_marginTop="@dimen/zq_chicang_margin_B"
+            android:background="@color/zq_93939b" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ZQ_ChiCangKeYong"
+            android:textColor="@color/zq_212121"
+            android:textSize="@dimen/zq_trade_font_C" />
+
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/zq_chicang_margin_B"
+            android:layout_marginTop="@dimen/zq_chicang_margin_B"
+            android:background="@color/zq_93939b" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ZQ_ChengBenXianJia"
+            android:textColor="@color/zq_212121"
+            android:textSize="@dimen/zq_trade_font_C" />
+    </LinearLayout>
+
+  <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dp"     
+        android:background="@color/zq_93939b" />
+
+    <ListView
+        android:id="@+id/zq_trade_cc_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/zq_ffffff"
+        android:clickable="true"
+        android:divider="@null"
+        android:fadingEdge="none" >
+    </ListView>
+
+</LinearLayout>

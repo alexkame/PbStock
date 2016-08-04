@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    
+    >
+
+    <LinearLayout
+        android:id="@+id/lv_bd_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/beidui_margin_Q"
+        android:baselineAligned="false"        
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/lv_bd_item1"
+            android:layout_width="0dp"
+            android:layout_weight="193"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:lines="2"
+            android:singleLine="true"
+            android:textColor="@color/beidui_676767"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:id="@+id/lv_bd_item2"
+            android:layout_width="0dp"
+            android:layout_weight="165"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+           android:textColor="@color/beidui_676767"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:id="@+id/lv_bd_item3"
+            android:layout_width="0dp"
+            android:layout_weight="171"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:lines="2"
+            android:textColor="@color/beidui_676767"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:id="@+id/lv_bd_item4"
+            android:layout_width="0dp"
+            android:layout_weight="188"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/beidui_676767"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:id="@+id/lv_bd_item5"
+            android:layout_width="0dp"
+            android:layout_weight="171"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:lines="2"
+            android:textColor="@color/beidui_676767"
+            android:textSize="@dimen/font_trade_position_B" />
+
+    </LinearLayout>
+    <View        
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/beidui_dcdcdc" />
+
+</RelativeLayout>

@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <!--<LinearLayout
+        android:id="@+id/gain_loss_anilysis_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >  -->
+
+        <LinearLayout
+            android:id="@+id/gain_loss_anilysis_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gainloss_pjyl_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_demand"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/IDS_PingJunYingLi"
+                android:textSize="@dimen/font_gainloss_D"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/gain_loss_anilysis_pjsyl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textSize="@dimen/font_gainloss_D"
+                android:textColor="@android:color/black"/>
+            
+            <TextView
+                android:id="@+id/gain_loss_anilysis_pjsy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textSize="@dimen/font_gainloss_D"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/gain_loss_anilysis_pjrate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textSize="@dimen/font_gainloss_D"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/gain_loss_anilysis_bottom" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"  
+            android:focusableInTouchMode="true"  >
+
+            <LinearLayout
+                android:id="@+id/gain_loss_analysis_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/gainloss_bodong_height"
+                android:background="#eeeeee"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/IDS_BoDongYuQi"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_gainloss_A" />
+
+                <RadioGroup
+                    android:id="@+id/history_radiogroup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/history_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_gainloss_left_selected_unselected"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/IDS_PingHuan"
+                        android:textColor="@drawable/classify_text_selector_2"
+                        android:textSize="@dimen/font_gainloss_C" />
+
+                    <RadioButton
+                        android:id="@+id/history_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_gainloss_middle_selected_unselected"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/IDS_ZhengChang"
+                        android:textColor="@drawable/classify_text_selector_2"
+                        android:textSize="@dimen/font_gainloss_C" />
+
+                    <RadioButton
+                        android:id="@+id/history_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_gainloss_right_selected_unselected"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/IDS_JuLie"
+                        android:textColor="@drawable/classify_text_selector_2"
+                        android:textSize="@dimen/font_gainloss_C" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gain_loss_analysis_layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_80px"
+                android:background="@android:color/white"
+                android:baselineAligned="false"
+                android:layout_marginLeft="@dimen/gainloss_margin_leftright"
+                android:layout_marginRight="@dimen/gainloss_margin_leftright"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_XingQuanJia"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_xqj"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_NeiZaiJiaZhi"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_nzjz"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_ShiJianJiaZhi"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_sjjz"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_GangGanLv"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_ggl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_ZhenShiGangGanLv"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_zsggl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gain_loss_analysis_layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_80px"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:baselineAligned="false"
+                android:layout_marginLeft="@dimen/gainloss_margin_leftright"
+                android:layout_marginRight="@dimen/gainloss_margin_leftright"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center"
+                        android:text="@string/IDS_Delta"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_delta"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center"
+                        android:text="@string/IDS_Gamma"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_gamma"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                       
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_Theta"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_theta"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_Rho"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_rho"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_Vega"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_vega"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gain_loss_analysis_layout4"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_80px"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:baselineAligned="false"
+                android:layout_marginLeft="@dimen/gainloss_margin_leftright"
+                android:layout_marginRight="@dimen/gainloss_margin_leftright"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_YiJiaLv"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_yjl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_YingLiGaiLv"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_ylgl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_DanZhangChengBen"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_dzcb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_HuoYueDu"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_hyd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/IDS_GuSuanSunYiBi"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@color/gray_demand_three" />
+
+                    <TextView
+                        android:id="@+id/field_hq_gssyb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                       
+                        android:gravity="center"
+                        android:text="--"
+                        android:textSize="@dimen/font_gainloss_C"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/gain_loss_analysis_draw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ViewFlipper
+                    android:id="@+id/flipper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/gain_loss_list_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/gainloss_ykbiaoti_height"
+                    android:background="@color/background_demand"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/IDS_JiaGe"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/font_gainloss_C" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/IDS_ShouYiLv"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/font_gainloss_C" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/IDS_ShouYi"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/font_gainloss_C" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/IDS_FaShengGaiLv"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/font_gainloss_C" />
+                </LinearLayout>
+
+                <com.pengbo.mhdcx.view.ListViewForScrollView
+                    android:id="@+id/gain_loss_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </com.pengbo.mhdcx.view.ListViewForScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

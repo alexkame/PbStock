@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    
+     <!-- 对item的不通状态设置不同的图片，第一行是 他的状态被选中&&他没有被按下的状态就用这个图片-->
+    <item android:state_selected="true" android:state_pressed="false" android:drawable="@color/beidui_6d6868"/>
+    <!-- 被checked的时候并且没有按下 -->
+	<item android:state_checked="true"  android:state_pressed="false" android:drawable="@color/beidui_6d6868"/>
+	<item android:drawable="@color/beidui_cccaca"/>
+
+</selector>

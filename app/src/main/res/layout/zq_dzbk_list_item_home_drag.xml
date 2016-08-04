@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/optional_scroll_tab_item"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/click_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/IDS_TuPianMiaoShu"
+                android:src="@drawable/zq_bjdzbk_red_add_cut_a" />
+
+            <ImageView
+                android:id="@+id/click_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/IDS_TuPianMiaoShu"
+                android:src="@drawable/zq_bjdzbk_red_add_cut"
+                android:visibility="gone" />
+            
+            <TextView
+            android:id="@+id/headEditActivity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/zq_515151"
+            android:textSize="@dimen/font_optional_D" />
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@id/drag_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/zq_bjdzbk_drag"
+            android:contentDescription="@string/IDS_TuPianMiaoShu" />
+        
+        <TextView
+            android:id="@+id/headEditActivity_text_tuodong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/ZQ_ChangAnTuoDong"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/font_optional_D"
+            android:visibility="gone" />
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f3f3f3" />
+
+</LinearLayout>

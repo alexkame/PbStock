@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <Button
+        android:id="@+id/btn_zq_myoption_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:background="@drawable/zq_zixuan_add_blue_bcg"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="+添加自选"
+        android:textColor="@color/zq_ffffff"
+        android:textSize="@dimen/zq_trade_font_E" />
+
+    <LinearLayout
+        android:id="@+id/llayout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zq_marketinfo_rb_unselect"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_A" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="最新"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_A" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="涨幅"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_A" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="涨跌"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_A" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_zq_mystock"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/llayout_title"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

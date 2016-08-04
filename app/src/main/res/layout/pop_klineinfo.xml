@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="2dip"
+    android:paddingBottom="2dip"
+    android:background="#601C3E58"
+>
+   <LinearLayout android:orientation="horizontal"
+    			android:layout_width="@dimen/popupinfo_width"
+    			android:layout_height="wrap_content"
+    			>
+		<TextView
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+			android:textSize="@dimen/font_screen_F"
+		    android:textColor="#00ffff"
+		    android:gravity="left"
+		    android:text="开盘" />
+		<TextView android:id="@+id/kline_popinfo_field0"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_screen_F"
+	        android:textColor="#ffffff"
+	        android:gravity="right"
+	        android:paddingRight="2dip" />
+	</LinearLayout>
+	
+   <LinearLayout android:orientation="horizontal"
+    			android:layout_width="@dimen/popupinfo_width"
+    			android:layout_height="wrap_content"
+    			>
+		<TextView
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+			android:textSize="@dimen/font_screen_F"
+		    android:textColor="#00ffff"
+		    android:gravity="left"
+		    android:text="最高" />
+		<TextView android:id="@+id/kline_popinfo_field1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_screen_F"
+	        android:textColor="#ffffff"
+	        android:gravity="right"
+	        android:paddingRight="2dip" />
+	</LinearLayout>
+	        
+   <LinearLayout android:orientation="horizontal"
+    			android:layout_width="@dimen/popupinfo_width"
+    			android:layout_height="wrap_content"
+    			>
+		<TextView
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+			android:textSize="@dimen/font_screen_F"
+		    android:textColor="#00ffff"
+		    android:gravity="left"
+		    android:text="最低" />
+		<TextView android:id="@+id/kline_popinfo_field2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_screen_F"
+	        android:textColor="#ffffff"
+	        android:gravity="right"
+	        android:paddingRight="2dip" />
+	</LinearLayout>
+	        
+   <LinearLayout android:orientation="horizontal"
+    			android:layout_width="@dimen/popupinfo_width"
+    			android:layout_height="wrap_content"
+    			>
+		<TextView
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+			android:textSize="@dimen/font_screen_F"
+		    android:textColor="#00ffff"
+		    android:gravity="left"
+		    android:text="收盘" />
+		<TextView android:id="@+id/kline_popinfo_field3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_screen_F"
+	        android:textColor="#ffffff"
+	        android:gravity="right"
+	        android:paddingRight="2dip" />
+	</LinearLayout>
+	        
+   <LinearLayout android:orientation="horizontal"
+    			android:layout_width="@dimen/popupinfo_width"
+    			android:layout_height="wrap_content"
+    			>
+		<TextView
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+			android:textSize="@dimen/font_screen_F"
+		    android:textColor="#00ffff"
+		    android:gravity="left"
+		    android:text="幅度" />
+		<TextView android:id="@+id/kline_popinfo_field4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_screen_F"
+	        android:textColor="#ffffff"
+	        android:gravity="right"
+	        android:paddingRight="2dip" />
+	</LinearLayout>
+	
+   	<LinearLayout android:id="@+id/layout_hsl" 
+   	    		android:orientation="horizontal"
+    			android:layout_width="@dimen/popupinfo_width"
+    			android:layout_height="wrap_content"
+    			>
+		<TextView
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+			android:textSize="@dimen/font_screen_F"
+		    android:textColor="#00ffff"
+		    android:gravity="left"
+		    android:text="换手" />
+		<TextView android:id="@+id/kline_popinfo_field9"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_screen_F"
+	        android:textColor="#ffffff"
+	        android:gravity="right"
+	        android:paddingRight="2dip" />
+	</LinearLayout>
+   
+   
+   
+   
+   
+    <LinearLayout android:id="@+id/layout_gzqh_cjl" 
+        		android:orientation="horizontal"
+    			android:layout_width="@dimen/popupinfo_width"
+    			android:layout_height="wrap_content"
+    			>
+		<TextView
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+			android:textSize="@dimen/font_screen_F"
+		    android:textColor="#00ffff"
+		    android:gravity="left"
+		    android:text="成交量" />
+		<TextView android:id="@+id/kline_popinfo_field5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_screen_F"
+	        android:textColor="#ffffff"
+	        android:gravity="right"
+	        android:paddingRight="2dip" />
+	</LinearLayout>
+	
+    <LinearLayout android:id="@+id/layout_gzqh_cje" 
+        		android:orientation="horizontal"
+    			android:layout_width="@dimen/popupinfo_width"
+    			android:layout_height="wrap_content"
+    			>
+		<TextView
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+			android:textSize="@dimen/font_screen_F"
+		    android:textColor="#00ffff"
+		    android:gravity="left"
+		    android:text="成交额" />
+		<TextView android:id="@+id/kline_popinfo_field6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_screen_F"
+	        android:textColor="#ffffff"
+	        android:gravity="right"
+	        android:paddingRight="2dip" />
+	</LinearLayout>
+	
+    <LinearLayout android:id="@+id/layout_gzqh_ccl" 
+        		android:orientation="horizontal"
+    			android:layout_width="@dimen/popupinfo_width"
+    			android:layout_height="wrap_content"
+    			>
+		<TextView
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+			android:textSize="@dimen/font_screen_F"
+		    android:textColor="#00ffff"
+		    android:gravity="left"
+		    android:text="持仓量" />
+		<TextView android:id="@+id/kline_popinfo_field7"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_screen_F"
+	        android:textColor="#ffffff"
+	        android:gravity="right"
+	        android:paddingRight="2dip" />
+	</LinearLayout>
+	
+    <LinearLayout android:id="@+id/layout_gzqh_jsj" 
+        		android:orientation="horizontal"
+    			android:layout_width="@dimen/popupinfo_width"
+    			android:layout_height="wrap_content"
+    			>
+		<TextView
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+			android:textSize="@dimen/font_screen_F"
+		    android:textColor="#00ffff"
+		    android:gravity="left"
+		    android:text="结算价" />
+		<TextView android:id="@+id/kline_popinfo_field8"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/font_screen_F"
+	        android:textColor="#ffffff"
+	        android:gravity="right"
+	        android:paddingRight="2dip" />
+	</LinearLayout>
+        
+</LinearLayout>

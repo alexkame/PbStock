@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/setonlinetime_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_100px"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        >
+
+        <TextView
+            android:id="@+id/setonlinetime_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:text="@string/IDS_Back"
+            android:textColor="@drawable/classify_custom_textview_blue_white"
+            android:textSize="@dimen/custom_font_middle_17sp"
+            android:visibility="visible" />
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:gravity="left"
+            android:text="@string/IDS_QingXuanZe"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/custom_font_middle_20sp"
+            android:visibility="visible" />     
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/setonlinetime_gv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/setonlinetime_head"
+        android:background="@android:color/white"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="1" >
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qq_dialog_A"
+        android:layout_marginRight="@dimen/qq_dialog_A"
+        android:layout_marginTop="@dimen/qq_dialog_A"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_xbig_18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qq_dialog_A"
+        android:layout_marginRight="@dimen/qq_dialog_A"
+        android:layout_marginTop="@dimen/qq_dialog_A"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_middle_16sp" />
+
+    <TextView
+        android:id="@+id/txt_msg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qq_dialog_A"
+        android:layout_marginRight="@dimen/qq_dialog_A"
+        android:layout_marginTop="@dimen/qq_dialog_A"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_middle_16sp" />
+
+    <!-- android:hint="@string/IDS_QingShuRuXINGQUANSHULIANG" -->
+
+    <EditText
+        android:id="@+id/edit_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qq_dialog_A"
+        android:layout_marginRight="@dimen/qq_dialog_A"
+        android:layout_marginTop="@dimen/qq_dialog_A"
+        android:background="@drawable/shape_four_biankuang_bg"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/IDS_QingShuRuXINGQUANSHULIANG"
+        android:inputType="number"
+        android:paddingBottom="@dimen/qq_dialog_B"
+        android:paddingTop="@dimen/qq_dialog_B"
+        android:singleLine="true"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/font_middle_16sp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qq_dialog_A"
+        android:layout_marginRight="@dimen/qq_dialog_A"
+        android:layout_marginTop="@dimen/qq_dialog_A"
+        android:background="@drawable/shape_four_biankuang_bg"
+        android:digits="1234567890"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/IDS_QingShuRuShuLiang"
+        android:inputType="number"
+        android:paddingBottom="@dimen/qq_dialog_B"
+        android:paddingTop="@dimen/qq_dialog_B"
+        android:singleLine="true"
+        android:textColor="@android:color/darker_gray" 
+        android:textSize="@dimen/font_middle_16sp">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_optionname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="合约名称："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_optioncode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="合约代码："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_wtjg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="委托价格："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_wtsl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="委托数量："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_bzj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="保证金："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_jylx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="交易类型："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_optionnamevalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_optioncodevalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_wtjgvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_wtslvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_bzjvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_jylxvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sep_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/qq_dialog_C"
+        android:background="@color/alertdialog_line" />
+
+    <LinearLayout
+        android:id="@+id/layout_kjfs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_optionname_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="合约名称："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_optioncode_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="合约代码："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_wtjg_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="委托价格："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_wtsl_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="委托数量："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_bzj_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="保证金："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_jylx_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_D"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="交易类型："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_middle_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_optionnamevalue_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_optioncodevalue_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_wtjgvalue_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_wtslvalue_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_bzjvalue_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+
+            <TextView
+                android:id="@+id/txt_jylxvalue_fs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qq_dialog_C"
+                android:layout_marginRight="@dimen/qq_dialog_D"
+                android:layout_marginTop="@dimen/qq_dialog_D"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_middle_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/qq_dialog_C"
+        android:background="@color/alertdialog_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_neg"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_left_selector"
+            android:gravity="center"
+            android:textColor="@color/actionsheet_blue"
+            android:textSize="@dimen/font_middle_16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="0.5dp"
+            android:layout_height="43dp"
+            android:background="@color/alertdialog_line" />
+
+        <Button
+            android:id="@+id/btn_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_right_selector"
+            android:gravity="center"
+            android:textColor="@color/actionsheet_blue"
+            android:textSize="@dimen/font_middle_16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

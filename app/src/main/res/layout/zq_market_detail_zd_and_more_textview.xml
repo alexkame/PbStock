@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llay_zq_market_detail_zd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/zq_marketinfo_detail_margin_B"
+        android:paddingTop="@dimen/zq_marketinfo_detail_margin_B"
+        android:paddingLeft="@dimen/zq_marketinfo_detail_margin_A"
+        android:paddingRight="@dimen/zq_marketinfo_detail_margin_A"
+         >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+             >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/tv_detail_now_price"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zq_marketinfo_now_height"
+                android:layout_gravity="center"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="117.79"
+                android:textColor="@color/zq_ffffff"
+                android:textSize="@dimen/zq_marketinfo_detail_font_A" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/zq_marketinfo_detail_padding_A"
+                android:orientation="horizontal" >
+
+                <com.pengbo.mhdzq.view.AutoScaleTextView
+                    android:id="@+id/tv_detail_zd"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/zq_marketinfo_zd_height"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:gravity="top|right"
+                    android:singleLine="true"
+                    android:text="--"
+                    android:paddingRight="@dimen/zq_param_margin_B"
+                    android:textColor="@color/zq_ffffff"
+                    android:textSize="@dimen/zq_font_C" />
+
+                <com.pengbo.mhdzq.view.AutoScaleTextView
+                    android:id="@+id/tv_detail_zdf"
+                    android:layout_width="0dp"  
+                    android:layout_height="@dimen/zq_marketinfo_zd_height"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:gravity="left|top"
+                    android:singleLine="true"
+                    android:text="--"
+                    android:textColor="@color/zq_ffffff"
+                    android:textSize="@dimen/zq_font_C" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tv_detail_rong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/zq_marketinfo_detail_margin_E"
+            android:src="@drawable/zq_detail_rong"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llayout_jk_cjl"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_detail_jinkai_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ellipsize="none"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/ZQ_JinKai"
+                android:textColor="@color/zq_99ffffff"
+                android:textSize="@dimen/zq_font_D" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/tv_detail_jinkai"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/zq_marketinfo_detail_padding_D"
+                android:ellipsize="none"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="-----"
+                android:textColor="@color/zq_ffffff"
+                android:textSize="@dimen/zq_font_D" />
+
+            <TextView
+                android:id="@+id/tv_detail_chengjiaoliang_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/zq_marketinfo_detail_padding_E"
+                android:ellipsize="none"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/ZQ_ChengJiaoLiang"
+                android:textColor="@color/zq_99ffffff"
+                android:textSize="@dimen/zq_font_D" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/tv_detail_chengjiaoliang"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/zq_marketinfo_detail_padding_D"
+                android:ellipsize="none"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="--"
+                android:textColor="@color/zq_ffffff"
+                android:textSize="@dimen/zq_font_D" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_zs_hsl"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                 android:id="@+id/tv_detail_zuoshou_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ellipsize="none"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/ZQ_ZuoShou"
+                android:textColor="@color/zq_99ffffff"
+                android:textSize="@dimen/zq_font_D" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/tv_detail_zuoshou"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/zq_marketinfo_detail_padding_D"
+                android:ellipsize="none"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="--"
+                android:textColor="@color/zq_ffffff"
+                android:textSize="@dimen/zq_font_D" />
+
+            <TextView
+                android:id="@+id/tv_detail_huanshoulv_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/zq_marketinfo_detail_padding_E"
+                android:ellipsize="none"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/ZQ_HuanShouLv"
+                android:textColor="@color/zq_99ffffff"
+                android:textSize="@dimen/zq_font_D" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/tv_detail_huanshoulv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/zq_marketinfo_detail_padding_D"
+                android:ellipsize="none"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="--"
+                android:textColor="@color/zq_ffffff"
+                android:textSize="@dimen/zq_font_D" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/zq_d0d0d0" />
+
+</LinearLayout>

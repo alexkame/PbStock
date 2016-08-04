@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_demand" >
+
+    <include
+        android:id="@+id/hot_header"
+        layout="@layout/screen_detail_header" />
+
+    <View
+        android:id="@+id/divider_item1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@+id/hot_header"
+        android:background="@color/demand_e5e5e5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/divider_item1"
+        android:layout_marginBottom="@dimen/dim_120px"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/headOfOptionList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/hscroll_head_item" />
+
+        <View
+            android:id="@+id/divider_item"
+            android:layout_width="fill_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/demand_e5e5e5" />
+
+        <ListView
+            android:id="@+id/hotoption_listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:divider="@null"
+            android:fadingEdge="none" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/maintab_footer" />
+    </LinearLayout>
+
+</RelativeLayout>

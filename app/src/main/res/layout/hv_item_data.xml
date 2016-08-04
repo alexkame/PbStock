@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/hv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/t_offer_height_item"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/hv_item1"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:minLines="2"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+
+        <TextView
+            android:id="@+id/hv_item2"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+
+        <TextView
+            android:id="@+id/hv_item3"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+
+        <TextView
+            android:id="@+id/hv_item4"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+
+        <TextView
+            android:id="@+id/hv_item5"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+
+        <TextView
+            android:id="@+id/hv_item6"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+
+        <TextView
+            android:id="@+id/hv_item7"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+
+        <TextView
+            android:id="@+id/hv_item8"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+
+        <TextView
+            android:id="@+id/hv_item9"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+        
+        <TextView
+            android:id="@+id/hv_item10"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+        
+        <TextView
+            android:id="@+id/hv_item11"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+        
+        <TextView
+            android:id="@+id/hv_item12"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+        
+        <TextView
+            android:id="@+id/hv_item13"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+        
+        <TextView
+            android:id="@+id/hv_item14"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+        
+        <TextView
+            android:id="@+id/hv_item15"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+        
+        <TextView
+            android:id="@+id/hv_item16"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+        
+        <TextView
+            android:id="@+id/hv_item17"
+            android:layout_width="@dimen/list_item_width_mid_100dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/demand_333333"
+            android:textSize="@dimen/font_t_offer_E" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/t_offer_ebe6e6" />
+
+    <!--  android:background="@color/t_offer_ebe6e6"-->
+</LinearLayout>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_demand"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlayout_lsxc_activity_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_100px"
+        android:background="@android:color/black" >
+
+        <TextView
+            android:id="@+id/tv_bd_header_left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/bank_margin_A"
+            android:clickable="true"
+            android:text="返回"
+            android:textColor="@drawable/classify_custom_textview_blue_white"
+            android:textSize="@dimen/font_optional_B" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/IDS_BeiDuiSDJS"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_bank_A" />
+
+        <ImageView
+            android:id="@+id/img_right_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/optional_margin_A"
+            android:background="@drawable/selector_shuaxin_btn"
+            android:contentDescription="@string/IDS_TuPianMiaoShu" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/beidui_margin_A"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/beidui_margin_B"
+        android:paddingRight="@dimen/beidui_margin_B" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/beiduikuang"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/beidui_xiala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/beidui_xiala"
+                    android:clickable="true"
+                    android:contentDescription="@string/IDS_TuPianMiaoShu" />
+
+                <Button
+                    android:id="@+id/btn_zhengquanmc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/beidui_xiala"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/beidui_8e8a8a"
+                    android:textSize="@dimen/beidui_font_A"
+                    android:text="" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/beidui_margin_Y"
+                android:background="@drawable/beiduikuang"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/btn_delete_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/IDS_TuPianMiaoShu"
+                    android:gravity="center"
+                    android:src="@drawable/beidui_jian" />
+
+                <EditText
+                    android:id="@+id/edit_sdsl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:hint="数量"
+                    android:textColor="@color/beidui_969393"
+                    android:textSize="@dimen/beidui_font_A"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/btn_add_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/IDS_TuPianMiaoShu"
+                    android:gravity="center"
+                    android:src="@drawable/beidui_add" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/beidui_margin_A"
+            android:layout_weight="1"
+            android:background="@drawable/beidui_shape_chaxun"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/beidui_margin_C"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/btn_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/beidui_margin_C"
+                   	android:background="@drawable/beidui_chaxun_btn_press_selector"
+                    android:paddingBottom="@dimen/beidui_margin_D"
+                    android:paddingLeft="@dimen/beidui_margin_B"
+                    android:paddingRight="@dimen/beidui_margin_B"
+                    android:paddingTop="@dimen/beidui_margin_D"
+                    android:textColor="@color/white"
+                    android:text="查询"
+                    android:textSize="@dimen/qq_bei_dui_font_A"
+                     />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/beidui_margin_B" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="当前可锁定："
+                    android:textSize="@dimen/beidui_font_C" 
+                    android:textColor="@color/beidui_969393"/>
+
+                <TextView
+                    android:id="@+id/tv_dqksd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="--"
+                    android:singleLine="true"
+                    android:ellipsize="none"
+                    android:layout_marginLeft="@dimen/beidui_margin_D"
+                    android:textSize="@dimen/beidui_font_C" 
+                    android:textColor="@color/beidui_969393"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/beidui_margin_D"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/beidui_margin_B" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="当前可解锁："
+                    android:textSize="@dimen/beidui_font_C" 
+                    android:textColor="@color/beidui_969393" />
+
+                <TextView
+                    android:id="@+id/tv_dqkjs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="--"
+                    android:singleLine="true"
+                    android:ellipsize="none"
+                    android:layout_marginLeft="@dimen/beidui_margin_D"
+                    android:textSize="@dimen/beidui_font_C" 
+                    android:textColor="@color/beidui_969393" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/beidui_margin_X"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/beidui_margin_F"
+        android:paddingRight="@dimen/beidui_margin_F" >
+
+        <Button
+             android:id="@+id/btn_suoding"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/beidui_jiesuo_kaisuo_selector"
+            android:text="锁定"
+            android:textColor="@color/white" 
+            android:textSize="@dimen/qq_bei_dui_font_A"/>
+
+        <Button
+              android:id="@+id/btn_jiesuo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/beidui_margin_G"
+            android:layout_weight="1"
+            android:background="@drawable/beidui_jiesuo_kaisuo_selector"
+            android:text="解锁"
+            android:textColor="@color/white" 
+            android:textSize="@dimen/qq_bei_dui_font_A"/>
+    </LinearLayout>
+
+
+    <View 
+        android:layout_marginTop="@dimen/beidui_margin_H"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/beidui_878484"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/beidui_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/beidui_margin_Z"            
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_bdcc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_beidui_kaisuo_jiesuo"
+                android:button="@null"
+                android:checked="true"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/IDS_BeiDuiZhengQuanCC"
+                android:textColor="@drawable/classify_text_beidui_chicang_weituo"
+                android:textSize="@dimen/beidui_font_D" />
+
+            <RadioButton
+                android:id="@+id/rb_bdwt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_beidui_kaisuo_jiesuo"
+                android:button="@null"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/IDS_BeiDuiZhengQuanWT"
+                android:textColor="@drawable/classify_text_beidui_chicang_weituo"
+                android:textSize="@dimen/beidui_font_D" />
+        </RadioGroup>
+        
+        <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/beidui_878484"/>
+
+        <LinearLayout
+            android:id="@+id/lLayout_bdccheader"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/beidui_margin_G"
+            android:background="@color/beidui_cccaca"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="193"
+                android:gravity="center"
+                android:text="@string/IDS_ZhengQuanDaiMa"
+                android:textColor="@color/beidui_737373"
+                android:textSize="@dimen/beidui_font_B" />
+            <View android:layout_width="0.1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/beidui_878484"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="165"
+                android:gravity="center"
+                android:text="@string/IDS_ZhengQuanMingCheng"
+                android:textColor="@color/beidui_737373"
+                android:textSize="@dimen/beidui_font_B" />
+            <View android:layout_width="0.1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/beidui_878484"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="171"
+                android:gravity="center"
+                android:text="@string/IDS_KeSuoDingSL"
+                android:textColor="@color/beidui_737373"
+                android:textSize="@dimen/beidui_font_B" />
+            <View android:layout_width="0.1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/beidui_878484"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="188"
+                android:gravity="center"
+                android:text="@string/IDS_YiSuoDingSL"
+                android:textColor="@color/beidui_737373"
+                android:textSize="@dimen/beidui_font_B" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lLayout_bdwtheader"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/beidui_margin_G"
+            android:background="@color/beidui_cccaca"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="193"
+                android:gravity="center"
+                android:text="@string/IDS_WeiTuoShiJian"
+                android:textColor="@color/beidui_737373"
+                android:textSize="@dimen/beidui_font_B" />
+            
+            <View android:layout_width="0.1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/beidui_878484"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="165"
+                android:gravity="center"
+                android:text="@string/IDS_ZhengQuanDaiMa"
+                android:textColor="@color/beidui_737373"
+                android:textSize="@dimen/beidui_font_B" />
+            <View android:layout_width="0.1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/beidui_878484"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="171"
+                android:gravity="center"
+                android:text="@string/IDS_ShenQingLeiBie"
+                android:textColor="@color/beidui_737373"
+                android:textSize="@dimen/beidui_font_B" />
+            <View android:layout_width="0.1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/beidui_878484"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="188"
+                android:gravity="center"
+                android:text="@string/IDS_WeiTuoShuLiang"
+                android:textColor="@color/beidui_737373"
+                android:textSize="@dimen/beidui_font_B" />
+            <View android:layout_width="0.1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/beidui_878484"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="171"
+                android:gravity="center"
+                android:text="@string/IDS_WeiTuoZhuangTai"
+                android:textColor="@color/beidui_737373"
+                android:textSize="@dimen/beidui_font_B"/>
+        </LinearLayout>
+         <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/beidui_878484"/>
+
+        <ListView
+            android:id="@+id/lv_bdcc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:divider="@null"
+            android:fadingEdge="none">
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_bdwt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_rightpanel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/five_detail_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_wudang_mingxi_rg_height"
+        android:background="@color/detail_ffffff"
+        android:orientation="horizontal" >
+        
+        <!-- android:layout_height="20dp"
+        android:layout_marginBottom="5dp" -->
+
+        <RadioButton
+            android:id="@+id/radiobutton_five"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/zq_wudang_mingxi_margin_A"
+            android:layout_weight="1"
+            android:background="@drawable/zq_shape_optiondetail_selected"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/IDS_WuDang"
+            android:textColor="@drawable/zq_classify_text_selector_detail_wudang"
+            android:textSize="@dimen/font_screen_C" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_detail"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/zq_wudang_mingxi_margin_A"
+            android:layout_weight="1"
+            android:background="@drawable/zq_shape_optiondetail_selected"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/IDS_MingXi"
+            android:textColor="@drawable/zq_classify_text_selector_detail_wudang"
+            android:textSize="@dimen/font_screen_C" />
+    </RadioGroup>
+
+     <FrameLayout
+        android:id="@+id/five_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/zq_wudang_mingxi_margin_A"
+        android:layout_marginRight="@dimen/zq_wudang_mingxi_margin_A"
+        android:layout_below="@+id/five_detail_radiogroup" >
+
+        <com.pengbo.mhdzq.tools.ScrollLayout
+            android:id="@+id/scrollLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <include
+                android:id="@+id/fiveprice_panel"
+                layout="@layout/zq_stockinfo_fiveprice" />
+
+            <include
+                android:id="@+id/detail_panel"
+                layout="@layout/zq_stockinfo_detail" />
+        </com.pengbo.mhdzq.tools.ScrollLayout>
+    </FrameLayout>
+    
+   
+</RelativeLayout>

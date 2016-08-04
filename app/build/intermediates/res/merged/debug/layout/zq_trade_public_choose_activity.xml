@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+
+    <include 
+        android:id="@+id/zq_trade_public_choose_head"
+        layout="@layout/zq_dbzq_public_head_black"
+        />
+    <GridView
+        android:id="@+id/zq_trade_public_choose_gv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/zq_trade_public_choose_head"
+        android:background="@android:color/white"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="1" >
+    </GridView>
+
+</RelativeLayout>

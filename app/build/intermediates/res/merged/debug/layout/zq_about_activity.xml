@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/zq_f3f3f3"
+    >
+    
+    <include 
+        layout="@layout/zq_dbzq_public_head_black"      
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp" >
+
+        <TextView
+            android:id="@+id/tv_about_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zq_about_A"
+            android:layout_marginRight="@dimen/zq_about_A"
+            android:layout_marginTop="@dimen/zq_about_A"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2.5dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/zq_090909"
+            android:textSize="@dimen/zq_about_font" />
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/llayout_upgrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/tv_version"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/zq_about_A"
+                android:layout_gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="tset"
+                android:textColor="@color/red"
+                android:textSize="@dimen/zq_about_font" />
+            
+            <Button
+                android:id="@+id/btn_upgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/zq_upgrade_btn_selector"
+                android:text="点击更新"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/zq_about_font_B" />
+
+        </LinearLayout>
+        
+        
+        
+         <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_below="@id/tv_about_content"
+             android:layout_above="@id/llayout_upgrade"
+             android:orientation="vertical"
+             android:gravity="center"
+             >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/zq_about_A"
+                    android:gravity="center"
+                   	android:singleLine="true"
+                	android:ellipsize="none"
+                    android:text="@string/ZQ_HQFWQDZ"
+                    android:textColor="@color/zq_090909"
+            		android:textSize="@dimen/zq_about_font" />
+
+                <com.pengbo.mhdzq.view.AutoScaleTextView
+                    android:id="@+id/tv_hangqing_fwq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:singleLine="true"
+                	android:ellipsize="none"
+                    android:text="@string/ZQ_WLJ"
+                    android:textColor="@color/zq_090909"
+            		android:textSize="@dimen/zq_about_font" />
+            </LinearLayout>
+            
+            
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/zq_about_A" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/zq_about_A"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:ellipsize="none"
+                    android:text="@string/ZQ_JYFWQDZ"
+                    android:textColor="@color/zq_090909"
+            		android:textSize="@dimen/zq_about_font" />
+
+                <com.pengbo.mhdzq.view.AutoScaleTextView
+                    android:id="@+id/tv_jiaoyi_fwq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:ellipsize="none"
+                    android:text="@string/ZQ_WLJ" 
+                    android:textColor="@color/zq_090909"
+            		android:textSize="@dimen/zq_about_font"/>
+            </LinearLayout>
+             
+         </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

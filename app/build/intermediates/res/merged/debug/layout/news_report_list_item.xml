@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/list_item_color_bg"
+    >
+
+    <TextView
+        android:id="@+id/news_report_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/screen_detail_news_item_height"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/optional_margin_A"
+        android:layout_marginRight="@dimen/optional_margin_A"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/font_screen_E" 
+        android:paddingTop="@dimen/trade_query_listview_item_padding_height"
+        android:paddingBottom="@dimen/trade_query_listview_item_padding_height"/>
+
+    
+    <!--  android:ellipsize="end"显示不完的时候 用 。。。代表  -->
+    
+    <View         
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/gray_demand_one"
+        />
+
+</LinearLayout>

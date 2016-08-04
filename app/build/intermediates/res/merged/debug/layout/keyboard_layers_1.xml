@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keyboard_bg_up"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:paddingTop="2.0dip" >
+
+            <RadioGroup
+                android:id="@+id/key_rg_switch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/key_rb_kjbj"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_left_selected_unselected"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/IDS_KuaiSuBaoJia"
+                    android:textColor="@drawable/classify_text_selector_detail"
+                    android:textSize="@dimen/font_middle_16sp" />
+
+                <RadioButton
+                    android:id="@+id/key_rb_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_right_selected_unselected"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/IDS_JianPanBaoJia"
+                    android:textColor="@drawable/classify_text_selector_detail"
+                    android:textSize="@dimen/font_middle_16sp" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/key_fok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:src="@drawable/order_fox02" 
+                android:contentDescription="@string/IDS_TuPianMiaoShu"/>
+
+            <Button
+                android:id="@+id/key_btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/key_complete" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/keyboard_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keyboard_bg_down"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="8.0dip" >
+
+            <ViewFlipper
+                android:id="@+id/keyboard_flipper"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:id="@+id/layer_digit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <include
+                        android:layout_width="wrap_content"
+                        layout="@layout/keyboard_layer_digit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layer_kjbj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <include layout="@layout/keyboard_layer_kjbj" />
+                </LinearLayout>
+            </ViewFlipper>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

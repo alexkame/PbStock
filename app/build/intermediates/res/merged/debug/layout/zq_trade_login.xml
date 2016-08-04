@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zq_trade_login"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/zq_ededed"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/out_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zq_trade_login_Z"
+        android:orientation="vertical" >
+        
+         <RelativeLayout
+            android:id="@+id/trade_activity_linearlayout0"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zq_trade_login_B"
+            android:background="@android:color/white"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/textViewZhandian"
+                style="@style/ZQTRADELOGINNAME"
+                android:layout_centerVertical="true"
+                android:text="@string/zq_jiaoyizhangdian" />
+
+            <TextView
+                android:id="@+id/zq_trade_login_zqgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/textViewZhandian"
+                android:layout_marginLeft="@dimen/zq_trade_login_C"
+                android:text="@string/zq_zqgsmc"
+                android:textColor="@color/zq_414141"
+                android:textSize="@dimen/font_trade_C" 
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/zq_trade_login_xuanzhegongsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textViewZhandian"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/zq_chevron_default"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/zq_ededed" />
+
+        <RelativeLayout
+            android:id="@+id/trade_activity_linearlayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zq_trade_login_B"
+            android:background="@android:color/white"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/ZQTRADELOGINNAME"
+                android:text="@string/zq_zhanghaoleixing" />
+
+            <TextView
+                android:id="@+id/zq_trade_login_leixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/textView1"
+                android:layout_marginLeft="@dimen/zq_trade_login_C"
+                android:text="@string/zq_zhijingzhanghao"
+                android:textColor="@color/zq_414141"
+                android:textSize="@dimen/font_trade_C" />
+
+            <ImageView
+                android:id="@+id/zq_trade_login_xuanzheleixing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textView1"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/zq_chevron_default" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/zq_ededed" />
+
+        <RelativeLayout
+            android:id="@+id/trade_activity_linearlayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zq_trade_login_B"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/ZQTRADELOGINNAME"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/zq_jiaoyizhanghao" />
+
+            <EditText
+                android:id="@+id/zq_input_zhanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/cb_save_zhanghao"
+                android:layout_alignTop="@+id/textView2"
+                android:gravity="left|center"
+                android:layout_marginLeft="@dimen/zq_trade_login_F"
+                android:background="@null"
+                android:inputType="number"
+                android:minWidth="@dimen/zq_trade_login_G"
+                android:singleLine="true"
+                android:textColor="@color/zq_414141"
+                android:textSize="@dimen/zq_reade_login_A" />
+
+
+            <CheckBox
+                android:id="@+id/cb_save_zhanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_alignTop="@+id/textView2"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/zq_trade_login_D"
+                android:button="@drawable/zq_btn_zhanghao_selector"
+                android:text="@string/zq_trade_login_baocun"
+                android:textColor="@color/zq_414141"
+                android:textSize="@dimen/zq_detail_font_E" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/zq_ededed" />
+
+        <RelativeLayout
+            android:id="@+id/trade_activity_linearlayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zq_trade_login_B"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/ZQTRADELOGINNAME"
+                android:text="@string/zq_jiaoyimima" />
+
+            <EditText
+                android:id="@+id/zq_trade_login_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/textView3"
+                android:layout_toLeftOf="@+id/zq_imgbtn_trade_empty_pwd"
+                android:gravity="left|center"
+                android:layout_marginLeft="@dimen/zq_trade_login_F"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:minWidth="@dimen/zq_trade_login_G"
+                android:singleLine="true"
+                android:textColor="@color/zq_414141"
+                android:textSize="@dimen/zq_reade_login_A" />
+            
+            <ImageButton
+                android:id="@+id/zq_imgbtn_trade_empty_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/trade_margin_B"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textView3"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/trade_margin_B"
+                android:background="@drawable/edit_delete"
+                android:clickable="true"
+                 />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/zq_ededed" />
+
+        <RelativeLayout
+            android:id="@+id/trade_activity_linearlayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zq_trade_login_B"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/ZQTRADELOGINNAME"
+                android:text="@string/zq_tongxunmima" />
+
+            <EditText
+                android:id="@+id/zq_trade_login_comm_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_toLeftOf="@+id/cb_save_comm_psw"
+                android:gravity="left|center"
+                android:layout_marginLeft="@dimen/zq_trade_login_F"
+                android:background="@null"
+                android:hint="@string/zq_xuantian"
+                android:inputType="textPassword"
+                android:minWidth="@dimen/zq_trade_login_G"
+                android:singleLine="true"
+                android:textColor="@color/zq_414141"
+                android:textSize="@dimen/zq_reade_login_B" />
+
+            <CheckBox
+                android:id="@+id/cb_save_comm_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_marginRight="@dimen/zq_trade_login_D"
+                android:button="@drawable/zq_btn_zhanghao_selector"
+                android:text="@string/zq_trade_login_baocun"
+                android:textColor="@color/zq_414141"
+                android:textSize="@dimen/zq_detail_font_E" />
+        </RelativeLayout>
+<!-- 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/zq_ededed" /> -->
+
+        <RelativeLayout
+            android:id="@+id/trade_activity_linearlayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zq_trade_login_E"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/ZQTRADELOGINNAME"
+                android:text="@string/zq_trade_login_yzm" />
+
+            <EditText
+                android:id="@+id/zq_et_EnsureCodes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/textView5"
+                android:layout_toLeftOf="@+id/iv_showCode"
+                android:gravity="left|center"
+                android:layout_marginLeft="@dimen/zq_trade_login_C"
+                android:background="@null"
+                android:inputType="number"
+                android:minWidth="@dimen/zq_trade_login_F"
+                android:singleLine="true"
+                android:textColor="@color/zq_414141"
+                android:textSize="@dimen/zq_reade_login_A" />
+
+            <ImageView
+            android:id="@+id/iv_showCode"
+            android:layout_width="@dimen/zq_trade_login_W"
+            android:layout_marginRight="@dimen/zq_trade_login_D"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/trade_activity_settimeout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_trade_login_E" >
+
+        <TextView
+            android:id="@+id/textViewBaochi"
+            android:text="@string/zq_trade_login_baochizaixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zq_trade_login_J"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/zq_reade_login_C"
+            android:textColor="@color/zq_707070" />
+
+        <Button
+            android:id="@+id/textViewBaochitime"
+            android:layout_toRightOf="@+id/textViewBaochi"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:background="@drawable/zq_trade_logintimeset"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/zq_reade_login_C"
+            android:text="15分钟" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login_trade"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_trade_login_B"
+        android:layout_marginLeft="@dimen/zq_trade_login_J"
+        android:layout_marginRight="@dimen/zq_trade_login_J"
+        android:layout_marginTop="@dimen/zq_trade_login_D"
+        android:background="@drawable/all_blue_btn_press_selector"
+        android:text="@string/zq_trade_login_login"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/zq_reade_login_D" />
+
+    <Button
+        android:id="@+id/btn_register_trade"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_trade_login_B"
+        android:layout_marginLeft="@dimen/zq_trade_login_J"
+        android:layout_marginRight="@dimen/zq_trade_login_J"
+        android:layout_marginTop="@dimen/zq_trade_login_H"
+        android:background="@drawable/all_red_btn_press_selector"
+        android:text="@string/zq_kaihu"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/zq_reade_login_D" />
+
+</LinearLayout>

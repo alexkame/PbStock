@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zq_trade_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/zq_trade_more_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lLayout_order_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/order_margin_30px"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/lscj_date1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/trade_query_margin_A"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:textSize="@dimen/zq_trade_detail_E" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="至" 
+                android:textSize="@dimen/zq_trade_detail_E"/>
+
+            <EditText
+                android:id="@+id/lscj_date2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/trade_query_margin_A"
+                android:layout_weight="1"
+                android:focusable="false" 
+                android:textSize="@dimen/zq_trade_detail_E"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/lscj_query_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/trade_margin_B"
+            android:layout_marginLeft="@dimen/trade_margin_B"
+            android:layout_marginRight="@dimen/trade_margin_B"
+            android:layout_marginTop="@dimen/trade_query_margin_A"
+            android:background="@drawable/all_blue_btn_press_selector"
+            android:text="查询"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_trade_A" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayout_order_list_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="14dp"
+            android:text="成交时间"
+            android:textColor="@color/demand_212121"
+            android:textSize="@dimen/zq_jy_size_E" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/demand_cc00ff" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="14dp"
+            android:text="成交价格"
+            android:textColor="@color/demand_212121"
+            android:textSize="@dimen/zq_jy_size_E" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/demand_cc00ff" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="14dp"
+            android:text="成交数量"
+            android:textColor="@color/demand_212121"
+            android:textSize="@dimen/zq_jy_size_E" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/demand_cc00ff" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="14dp"
+            android:text="成交金额"
+            android:textColor="@color/demand_212121"
+            android:textSize="@dimen/zq_jy_size_E" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/wt_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dp"
+        android:layout_below="@id/lLayout_order_list_header" />
+
+    <ListView
+        android:id="@+id/trade_order_listview_cj"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wt_divider"
+        android:clickable="true"
+        android:divider="@null"
+        android:fadingEdge="none" >
+    </ListView>
+
+</LinearLayout>

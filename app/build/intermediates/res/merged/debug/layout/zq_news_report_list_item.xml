@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/list_item_color_bg"
+    >
+
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_news_item_height"
+        android:layout_marginLeft="@dimen/zq_marketinfo_detail_margin_F"
+        android:layout_marginRight="@dimen/zq_marketinfo_detail_margin_F"
+        android:paddingTop="@dimen/zq_marketinfo_detail_margin_F"
+        android:paddingBottom="@dimen/zq_detai_news_margin_A"
+         >
+
+        <TextView
+            android:id="@+id/zq_news_report_head"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical|center"            
+            android:gravity="top"
+            android:maxLines="2"
+            android:text="---"  
+            android:ellipsize="end"
+            android:maxLength="60"
+            android:lineSpacingExtra="@dimen/zq_detai_news_margin_B"
+            android:textColor="@color/zq_515151"
+            android:textSize="@dimen/zq_news_time_A" />
+        
+        
+        <TextView       
+            android:id="@+id/zq_news_report_time"    
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+           	android:layout_alignParentBottom="true"
+           	android:paddingBottom="@dimen/zq_detai_news_margin_A"
+            android:text="2015-10-7"
+            android:textColor="@color/zq_d1d1d1"
+            android:textSize="@dimen/zq_news_time_B" 
+            />
+
+    </RelativeLayout>
+
+    <!-- android:ellipsize="end"显示不完的时候 用 。。。代表 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/zq_f3f3f3" />
+
+</LinearLayout>

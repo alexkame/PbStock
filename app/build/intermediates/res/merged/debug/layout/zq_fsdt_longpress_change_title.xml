@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/zq_detail_big_trend_kline_margin_D"
+    android:paddingLeft="@dimen/zq_detail_big_trend_kline_margin_C"
+    android:paddingRight="@dimen/zq_detail_big_trend_kline_margin_C"
+    android:paddingTop="@dimen/zq_detail_big_trend_kline_margin_A" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/ZQ_ShiJian"
+        android:textColor="@color/zq_515151"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+    <TextView
+        android:id="@+id/tv_zq_big_view_shijianzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/ZQ_ShiJianZhi"
+        android:textColor="@color/zq_b6b6b6"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/zq_detail_big_trend_kline_margin_F"
+        android:gravity="center"
+        android:text="@string/ZQ_Gao"
+        android:textColor="@color/zq_515151"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+    <TextView
+        android:id="@+id/tv_zq_big_view_gaozhi"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/ZQ_ShiJianZhi"
+        android:textColor="@color/zq_b6b6b6"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/zq_detail_big_trend_kline_margin_F"
+        android:gravity="center"
+        android:text="@string/ZQ_Kai"
+        android:textColor="@color/zq_515151"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+    <TextView
+        android:id="@+id/tv_zq_big_view_kaizhi"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/ZQ_ShiJianZhi"
+        android:textColor="@color/zq_b6b6b6"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/zq_detail_big_trend_kline_margin_F"
+        android:gravity="center"
+        android:text="@string/ZQ_Di"
+        android:textColor="@color/zq_515151"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+    <TextView
+        android:id="@+id/tv_zq_big_view_dizhi"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/ZQ_ShiJianZhi"
+        android:textColor="@color/zq_b6b6b6"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/zq_detail_big_trend_kline_margin_F"
+        android:gravity="center"
+        android:text="@string/ZQ_Shou"
+        android:textColor="@color/zq_515151"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+    <TextView
+        android:id="@+id/tv_zq_big_view_shouzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/ZQ_ShiJianZhi"
+        android:textColor="@color/zq_b6b6b6"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/zq_detail_big_trend_kline_margin_F"
+        android:gravity="center"
+        android:text="@string/ZQ_ZhangDie"
+        android:textColor="@color/zq_515151"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+    <TextView
+        android:id="@+id/tv_zq_big_view_zhangdiezhi"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/ZQ_ShiJianZhi"
+        android:textColor="@color/zq_b6b6b6"
+        android:textSize="@dimen/zq_detail_big_trend_kline_font_A" />
+
+</LinearLayout>

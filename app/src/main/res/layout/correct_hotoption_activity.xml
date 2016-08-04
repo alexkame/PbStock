@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+    <!-- background color eeeeee -->
+
+    <include
+        android:id="@+id/header_title"
+        layout="@layout/maintab_header" />
+
+    <!-- 最外层   的   linearlayout   被权重分配多分 -->
+    
+
+    <LinearLayout
+        android:id="@+id/outer_most_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header_title"
+        android:orientation="vertical" >
+
+        <!-- ***************规则名称************ -->
+
+        <LinearLayout
+            android:id="@+id/correct_hotoption_activity_layout_biaodiwu"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim_80px"
+            android:layout_marginTop="@dimen/qq_margin_G"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/qq_margin_F"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/qq_margin_G"
+                android:layout_weight="0.0"
+                android:text="@string/IDS_BiaoDiWu"
+                android:textColor="#000000"
+                android:textSize="@dimen/qq_correct_font_A" />
+
+            <TextView
+                android:id="@+id/btn_customerSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/qq_margin_G"
+                android:layout_weight="1.0"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="@string/IDS_QuanBuBiaoDi"
+                android:textSize="@dimen/qq_correct_font_A" />
+
+             <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/qq_margin_E"
+                android:background="@drawable/chevron_default"
+                android:contentDescription="@string/IDS_TuPianMiaoShu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qq_margin_G"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/correct_hotoption_gv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3" >
+            </GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/correct_hotoption_activity_layout_upanddown"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim_100px"
+            android:layout_marginTop="@dimen/qq_margin_G"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_zdtitle"
+                android:layout_width="@dimen/qq_margin_F"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/qq_margin_G"
+                android:layout_weight="0.0"
+                android:text="@string/IDS_KanZhangDieFuDu"
+                android:textColor="#000000"
+                android:textSize="@dimen/qq_correct_font_A" />
+
+            <TextView
+                android:id="@+id/btn_customerSpinner2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/qq_margin_E"
+                android:layout_marginRight="@dimen/qq_margin_G"
+                android:layout_weight="1.0"
+                android:background="@android:color/white"
+                android:text="" 
+                android:textSize="@dimen/qq_correct_font_A"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/qq_margin_E"
+                android:background="@drawable/chevron_default"
+                android:contentDescription="@string/IDS_TuPianMiaoShu" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim_100px"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/qq_margin_F"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/qq_margin_G"
+                android:layout_weight="0.0"
+                android:text="@string/IDS_GangGanBeiShu"
+                android:textColor="#000000"
+                android:textSize="@dimen/qq_correct_font_A" />
+
+            <RadioGroup
+                android:id="@+id/ganggan_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/qq_margin_C"
+                android:layout_marginRight="@dimen/qq_margin_C"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/ganggan_0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/qq_margin_E"
+                    android:layout_marginTop="@dimen/qq_margin_E"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_left_selected_unselected"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="全部"
+                    android:textColor="@drawable/classify_text_selector_2"
+                    android:textSize="@dimen/qq_correct_font_B" />
+                
+                <RadioButton
+                    android:id="@+id/ganggan_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/qq_margin_E"
+                    android:layout_marginTop="@dimen/qq_margin_E"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_middle_selected_unselected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="＜10"
+                    android:textColor="@drawable/classify_text_selector_2"
+                    android:textSize="@dimen/qq_correct_font_B" />
+
+                <RadioButton
+                    android:id="@+id/ganggan_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/qq_margin_E"
+                    android:layout_marginTop="@dimen/qq_margin_E"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_middle_selected_unselected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="10~20"
+                    android:textColor="@drawable/classify_text_selector_2"
+                    android:textSize="@dimen/qq_correct_font_B" />
+
+                <RadioButton
+                    android:id="@+id/ganggan_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/qq_margin_E"
+                    android:layout_marginTop="@dimen/qq_margin_E"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_right_selected_unselected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text=">20"
+                    android:textColor="@drawable/classify_text_selector_2"
+                    android:textSize="@dimen/qq_correct_font_B" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 活跃度 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim_100px"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/qq_margin_F"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/qq_margin_G"
+                android:layout_weight="0.0"
+                android:text="@string/IDS_HuoYueDuDian"
+                android:textColor="@color/black_demand"
+                android:textSize="@dimen/qq_correct_font_A" />
+
+            <RadioGroup
+                android:id="@+id/huoyuedu_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/qq_margin_C"
+                android:layout_marginRight="@dimen/qq_margin_C"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/huoyuedu_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/qq_margin_E"
+                    android:layout_marginTop="@dimen/qq_margin_E"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_left_selected_unselected"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/IDS_BuHuoYue"
+                    android:textColor="@drawable/classify_text_selector_2"
+                    android:textSize="@dimen/qq_correct_font_B" />
+
+                <RadioButton
+                    android:id="@+id/huoyuedu_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/qq_margin_E"
+                    android:layout_marginTop="@dimen/qq_margin_E"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_middle_selected_unselected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/IDS_YiBan"
+                    android:textColor="@drawable/classify_text_selector_2"
+                    android:textSize="@dimen/qq_correct_font_B" />
+
+                <RadioButton
+                    android:id="@+id/huoyuedu_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/qq_margin_E"
+                    android:layout_marginTop="@dimen/qq_margin_E"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_right_selected_unselected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/IDS_HuoYue"
+                    android:textColor="@drawable/classify_text_selector_2"
+                    android:textSize="@dimen/qq_correct_font_B" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 历史波动 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray" 
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim_100px"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="@dimen/qq_margin_F"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/qq_margin_G"
+                android:layout_weight="0.0"
+                android:text="@string/IDS_LiShiBoDong"
+                android:textColor="@color/blue_demand"
+                android:textSize="@dimen/qq_correct_font_A" />
+
+            <RadioGroup
+                android:id="@+id/history_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/qq_margin_C"
+                android:layout_marginRight="@dimen/qq_margin_C"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/history_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/qq_margin_E"
+                    android:layout_marginTop="@dimen/qq_margin_E"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_left_selected_unselected"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/IDS_PingHuan"
+                    android:textColor="@drawable/classify_text_selector_2"
+                    android:textSize="@dimen/qq_correct_font_B" />
+
+                <RadioButton
+                    android:id="@+id/history_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/qq_margin_E"
+                    android:layout_marginTop="@dimen/qq_margin_E"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_middle_selected_unselected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/IDS_ZhengChang"
+                    android:textColor="@drawable/classify_text_selector_2"
+                    android:textSize="@dimen/qq_correct_font_B" />
+
+                <RadioButton
+                    android:id="@+id/history_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/qq_margin_E"
+                    android:layout_marginTop="@dimen/qq_margin_E"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_white_right_selected_unselected"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/IDS_JuLie"
+                    android:textColor="@drawable/classify_text_selector_2"
+                    android:textSize="@dimen/qq_correct_font_B" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/qq_margin_G"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/correct_hot_page_start_optional_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/trade_margin_B"
+                android:layout_marginRight="@dimen/trade_margin_B"
+                android:background="@drawable/all_blue_btn_press_selector"
+                android:text="@string/IDS_KaiShiShaiXuan"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_trade_A" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

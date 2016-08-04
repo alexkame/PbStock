@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/set_item_height"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/zq_param_margin_B"
+        android:paddingRight="@dimen/zq_param_margin_B" >
+
+        <TextView
+            android:id="@+id/junxianname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="第一条均线"
+            android:textColor="@color/black" 
+            android:textSize="@dimen/zq_set_average_param_font_A"/>
+
+        <EditText
+            android:id="@+id/edittext_junxian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:ems="6"
+            android:paddingRight="@dimen/zq_param_margin_C"
+            android:background="@null"
+            android:gravity="right"
+            android:text="5" 
+            android:maxLength="6"
+            android:textSize="@dimen/zq_set_average_param_font_A"/>
+        <!--             android:inputType="number" -->
+
+        <TextView
+            android:id="@+id/tv_junxian_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/zq_set_average_param_font_A" />
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/zq_808080"        
+        />
+
+</LinearLayout>

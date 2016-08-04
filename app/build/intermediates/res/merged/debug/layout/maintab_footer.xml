@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black" >
+
+    <RadioGroup
+        android:id="@+id/main_tabs_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim_120px"
+        android:background="@drawable/nav_unselect"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_tab_rb_a"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selecter_tab_background"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_optional_btn"
+            android:gravity="center|center_horizontal" />
+
+        <RadioButton
+            android:id="@+id/main_tab_rb_b"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selecter_tab_background"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_screen_btn"
+            android:gravity="center|center_horizontal" />
+
+        <RadioButton
+            android:id="@+id/main_tab_rb_c"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selecter_tab_background"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_trade_btn"
+            android:gravity="center|center_horizontal" />
+
+        <RadioButton
+            android:id="@+id/main_tab_rb_e"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selecter_tab_background"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_setting_btn"
+            android:gravity="center|center_horizontal" />
+    </RadioGroup>
+
+</RelativeLayout>

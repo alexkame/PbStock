@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rb_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zq_hangqing_navbar_height"
+        android:background="@drawable/nav_unselect"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selecter_tab_background"
+            android:drawableTop="@drawable/zq_btn_zqhome_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_zixuan"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selecter_tab_background"
+            android:drawableTop="@drawable/zq_btn_zixuan_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_hangqing"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selecter_tab_background"
+            android:drawableTop="@drawable/zq_btn_hangqing_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_jiaoyi"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selecter_tab_background"
+            android:drawableTop="@drawable/zq_btn_jiaoyi_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_zq_set"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selecter_tab_background"
+            android:drawableTop="@drawable/tab_setting_btn" />
+    </RadioGroup>
+
+</LinearLayout>

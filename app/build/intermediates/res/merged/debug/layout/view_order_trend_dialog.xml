@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_marginTop="20dp"
+    android:background="@android:color/white"
+    android:gravity="top"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+
+    <ImageView
+        android:id="@+id/order_trend_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/order_close" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:id="@+id/order_trend_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+            
+            <RelativeLayout 
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                android:id="@+id/order_trend_tv_optionname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/font_36px"
+                android:textStyle="bold"
+                android:visibility="visible" />
+                
+                <TextView
+                android:id="@+id/order_trend_tv_stockname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_trend_tv_optionname"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/font_36px"
+                android:textStyle="bold"
+                android:visibility="visible" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                android:id="@+id/BiaoDidian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text=":"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/font_36px" />
+                
+                <TextView
+                android:id="@+id/BiaoDidian1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@+id/BiaoDidian"
+                android:text=":"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/font_36px" />
+            </RelativeLayout>
+             
+            <RelativeLayout 
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                android:id="@+id/order_trend_tv_optionprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:gravity="left"
+                android:textColor="@color/black_demand"
+                android:textSize="@dimen/font_36px"
+                android:textStyle="bold" />
+                
+                <TextView
+                android:id="@+id/order_trend_tv_stockprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@+id/order_trend_tv_optionprice"
+                android:gravity="left"
+                android:textColor="@color/black_demand"
+                android:textSize="@dimen/font_36px"
+                android:textStyle="bold" />
+            </RelativeLayout>
+            
+
+            
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/trend_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/screen_detail_draw_height"
+            android:layout_below="@id/order_trend_option"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" >
+            
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

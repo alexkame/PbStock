@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_demand" >
+
+    <include
+        android:id="@+id/toffer_header"
+        layout="@layout/screen_detail_header" />
+
+    <LinearLayout
+        android:id="@+id/red_green_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/t_offer_height_gou"
+        android:layout_below="@+id/toffer_header"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@drawable/t_red"
+            android:gravity="center"
+            android:text="购"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/t_offer_fceced"
+            android:textSize="@dimen/font_t_offer_B" />
+
+        <TextView
+            android:id="@+id/textview_month"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@color/t_offer_e3dfdf"
+            android:drawableRight="@drawable/month_pulldown"
+            android:gravity="center"
+            android:paddingLeft="@dimen/qq_margin_E"
+            android:paddingRight="@dimen/qq_margin_B"
+            android:text="4月"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/t_offer_626060" 
+            android:textSize="@dimen/font_t_offer_B"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@drawable/t_green"
+            android:gravity="center"
+            android:text="沽"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/t_offer_fceced"
+            android:textSize="@dimen/font_t_offer_B" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_hlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/red_green_layout"
+        android:layout_marginBottom="@dimen/dim_120px"
+        android:orientation="horizontal" >
+
+        <com.pengbo.mhdcx.view.MyTHScrollView
+            android:id="@+id/horizontalOfferScrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/head_leftlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/hv_item_head1"
+                    android:background="@color/list_middle_bg_A" />
+
+                <View
+                    android:id="@+id/divider_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/list_middle_bg_A" />
+
+                <com.pengbo.mhdcx.view.MyTListView
+                    android:id="@+id/listView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/white"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" >
+                </com.pengbo.mhdcx.view.MyTListView>
+            </LinearLayout>
+        </com.pengbo.mhdcx.view.MyTHScrollView>
+
+        <LinearLayout
+            android:id="@+id/horizontalOfferScrollView0"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/head_midllelist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/titemhead0"
+                android:background="@color/list_middle_bg_A" />
+
+            <View
+                android:id="@+id/divider_item2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/list_middle_bg_A" />
+
+            <com.pengbo.mhdcx.view.MyTListView
+                android:id="@+id/listView0"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/white"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" >
+            </com.pengbo.mhdcx.view.MyTListView>
+        </LinearLayout>
+
+        <com.pengbo.mhdcx.view.MyTHScrollView
+            android:id="@+id/horizontalOfferScrollView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/head_rightlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/hv_item_head"
+                    android:background="@color/list_middle_bg_A" />
+
+                <View
+                    android:id="@+id/divider_item1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/list_middle_bg_A" />
+
+                <com.pengbo.mhdcx.view.MyTListView
+                    android:id="@+id/listView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/white"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" >
+                </com.pengbo.mhdcx.view.MyTListView>
+            </LinearLayout>
+        </com.pengbo.mhdcx.view.MyTHScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_toffer_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/maintab_footer" />
+    </LinearLayout>
+
+</RelativeLayout>

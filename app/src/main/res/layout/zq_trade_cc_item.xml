@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/zq_trade_cc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zq_cc_item_drawable"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/zq_cc_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="11dp"
+                android:paddingTop="7.5dp"
+                android:textSize="@dimen/zq_hq_size_C" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/zq_cc_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:paddingLeft="11dp"
+                android:textSize="@dimen/zq_hq_size_D" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/zq_cc_yk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingTop="7.5dp"
+                android:textSize="@dimen/zq_hq_size_D" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/zq_cc_ykbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="6dp"
+                android:textSize="@dimen/zq_hq_size_D" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/zq_cc_cc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingTop="7.5dp"
+                android:textSize="@dimen/zq_hq_size_D" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/zq_cc_ky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="6dp"
+                android:textSize="@dimen/zq_hq_size_D" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/zq_cc_cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="14dp"
+                android:paddingTop="7.5dp"
+                android:textSize="@dimen/zq_hq_size_D" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/zq_cc_xj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="6dp"
+                android:paddingRight="14dp"
+                android:textSize="@dimen/zq_hq_size_D" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- @color/zq_ededed   zq_93939b -->
+
+    <RelativeLayout
+        android:id="@+id/rlayout_chicang_list_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zq_eeeeee"
+        android:visibility="gone">"
+
+        <View
+            android:id="@+id/zq_cicang_divider_zk_item"
+            android:layout_width="fill_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/zq_93939b" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zq_cicang_divider_zk_item"
+            android:paddingBottom="@dimen/zq_marketinfo_detail_padding_F"
+            android:paddingLeft="@dimen/zq_trade_chicang_listmenu_paddingleft"
+            android:paddingRight="@dimen/zq_trade_chicang_listmenu_paddingleft"
+            android:paddingTop="@dimen/zq_marketinfo_detail_padding_F" >
+
+            <TextView
+                android:id="@+id/tv_menu_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/zq_cicang_item_buy"
+                android:drawablePadding="@dimen/zq_marketinfo_detail_padding_D"
+                android:gravity="center"
+                android:text="@string/ZQ_MaiRu"
+                android:textColor="@color/zq_414141"
+                android:textSize="@dimen/zq_marketinfo_detail_font_G" />
+
+            <TextView
+                android:id="@+id/tv_menu_hangqing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/zq_cicang_item_hangqing"
+                android:drawablePadding="@dimen/zq_marketinfo_detail_padding_D"
+                android:gravity="center"
+                android:text="@string/ZQ_HangQing"
+                android:textColor="@color/zq_414141"
+                android:textSize="@dimen/zq_marketinfo_detail_font_G" />
+
+            <TextView
+                android:id="@+id/tv_menu_sell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/zq_cicang_item_sell"
+                android:drawablePadding="@dimen/zq_marketinfo_detail_padding_D"
+                android:gravity="center"
+                android:text="@string/ZQ_MaiChu"
+                android:textColor="@color/zq_414141"
+                android:textSize="@dimen/zq_marketinfo_detail_font_G" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dp"
+        android:background="@color/zq_93939b" />
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/zq_public_head_title_height"
+    android:background="@android:color/black" >
+
+    <TextView
+        android:id="@+id/tv_public_black_head_title_middle_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/ZQ_app_name"
+        android:textColor="@color/zq_public_head_ffffff"
+        android:textSize="@dimen/zq_font_A"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llayout_middle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/llayout_middle_tv_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ZQ_DanPinName"
+            android:textColor="@color/zq_public_head_ffffff"
+            android:textSize="@dimen/zq_font_A" />
+
+        <TextView
+            android:id="@+id/llayout_middle_tv_down"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="------"
+            android:textColor="@color/zq_public_head_ffffff"
+            android:textSize="@dimen/zq_font_D" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_public_black_head_title_left_blue_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/zq_public_head_margin_A"
+        android:paddingRight="@dimen/zq_public_head_margin_B"
+        android:src="@drawable/zq_selector_back_btn_blue"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_public_black_head_title_left_white_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/zq_public_head_margin_A"
+        android:paddingRight="@dimen/zq_public_head_margin_B"
+        android:src="@drawable/zq_selector_back_btn_white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_public_black_head_title_left_note"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/zq_public_head_margin_A"
+        android:paddingRight="@dimen/zq_public_head_margin_B"
+        android:src="@drawable/zq_selector_bianji_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_public_black_head_title_left_user"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/zq_public_head_margin_A"
+        android:paddingRight="@dimen/zq_public_head_margin_B"
+        android:src="@drawable/zq_selector_btn_user"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_public_black_head_title_right_blue_search"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/zq_public_head_margin_B"
+        android:paddingRight="@dimen/zq_public_head_margin_A"
+        android:src="@drawable/zq_selector_search_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_public_black_head_title_right_blue_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/zq_public_head_margin_B"
+        android:paddingRight="@dimen/zq_public_head_margin_A"
+        android:src="@drawable/zq_selector_shuaxin_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_public_black_head_title_right_white_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/zq_public_head_margin_B"
+        android:paddingRight="@dimen/zq_public_head_margin_A"
+        android:src="@drawable/zq_selector_refersh_btn"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_public_black_head_title_right_blue_about"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/zq_public_head_margin_B"
+        android:paddingRight="@dimen/zq_public_head_margin_A"
+        android:text="@string/ZQ_GuanYu"
+        android:textColor="@drawable/classify_custom_textview_blue_white"
+        android:textSize="@dimen/zq_about_font"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_public_black_head_title_right_blue_qiquan"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/zq_public_head_margin_B"
+        android:paddingRight="@dimen/zq_public_head_margin_A"
+        android:text="期权版"
+        android:textColor="@color/white"
+        android:textSize="@dimen/zq_about_font"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_public_black_head_title_right_blue_save"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/zq_public_head_margin_B"
+        android:paddingRight="@dimen/zq_public_head_margin_A"
+        android:text="@string/ZQ_BaoCun"
+        android:textColor="@drawable/classify_custom_textview_blue_white"
+        android:textSize="@dimen/zq_about_font"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_public_black_head_title_right_blue_prepage"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/zq_public_head_margin_B"
+        android:paddingRight="@dimen/zq_public_head_margin_A"
+        android:text="@string/ZQ_PrePage"
+        android:textColor="@drawable/classify_custom_textview_blue_white"
+        android:textSize="@dimen/zq_about_font"
+        android:visibility="gone" />
+
+</RelativeLayout>

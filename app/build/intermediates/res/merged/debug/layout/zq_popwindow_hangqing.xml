@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="horizontal" >
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="买入" />
+
+    <Button
+           android:layout_weight="1"
+           android:padding="5dp"
+        android:id="@+id/btn_sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卖出" />
+
+    <Button
+           android:layout_weight="1"
+           android:padding="5dp"
+        android:id="@+id/btn_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分时" />
+
+    <Button
+           android:layout_weight="1"
+           android:padding="5dp"
+        android:id="@+id/btn_kline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="K线" />
+
+    <Button
+           android:layout_weight="1"
+           android:padding="5dp"
+        android:id="@+id/btn_addself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加入自选" />
+
+</LinearLayout>

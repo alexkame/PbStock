@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 需求中规定的通用颜色 -->
+    <color name="black_demand">#333333</color>
+	<color name="red_demand">#d42626</color>
+	<color name="green_demand">#23a823</color>
+	<color name="blue_demand">#0d7aff</color>
+	<color name="gray_demand_one">#999999</color>
+	<color name="gray_demand_two">#666666</color>
+	<color name="background_demand">#eeeeee</color>
+	<color name="blue_position_demand">#1a81ff</color>
+	
+	<!-- T型报价页所用的三个颜色值 -->
+	<!-- 标头及中间的 Listview的背景色  -->
+	<color name="list_middle_bg_A">#ccc8c8</color>
+	<color name="danhang_bg_B">#f4f2f2</color>
+	<color name="shuanghang_bg_C">#ebe9e9</color>
+	<color name="t_offer_e3dfdf">#e3dfdf</color>
+	<color name="t_offer_626060">#626060</color>
+	<color name="t_offer_f4f5f8">#f4f5f8</color>
+	<color name="t_offer_fceced">#fceced</color>
+	<color name="t_offer_3a3838">#3a3838</color>
+	<color name="t_offer_4d4a4a">#4d4a4a</color>
+	<color name="t_offer_dbd9d9">#dbd9d9</color>
+	<color name="t_offer_e0dcdc">#e0dcdc</color>
+	<color name="t_offer_cfd0d1">#cfd0d1</color>
+	<color name="t_offer_f7eeee">#f7eeee</color>
+	<color name="t_offer_ebe6e6">#ebe6e6</color>
+	<color name="t_offer_30b24b">#30b24b</color>
+	<color name="t_offer_bec0c2">#bec0c2</color>
+	<color name="t_offer_9fa1a2">#9fa1a2</color>
+	<color name="t_offer_ea4450">#ea4450</color>
+	<color name="t_offer_333333">#333333</color>
+	
+	
+	
+	<color name="t_offer_1b67f2">#1b67f2</color>
+	<color name="t_offer_f7f8fc">#f7f8fc</color>
+	<color name="t_offer_5b5c61">#5b5c61</color>
+	<color name="t_offer_f8f8f9">#f8f8f9</color>
+	<color name="t_offer_525357">#525357</color>
+	<color name="t_offer_c9c7c7">#c9c7c7</color>
+	
+	<color name="t_offer_737e89">#737e89</color>
+
+	<!-- detail页面修改后颜色值-->
+	<color name="detail_5dc1fd">#5dc1fd</color>
+	<color name="detail_f0f5f8">#f0f5f8</color>
+	<color name="detail_ccd0d2">#ccd0d2</color>
+	<color name="detail_7f7d7d">#7f7d7d</color>
+	<color name="detail_ed4040">#ed4040</color>
+	<color name="detail_6d6d71">#6d6d71</color>
+	<color name="detail_222222">#222222</color>
+	<color name="detail_edeff0">#edeff0</color>
+	<color name="detail_cfcdcd">#cfcdcd</color>
+	<color name="detail_615f5f">#615f5f</color>
+	<color name="detail_2e76d5">#2e76d5</color>
+	<color name="detail_b6b8b9">#b6b8b9</color>
+	<color name="detail_949191">#949191</color>
+	<color name="detail_fb494c">#fb494c</color>
+	<color name="detail_3dc33e">#3dc33e</color>
+	
+	<color name="detail_6c6868">#6c6868</color>
+	<color name="detail_8f8f91">#8f8f91</color>
+	<color name="detail_e7e7eb">#e7e7eb</color>
+	<color name="detail_afafb3">#afafb3</color>
+	<color name="detail_666666">#666666</color>
+	<color name="detail_e2e2e2">#e2e2e2</color>
+	<color name="detail_ffffff">#ffffff</color>
+	
+	
+	<!-- gain_loss_analysis.xml -->
+	<color name="gray_demand_three">#808080</color>
+	
+	<!-- 调整界面时新增加的一些颜色值    期权详细中 -->
+	<color name="demand_e5e5e5">#e5e5e5</color>
+	<color name="demand_b1b1b1">#b1b1b1</color>
+	<color name="demand_f0f0f0">#f0f0f0</color>
+	<color name="demand_212121">#212121</color>
+	
+	<!-- 调整界面时新增加的一些颜色值    自选页面中 -->
+	<color name="demand_efefef">#efefef</color>
+	<color name="demand_d22720">#d22720</color>
+	<color name="demand_333333">#333333</color>
+	<color name="demand_21ab1b">#21ab1b</color>
+	<color name="demand_ececec">#ececec</color>
+	
+	
+	<color name="demand_f4f4f4">#f4f4f4</color>
+	<color name="demand_a6a1a1">#a6a1a1</color>
+	
+	<!-- 交易登录中新增的一些 颜色值      -->
+	
+	<color name="demand_9b9b9b">#9b9b9b</color>	
+	<color name="demand_107afd">#107afd</color>
+	
+	
+	<!-- 交易查询中可撤界面中 新增的颜色值  -->
+	<color name="demand_8a8a8a">#8a8a8a</color>
+	<color name="demand_e1e1e1">#e1e1e1</color>
+
+	
+	<color name="demand_959595">#959595</color>
+	<color name="demand_fffdfd">#fffdfd</color>
+	<color name="demand_4d4d4d">#4d4d4d</color>
+	<color name="demand_f5c142">#f5c142</color>
+	<color name="demand_a6a0a0">#a6a0a0</color>
+	
+	
+	
+    <color name="trans">#00000000</color>
+    <color name="black_ios">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    
+    <!-- 自定义   tabview 用的边框 -->
+    <color name="rounded_container_border">#ffb7babb</color>
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF61686E</color>
+    <color name="gray_1">#FF383842</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="magent">#FFFF00FF</color>
+    <color name="blue">#FF38BBFF</color>
+ <!-- 蓝色 -->
+    <color name="yellow">#FFEEEC81</color>
+ <!-- 黄色 -->
+    <color name="orange">#FFef8d0e</color>
+ <!-- 黄色 -->
+    <color name="news_bg">#FFFDEDD8</color>
+    <color name="light_blue">#FF064E7F</color>
+    <color name="light_blue_2">#FF009CFF</color>
+    <color name="transparent_background">#ee000000</color>
+    <color name="transparent_light_blue">#88064E7F</color>
+    <color name="light_blue_3">#FF193d55</color>
+    <color name="seperator_h">#FF193d55</color>
+ <!-- 横分割线 -->
+    <color name="sep_line_gray">#FFCCCCCC</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_blue">#FF38BBFF</color>
+ <!-- COLOR_BLUE -->
+    <color name="color_yellow">#FFEEEC81</color>
+ <!-- COLOR_YELLOW -->
+    <color name="color_radar_content">#FF9bbbcf</color>
+    <color name="color_system_text">#FF000000</color>
+    <color name="bg_color">#FF333333</color>
+ <!-- 整体 背景色 -->
+    <color name="bg_view">#FF050505</color>
+ <!-- View背景色 -->
+    <color name="bg_listview">#FF0E202C</color>
+ <!-- 列表背景色 -->
+    <color name="bg_loading">#880E202C</color>
+ <!-- 背景色 -->
+
+    <color name="text_marquee">#FFEEEC81</color>
+ <!-- 底部跑马灯字体色 -->
+
+    <color name="name_yellow">#FFEEEC81</color>
+ <!-- 名称 黄色 -->
+    <color name="name_blue">#FF009FC7</color>
+ <!-- 名称 蓝色 -->
+
+    <color name="bg_frame">#FF1C3E58</color>
+ <!-- 背景边框 -->
+    <color name="price_up">#FFF44949</color>
+ <!-- 价格 涨 -->
+    <color name="price_down">#FF339900</color>
+ <!-- 价格 跌 -->
+    <color name="price_equal">#FFFFFFFF</color>
+ <!-- 价格 平 -->
+    <color name="trend_mini">#FFFFFFFF</color>
+ <!-- 走势缩略图 -->
+    <color name="trend">#FFFFFFFF</color>
+ <!-- 走势线 -->
+    <color name="avgline">#FFFFA600</color>
+ <!-- 均 线 -->
+    <color name="volline">#FFEEEC81</color>
+ <!-- 成交量线 -->
+    <color name="lbline">#FFEEEC81</color>
+ <!-- 量比线 -->
+    <color name="bg_histrend">#C0222222</color>
+ <!-- 历史走势线背景 -->
+    <color name="kline_vol">#FFEEEC81</color>
+ <!-- K线 成交量柱线 -->
+    <color name="seperator">#FF183D55</color>
+ <!-- 报价栏 分割线 -->
+
+    <color name="kline_tech1">#FFFFFFFF</color>
+ <!-- K线 指标1 -->
+    <color name="kline_tech2">#FFEEEC81</color>
+ <!-- K线 指标2 -->
+    <color name="kline_tech3">#FFAE00FF</color>
+ <!-- K线 指标3 -->
+    <color name="kline_tech4">#FF00FFBE</color>
+ <!-- K线 指标4 -->
+
+
+    <!-- 龙虎榜颜色 -->
+    <color name="longhu_buy_host">#FFFF0000</color>
+ <!-- 买：庄 -->
+    <color name="longhu_buy_big">#FFAD0000</color>
+ <!-- 买：大 -->
+    <color name="longhu_buy_middle">#FF720000</color>
+ <!-- 买：中 -->
+    <color name="longhu_buy_small">#FF3E0000</color>
+ <!-- 买：小 -->
+    <color name="longhu_sell_host">#FF66FF66</color>
+ <!-- 卖：庄 -->
+    <color name="longhu_sell_big">#FF3D963D</color>
+ <!-- 卖：大 -->
+    <color name="longhu_sell_middle">#FF215421</color>
+ <!-- 卖：中 -->
+    <color name="longhu_sell_small">#FF002B00</color>
+ <!-- 卖：小 -->
+    <color name="longhu_cjl">#FF65C7CA</color>
+ <!-- 成交量 -->
+
+
+    <!-- 港股10档经纪人排位 -->
+    <color name="hk10_broker">#FF50F8FF</color>
+    <color name="stripe_0">#FF2A2A2A</color>
+    <color name="title_gradient_0">#FF0E2837</color>
+    <color name="title_gradient_1">#FF00080E</color>
+    <color name="trade_buy_bk">#ffeaef</color>
+ <!-- #ffeaef #f5ebf3 -->
+    <color name="trade_sell_bk">#def5ee</color>
+ <!-- #def5ee #ebf4f1 -->
+
+    <color name="trade_stockboard_hl">#FFB030</color>
+
+    <!-- custom toast -->
+    <color name="bright_foreground_dark">#ffffffff</color>
+    
+    
+    
+    
+    <!-- keyboard -->
+    <color name="lightblack">#ff202020</color>
+    
+    
+    <!-- 备兑颜色值 -->
+    <color name="beidui_8e8a8a">#8e8a8a</color>
+    <color name="beidui_969393">#969393</color>
+    <color name="beidui_f8f7f7">#f8f7f7</color>
+    <color name="beidui_ffffff">#ffffff</color>
+    <color name="beidui_6d6868">#6d6868</color>
+    <color name="beidui_878484">#878484</color>
+    <color name="beidui_dcdcdc">#dcdcdc</color>
+    <color name="beidui_cccaca">#cccaca</color>
+    <color name="beidui_656363">#656363</color>
+    <color name="beidui_737373">#737373</color>
+    <color name="beidui_676767">#676767</color>
+    <color name="beidui_afafb3">#afafb3</color>
+    
+    
+    <!-- 证券相关颜色值 -->
+    <color name="zq_515151">#515151</color>
+    <color name="zq_374447">#374447</color>
+    <color name="zq_92a0ad">#92a0ad</color>
+    <color name="zq_ffffff">#ffffff</color>
+    <color name="zq_c8c8c8">#c8c8c8</color>
+    <color name="zq_f3f3f3">#f3f3f3</color>
+    <color name="zq_565656">#565656</color>
+    <color name="zq_e6e6e6">#e6e6e6</color>
+    
+    
+	
+	<!---证券交易-->
+	<color name="zq_trade_gray">#ededed</color>
+	<color name="zq_xd_btn">#0D7AFF</color>
+	<color name="zq_five_price">#0D7AFF</color>
+	
+	<color name="demand_29b462">#29b462</color>
+	<color name="demand_d42626">#d42626</color>
+	<color name="demand_cc00ff">#d0d0d0</color>
+
+    <!-- 证券行情详细页面用到的颜色值 -->
+    
+    
+    <color name="zq_detail_bcg">#eeeeee</color>
+    <color name="zq_ef5138">#ef5138</color><!-- 橘色的背景 -->
+    <color name="zq_detail_white">#d42626</color>
+    
+    <color name="zq_fe8022">#fe8022</color>
+    <color name="zq_ffddbf">#ffddbf</color>
+    <color name="zq_ffb499">#ffb499</color>
+    <color name="zq_529bf9">#529bf9</color>
+    <color name="zq_9c9c9c">#9c9c9c</color>
+    <color name="zq_d42626">#d42626</color>
+    <color name="zq_38c36e">#38c36e</color>
+    <color name="zq_22bf63">#22bf63</color>
+    <color name="zq_d73434">#d73434</color>
+    <color name="zq_d1d1d1">#d1d1d1</color>
+    
+    <!-- 分时大图上的颜色值  -->
+    <color name="zq_090909">#090909</color>
+    <color name="zq_3f93f9">#3f93f9</color>
+    <color name="zq_858585">#858585</color>
+    <color name="zq_9f9f9f">#9f9f9f</color>
+    <color name="zq_fd8228">#fd8228</color>
+    <color name="zq_bbbe98">#bbbe98</color>
+    <color name="zq_3dc776">#3dc776</color>
+    <color name="zq_da4141">#da4141</color>
+    <!-- K线大图  -->
+    <color name="zq_6f6f6f">#6f6f6f</color>
+     <color name="zq_5a98ff">#5a98ff</color>
+     <color name="zq_d62e2e">#d62e2e</color>
+     <color name="zq_b6b6b6">#b6b6b6</color>
+     <color name="zq_d52f2f">#d52f2f</color>
+     <color name="zq_25c065">#25c065</color>
+    
+  
+    <color name="zq_ffb7ac">#ffb7ac</color>
+    <color name="zq_969696">#969696</color>
+    <color name="zq_212121">#212121</color>
+    <color name="zq_ededed1">#ededed</color>
+    <color name="zq_999999">#999999</color>
+   
+      <!-- 分时   一分钟  3分钟 这些字的  点击颜色 及未点击颜色  -->
+      
+   <color name="zq_515151S">#515151</color>
+      
+    <color name="zq_public_head_ffffff">#ffffff</color>
+    <!-- 证券交易页面 -->
+    <color name="zq_ededed">#ededed</color>
+    <color name="zq_414141">#414141</color>
+    <color name="zq_707070">#707070</color>
+    
+    <color name="zq_fdaca0">#fdaca0</color>
+	<color name="zq_d0d0d0">#d0d0d0</color>
+	<color name="zq_808080">#808080</color>
+    <!-- 首页页面 -->
+    <color name="zq_2d3e50">#2d3e50</color>
+    <color name="zq_d73e3e">#d73e3e</color>
+    
+    <color name="zq_a6a1a1">#a6a1a1</color>
+    <color name="zq_f4f4f4">#f4f4f4</color>
+    <color name="zq_f5f5f5">#f5f5f5</color>
+    <color name="zq_706f6f">#706f6f</color>
+    <color name="zq_ed8a24">#ed8a24</color>
+    <color name="zq_222222">#222222</color>
+
+	    
+    <color name="zq_cecece">#cecece</color>
+    <color name="zq_dddddd">#dddddd</color>
+    <color name="zq_8a99a7">#8a99a7</color>
+    <color name="zq_7f7f7f">#7f7f7f</color>
+    <color name="zq_cdcdcd">#cdcdcd</color>
+
+    <color name="statusbar_bg">#d52f2f</color>
+    <color name="zq_eeeeee">#eeeeee</color>
+    <color name="zq_93939b">#93939b</color>
+    
+     <color name="zq_767676">#767676</color>
+     <color name="zq_29b462">#29b462</color> 
+     <color name="zq_0d7aff">#0d7aff</color>
+     <color name="zq_6faefb">#6faefb</color>
+     <color name="zq_fd720c">#fd720c</color>
+     <color name="zq_add79a">#add79a</color>
+     <color name="zq_eeebe9">#eeebe9</color>
+     <color name="zq_f9ef3e">#f9ef3e</color>
+     <color name="zq_5ab5f5">#5ab5f5</color>
+     <color name="zq_fa65c2">#fa65c2</color>
+     <color name="zq_6e67ff">#6e67ff</color>
+     
+     <color name="zq_5a5a5a">#5a5a5a</color>
+     <color name="zq_99ffffff">#99ffffff</color>
+     <color name="zq_5d5d5d">#5d5d5d</color>
+     <color name="zq_cccccc">#cccccc</color>
+     
+    
+</resources>

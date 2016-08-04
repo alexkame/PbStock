@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="day_of_week">
+        <item>@string/sunday</item>
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+    </string-array>
+    <string-array name="jazz_artist_names">
+        <item>Brad Mehldau</item>
+        <item>Joshua Redman</item>
+        <item>Chick Corea</item>
+        <item>Kurt Rosenwinkel</item>
+        <item>Miles Davis</item>
+        <item>Wayne Shorter</item>
+        <item>Michael Brecker</item>
+        <item>Herbie Hancock</item>
+        <item>Joe Zawinul</item>
+        <item>Brian Blade</item>
+        <item>Jeff Ballard</item>
+        <item>Larry Grenadier</item>
+        <item>Keith Jarrett</item>
+        <item>McCoy Tyner</item>
+        <item>Stephon Harris</item>
+        <item>Mark Turner</item>
+    </string-array>
+    <attr format="reference" name="autoScaleTextViewStyle"/>
+    <attr format="boolean" name="centered"/>
+    <attr format="color" name="selectedColor"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="color" name="unselectedColor"/>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <bool name="default_line_indicator_centered">true</bool>
+    <bool name="default_title_indicator_selected_bold">true</bool>
+    <bool name="default_underline_indicator_fades">true</bool>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="avgline">#FFFFA600</color>
+    <color name="background_demand">#eeeeee</color>
+    <color name="beidui_656363">#656363</color>
+    <color name="beidui_676767">#676767</color>
+    <color name="beidui_6d6868">#6d6868</color>
+    <color name="beidui_737373">#737373</color>
+    <color name="beidui_878484">#878484</color>
+    <color name="beidui_8e8a8a">#8e8a8a</color>
+    <color name="beidui_969393">#969393</color>
+    <color name="beidui_afafb3">#afafb3</color>
+    <color name="beidui_cccaca">#cccaca</color>
+    <color name="beidui_dcdcdc">#dcdcdc</color>
+    <color name="beidui_f8f7f7">#f8f7f7</color>
+    <color name="beidui_ffffff">#ffffff</color>
+    <color name="bg_color">#FF333333</color>
+    <color name="bg_frame">#FF1C3E58</color>
+    <color name="bg_histrend">#C0222222</color>
+    <color name="bg_listview">#FF0E202C</color>
+    <color name="bg_loading">#880E202C</color>
+    <color name="bg_view">#FF050505</color>
+    <color name="black">#FF000000</color>
+    <color name="black_demand">#333333</color>
+    <color name="black_ios">#000000</color>
+    <color name="blue">#FF38BBFF</color>
+    <color name="blue_demand">#0d7aff</color>
+    <color name="blue_position_demand">#1a81ff</color>
+    <color name="bright_foreground_dark">#ffffffff</color>
+    <color name="color_blue">#FF38BBFF</color>
+    <color name="color_radar_content">#FF9bbbcf</color>
+    <color name="color_system_text">#FF000000</color>
+    <color name="color_yellow">#FFEEEC81</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="danhang_bg_B">#f4f2f2</color>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+    <color name="demand_107afd">#107afd</color>
+    <color name="demand_212121">#212121</color>
+    <color name="demand_21ab1b">#21ab1b</color>
+    <color name="demand_29b462">#29b462</color>
+    <color name="demand_333333">#333333</color>
+    <color name="demand_4d4d4d">#4d4d4d</color>
+    <color name="demand_8a8a8a">#8a8a8a</color>
+    <color name="demand_959595">#959595</color>
+    <color name="demand_9b9b9b">#9b9b9b</color>
+    <color name="demand_a6a0a0">#a6a0a0</color>
+    <color name="demand_a6a1a1">#a6a1a1</color>
+    <color name="demand_b1b1b1">#b1b1b1</color>
+    <color name="demand_cc00ff">#d0d0d0</color>
+    <color name="demand_d22720">#d22720</color>
+    <color name="demand_d42626">#d42626</color>
+    <color name="demand_e1e1e1">#e1e1e1</color>
+    <color name="demand_e5e5e5">#e5e5e5</color>
+    <color name="demand_ececec">#ececec</color>
+    <color name="demand_efefef">#efefef</color>
+    <color name="demand_f0f0f0">#f0f0f0</color>
+    <color name="demand_f4f4f4">#f4f4f4</color>
+    <color name="demand_f5c142">#f5c142</color>
+    <color name="demand_fffdfd">#fffdfd</color>
+    <color name="detail_222222">#222222</color>
+    <color name="detail_2e76d5">#2e76d5</color>
+    <color name="detail_3dc33e">#3dc33e</color>
+    <color name="detail_5dc1fd">#5dc1fd</color>
+    <color name="detail_615f5f">#615f5f</color>
+    <color name="detail_666666">#666666</color>
+    <color name="detail_6c6868">#6c6868</color>
+    <color name="detail_6d6d71">#6d6d71</color>
+    <color name="detail_7f7d7d">#7f7d7d</color>
+    <color name="detail_8f8f91">#8f8f91</color>
+    <color name="detail_949191">#949191</color>
+    <color name="detail_afafb3">#afafb3</color>
+    <color name="detail_b6b8b9">#b6b8b9</color>
+    <color name="detail_ccd0d2">#ccd0d2</color>
+    <color name="detail_cfcdcd">#cfcdcd</color>
+    <color name="detail_e2e2e2">#e2e2e2</color>
+    <color name="detail_e7e7eb">#e7e7eb</color>
+    <color name="detail_ed4040">#ed4040</color>
+    <color name="detail_edeff0">#edeff0</color>
+    <color name="detail_f0f5f8">#f0f5f8</color>
+    <color name="detail_fb494c">#fb494c</color>
+    <color name="detail_ffffff">#ffffff</color>
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+    <color name="gray">#FF61686E</color>
+    <color name="gray_1">#FF383842</color>
+    <color name="gray_demand_one">#999999</color>
+    <color name="gray_demand_three">#808080</color>
+    <color name="gray_demand_two">#666666</color>
+    <color name="green">#FF00FF00</color>
+    <color name="green_demand">#23a823</color>
+    <color name="hk10_broker">#FF50F8FF</color>
+    <color name="kline_tech1">#FFFFFFFF</color>
+    <color name="kline_tech2">#FFEEEC81</color>
+    <color name="kline_tech3">#FFAE00FF</color>
+    <color name="kline_tech4">#FF00FFBE</color>
+    <color name="kline_vol">#FFEEEC81</color>
+    <color name="lbline">#FFEEEC81</color>
+    <color name="light_blue">#FF064E7F</color>
+    <color name="light_blue_2">#FF009CFF</color>
+    <color name="light_blue_3">#FF193d55</color>
+    <color name="lightblack">#ff202020</color>
+    <color name="list_middle_bg_A">#ccc8c8</color>
+    <color name="longhu_buy_big">#FFAD0000</color>
+    <color name="longhu_buy_host">#FFFF0000</color>
+    <color name="longhu_buy_middle">#FF720000</color>
+    <color name="longhu_buy_small">#FF3E0000</color>
+    <color name="longhu_cjl">#FF65C7CA</color>
+    <color name="longhu_sell_big">#FF3D963D</color>
+    <color name="longhu_sell_host">#FF66FF66</color>
+    <color name="longhu_sell_middle">#FF215421</color>
+    <color name="longhu_sell_small">#FF002B00</color>
+    <color name="magent">#FFFF00FF</color>
+    <color name="name_blue">#FF009FC7</color>
+    <color name="name_yellow">#FFEEEC81</color>
+    <color name="news_bg">#FFFDEDD8</color>
+    <color name="orange">#FFef8d0e</color>
+    <color name="price_down">#FF339900</color>
+    <color name="price_equal">#FFFFFFFF</color>
+    <color name="price_up">#FFF44949</color>
+    <color name="red">#FFFF0000</color>
+    <color name="red_demand">#d42626</color>
+    <color name="rounded_container_border">#ffb7babb</color>
+    <color name="sep_line_gray">#FFCCCCCC</color>
+    <color name="seperator">#FF183D55</color>
+    <color name="seperator_h">#FF193d55</color>
+    <color name="shuanghang_bg_C">#ebe9e9</color>
+    <color name="statusbar_bg">#d52f2f</color>
+    <color name="stripe_0">#FF2A2A2A</color>
+    <color name="t_offer_1b67f2">#1b67f2</color>
+    <color name="t_offer_30b24b">#30b24b</color>
+    <color name="t_offer_333333">#333333</color>
+    <color name="t_offer_3a3838">#3a3838</color>
+    <color name="t_offer_4d4a4a">#4d4a4a</color>
+    <color name="t_offer_525357">#525357</color>
+    <color name="t_offer_5b5c61">#5b5c61</color>
+    <color name="t_offer_626060">#626060</color>
+    <color name="t_offer_737e89">#737e89</color>
+    <color name="t_offer_9fa1a2">#9fa1a2</color>
+    <color name="t_offer_bec0c2">#bec0c2</color>
+    <color name="t_offer_c9c7c7">#c9c7c7</color>
+    <color name="t_offer_cfd0d1">#cfd0d1</color>
+    <color name="t_offer_dbd9d9">#dbd9d9</color>
+    <color name="t_offer_e0dcdc">#e0dcdc</color>
+    <color name="t_offer_e3dfdf">#e3dfdf</color>
+    <color name="t_offer_ea4450">#ea4450</color>
+    <color name="t_offer_ebe6e6">#ebe6e6</color>
+    <color name="t_offer_f4f5f8">#f4f5f8</color>
+    <color name="t_offer_f7eeee">#f7eeee</color>
+    <color name="t_offer_f7f8fc">#f7f8fc</color>
+    <color name="t_offer_f8f8f9">#f8f8f9</color>
+    <color name="t_offer_fceced">#fceced</color>
+    <color name="text_marquee">#FFEEEC81</color>
+    <color name="title_gradient_0">#FF0E2837</color>
+    <color name="title_gradient_1">#FF00080E</color>
+    <color name="trade_buy_bk">#ffeaef</color>
+    <color name="trade_sell_bk">#def5ee</color>
+    <color name="trade_stockboard_hl">#FFB030</color>
+    <color name="trans">#00000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_background">#ee000000</color>
+    <color name="transparent_light_blue">#88064E7F</color>
+    <color name="trend">#FFFFFFFF</color>
+    <color name="trend_mini">#FFFFFFFF</color>
+    <color name="volline">#FFEEEC81</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFEEEC81</color>
+    <color name="zq_090909">#090909</color>
+    <color name="zq_0d7aff">#0d7aff</color>
+    <color name="zq_212121">#212121</color>
+    <color name="zq_222222">#222222</color>
+    <color name="zq_22bf63">#22bf63</color>
+    <color name="zq_25c065">#25c065</color>
+    <color name="zq_29b462">#29b462</color>
+    <color name="zq_2d3e50">#2d3e50</color>
+    <color name="zq_374447">#374447</color>
+    <color name="zq_38c36e">#38c36e</color>
+    <color name="zq_3dc776">#3dc776</color>
+    <color name="zq_3f93f9">#3f93f9</color>
+    <color name="zq_414141">#414141</color>
+    <color name="zq_515151">#515151</color>
+    <color name="zq_515151S">#515151</color>
+    <color name="zq_529bf9">#529bf9</color>
+    <color name="zq_565656">#565656</color>
+    <color name="zq_5a5a5a">#5a5a5a</color>
+    <color name="zq_5a98ff">#5a98ff</color>
+    <color name="zq_5ab5f5">#5ab5f5</color>
+    <color name="zq_5d5d5d">#5d5d5d</color>
+    <color name="zq_6e67ff">#6e67ff</color>
+    <color name="zq_6f6f6f">#6f6f6f</color>
+    <color name="zq_6faefb">#6faefb</color>
+    <color name="zq_706f6f">#706f6f</color>
+    <color name="zq_707070">#707070</color>
+    <color name="zq_767676">#767676</color>
+    <color name="zq_7f7f7f">#7f7f7f</color>
+    <color name="zq_808080">#808080</color>
+    <color name="zq_858585">#858585</color>
+    <color name="zq_8a99a7">#8a99a7</color>
+    <color name="zq_92a0ad">#92a0ad</color>
+    <color name="zq_93939b">#93939b</color>
+    <color name="zq_969696">#969696</color>
+    <color name="zq_999999">#999999</color>
+    <color name="zq_99ffffff">#99ffffff</color>
+    <color name="zq_9c9c9c">#9c9c9c</color>
+    <color name="zq_9f9f9f">#9f9f9f</color>
+    <color name="zq_a6a1a1">#a6a1a1</color>
+    <color name="zq_add79a">#add79a</color>
+    <color name="zq_b6b6b6">#b6b6b6</color>
+    <color name="zq_bbbe98">#bbbe98</color>
+    <color name="zq_c8c8c8">#c8c8c8</color>
+    <color name="zq_cccccc">#cccccc</color>
+    <color name="zq_cdcdcd">#cdcdcd</color>
+    <color name="zq_cecece">#cecece</color>
+    <color name="zq_d0d0d0">#d0d0d0</color>
+    <color name="zq_d1d1d1">#d1d1d1</color>
+    <color name="zq_d42626">#d42626</color>
+    <color name="zq_d52f2f">#d52f2f</color>
+    <color name="zq_d62e2e">#d62e2e</color>
+    <color name="zq_d73434">#d73434</color>
+    <color name="zq_d73e3e">#d73e3e</color>
+    <color name="zq_da4141">#da4141</color>
+    <color name="zq_dddddd">#dddddd</color>
+    <color name="zq_detail_bcg">#eeeeee</color>
+    <color name="zq_detail_white">#d42626</color>
+    <color name="zq_e6e6e6">#e6e6e6</color>
+    <color name="zq_ed8a24">#ed8a24</color>
+    <color name="zq_ededed">#ededed</color>
+    <color name="zq_ededed1">#ededed</color>
+    <color name="zq_eeebe9">#eeebe9</color>
+    <color name="zq_eeeeee">#eeeeee</color>
+    <color name="zq_ef5138">#ef5138</color>
+    <color name="zq_f3f3f3">#f3f3f3</color>
+    <color name="zq_f4f4f4">#f4f4f4</color>
+    <color name="zq_f5f5f5">#f5f5f5</color>
+    <color name="zq_f9ef3e">#f9ef3e</color>
+    <color name="zq_fa65c2">#fa65c2</color>
+    <color name="zq_fd720c">#fd720c</color>
+    <color name="zq_fd8228">#fd8228</color>
+    <color name="zq_fdaca0">#fdaca0</color>
+    <color name="zq_fe8022">#fe8022</color>
+    <color name="zq_ffb499">#ffb499</color>
+    <color name="zq_ffb7ac">#ffb7ac</color>
+    <color name="zq_ffddbf">#ffddbf</color>
+    <color name="zq_ffffff">#ffffff</color>
+    <color name="zq_five_price">#0D7AFF</color>
+    <color name="zq_public_head_ffffff">#ffffff</color>
+    <color name="zq_trade_gray">#ededed</color>
+    <color name="zq_xd_btn">#0D7AFF</color>
+    <declare-styleable name="AutoScaleTextView"><attr format="dimension" name="minTextSize"/></declare-styleable>
+    <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="circleradius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="DragSortListView"><attr format="dimension" name="collapsed_height"/><attr format="float" name="drag_scroll_start"/><attr format="float" name="max_drag_scroll_speed"/><attr format="color" name="float_background_color"/><attr name="remove_mode"><enum name="clickRemove" value="0"/><enum name="flingRemove" value="1"/></attr><attr format="boolean" name="track_drag_sort"/><attr format="float" name="float_alpha"/><attr format="float" name="slide_shuffle_speed"/><attr format="integer" name="remove_animation_duration"/><attr format="integer" name="drop_animation_duration"/><attr format="boolean" name="drag_enabled"/><attr format="boolean" name="sort_enabled"/><attr format="boolean" name="remove_enabled"/><attr name="drag_start_mode"><enum name="onDown" value="0"/><enum name="onMove" value="1"/><enum name="onLongPress" value="2"/></attr><attr format="integer" name="drag_handle_id"/><attr format="integer" name="fling_handle_id"/><attr format="integer" name="click_remove_id"/><attr format="boolean" name="use_default_controller"/></declare-styleable>
+    <declare-styleable name="SwitchButton"><attr format="reference" name="onDrawable"/><attr format="reference" name="offDrawable"/><attr format="reference" name="thumbDrawable"/><attr format="dimension|reference" name="thumb_margin"/><attr format="dimension|reference" name="thumb_marginTop"/><attr format="dimension|reference" name="thumb_marginBottom"/><attr format="dimension|reference" name="thumb_marginLeft"/><attr format="dimension|reference" name="thumb_marginRight"/><attr format="dimension|reference" name="thumb_width"/><attr format="dimension|reference" name="thumb_height"/><attr format="color|reference" name="onColor"/><attr format="color|reference" name="offColor"/><attr format="color|reference" name="thumbColor"/><attr format="color|reference" name="thumbPressedColor"/><attr format="integer" name="animationVelocity"/><attr format="integer" name="radius"/><attr format="float" name="measureFactor"/><attr format="dimension|reference" name="insetLeft"/><attr format="dimension|reference" name="insetRight"/><attr format="dimension|reference" name="insetTop"/><attr format="dimension|reference" name="insetBottom"/></declare-styleable>
+    <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bank_item_height">44dp</dimen>
+    <dimen name="bank_margin_A">10dp</dimen>
+    <dimen name="bank_radiogroup_out_height">64dp</dimen>
+    <dimen name="custom_font_middle_17sp">17dp</dimen>
+    <dimen name="custom_font_middle_20sp">20dp</dimen>
+    <dimen name="custom_font_tab_13sp">13dp</dimen>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_title_indicator_clip_padding">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">7dp</dimen>
+    <dimen name="default_title_indicator_text_size">15dp</dimen>
+    <dimen name="default_title_indicator_title_padding">5dp</dimen>
+    <dimen name="default_title_indicator_top_padding">7dp</dimen>
+    <dimen name="dim_100px">50dp</dimen>
+    <dimen name="dim_110px">37dp</dimen>
+    <dimen name="dim_120px">60dp</dimen>
+    <dimen name="dim_132px">22dp</dimen>
+    <dimen name="dim_145px">43dp</dimen>
+    <dimen name="dim_165px">42dp</dimen>
+    <dimen name="dim_200dp">200dp</dimen>
+    <dimen name="dim_20pt">10dp</dimen>
+    <dimen name="dim_22pt">11dp</dimen>
+    <dimen name="dim_24pt">12dp</dimen>
+    <dimen name="dim_30pt">15dp</dimen>
+    <dimen name="dim_34pt">17dp</dimen>
+    <dimen name="dim_60px">30dp</dimen>
+    <dimen name="dim_75px">35dp</dimen>
+    <dimen name="dim_80px">40dp</dimen>
+    <dimen name="dim_88px">44dp</dimen>
+    <dimen name="dim_90px">26dp</dimen>
+    <dimen name="dim_custom_tab_up">42dp</dimen>
+    <dimen name="font_24px">6.5dp</dimen>
+    <dimen name="font_36px">10.5dp</dimen>
+    <dimen name="font_40px">12dp</dimen>
+    <dimen name="font_48px">14.5dp</dimen>
+    <dimen name="font_50px">14.5dp</dimen>
+    <dimen name="font_60px">17dp</dimen>
+    <dimen name="font_bank_A">17.3dp</dimen>
+    <dimen name="font_bank_B">12dp</dimen>
+    <dimen name="font_bank_C">14.7dp</dimen>
+    <dimen name="font_big_20sp">20dp</dimen>
+    <dimen name="font_gainloss_A">14.5dp</dimen>
+    <dimen name="font_gainloss_B">10.5dp</dimen>
+    <dimen name="font_gainloss_C">12dp</dimen>
+    <dimen name="font_gainloss_D">13dp</dimen>
+    <dimen name="font_huge_24sp">24dp</dimen>
+    <dimen name="font_middle_16sp">16dp</dimen>
+    <dimen name="font_optional_A">17.3dp</dimen>
+    <dimen name="font_optional_B">13.3dp</dimen>
+    <dimen name="font_optional_C">9.3dp</dimen>
+    <dimen name="font_optional_D">16dp</dimen>
+    <dimen name="font_optional_E">13.3dp</dimen>
+    <dimen name="font_screen_A">13dp</dimen>
+    <dimen name="font_screen_B">10dp</dimen>
+    <dimen name="font_screen_C">12dp</dimen>
+    <dimen name="font_screen_D">42dp</dimen>
+    <dimen name="font_screen_E">14.5dp</dimen>
+    <dimen name="font_screen_F">9dp</dimen>
+    <dimen name="font_screen_G">17dp</dimen>
+    <dimen name="font_set_A">17.3dp</dimen>
+    <dimen name="font_set_B">14.5dp</dimen>
+    <dimen name="font_set_C">12dp</dimen>
+    <dimen name="font_small_12sp">12dp</dimen>
+    <dimen name="font_t_offer_A">20dp</dimen>
+    <dimen name="font_t_offer_B">18.7dp</dimen>
+    <dimen name="font_t_offer_C">17dp</dimen>
+    <dimen name="font_t_offer_D">14.5dp</dimen>
+    <dimen name="font_t_offer_E">14dp</dimen>
+    <dimen name="font_trade_A">17.3dp</dimen>
+    <dimen name="font_trade_B">16dp</dimen>
+    <dimen name="font_trade_C">13.3dp</dimen>
+    <dimen name="font_trade_more_A">17.3dp</dimen>
+    <dimen name="font_trade_more_B">14.5dp</dimen>
+    <dimen name="font_trade_position_A">17.3dp</dimen>
+    <dimen name="font_trade_position_B">10.6dp</dimen>
+    <dimen name="font_trade_position_C">13.3dp</dimen>
+    <dimen name="font_trade_position_D">9.3dp</dimen>
+    <dimen name="font_trade_query_A">17.3dp</dimen>
+    <dimen name="font_trade_query_B">13.3dp</dimen>
+    <dimen name="font_trade_query_C">9.3dp</dimen>
+    <dimen name="font_xbig_18sp">18dp</dimen>
+    <dimen name="font_xhuge_22sp">22dp</dimen>
+    <dimen name="font_xhuge_36sp">36dp</dimen>
+    <dimen name="font_xmid_14sp">14dp</dimen>
+    <dimen name="font_xsmall_10sp">10dp</dimen>
+    <dimen name="font_xxhuge_40sp">40dp</dimen>
+    <dimen name="font_xxsmall_9sp">9dp</dimen>
+    <dimen name="gainloss_bodong_height">44dp</dimen>
+    <dimen name="gainloss_margin_leftright">6dp</dimen>
+    <dimen name="gainloss_pjyl_height">28dp</dimen>
+    <dimen name="gainloss_ykbiaoti_height">30dp</dimen>
+    <dimen name="hvlist_head_height">40dp</dimen>
+    <dimen name="item_height">67dp</dimen>
+    <dimen name="key_height">50.0dip</dimen>
+    <dimen name="list_item_height_30dp">30dp</dimen>
+    <dimen name="list_item_width_big_120dp">120dp</dimen>
+    <dimen name="list_item_width_mid_100dp">100dp</dimen>
+    <dimen name="list_item_width_sml_80dp">80dp</dimen>
+    <dimen name="nav_leftright_width">8dip</dimen>
+    <dimen name="optional_margin_A">10dp</dimen>
+    <dimen name="optional_scroll_tab">28dp</dimen>
+    <dimen name="optional_scroll_tab_item">46.5dp</dimen>
+    <dimen name="order_control_gap">1.5dp</dimen>
+    <dimen name="order_margin_30px">5dp</dimen>
+    <dimen name="order_margin_34px">5.5dp</dimen>
+    <dimen name="order_margin_40px">8dp</dimen>
+    <dimen name="order_position_90pt">50dp</dimen>
+    <dimen name="popupinfo_width">90dp</dimen>
+    <dimen name="position_140pt">70dp</dimen>
+    <dimen name="position_22pt">11dp</dimen>
+    <dimen name="position_230pt">115dp</dimen>
+    <dimen name="position_24pt">12dp</dimen>
+    <dimen name="position_30pt">15dp</dimen>
+    <dimen name="screen_condition_textview_height">30dp</dimen>
+    <dimen name="screen_detail_alltextview_height">120dp</dimen>
+    <dimen name="screen_detail_biaodiwu_height">26.5dp</dimen>
+    <dimen name="screen_detail_control_gap">3dp</dimen>
+    <dimen name="screen_detail_draw_height">176.5dp</dimen>
+    <dimen name="screen_detail_fenshitu_tab_height">26.5dp</dimen>
+    <dimen name="screen_detail_margin_A">10dp</dimen>
+    <dimen name="screen_detail_margin_B">10.5dp</dimen>
+    <dimen name="screen_detail_margin_C">13dp</dimen>
+    <dimen name="screen_detail_news_item_height">33.3dp</dimen>
+    <dimen name="set_back">17.0dp</dimen>
+    <dimen name="set_choose">20.dp</dimen>
+    <dimen name="set_height">33.3dp</dimen>
+    <dimen name="set_item_height">44dp</dimen>
+    <dimen name="stockinfo_fiveprice_gap">2dp</dimen>
+    <dimen name="sub_title_height">40dip</dimen>
+    <dimen name="t_offer_height_gou">36.7dp</dimen>
+    <dimen name="t_offer_height_item">34.6dp</dimen>
+    <dimen name="t_offer_height_title">33.3dp</dimen>
+    <dimen name="t_offer_title_width">76dp</dimen>
+    <dimen name="t_offer_width">160dp</dimen>
+    <dimen name="trade_item_height">43.3dp</dimen>
+    <dimen name="trade_left_item_width">106dp</dimen>
+    <dimen name="trade_margin_A">33.3dp</dimen>
+    <dimen name="trade_margin_B">20dp</dimen>
+    <dimen name="trade_more_item_height">44dp</dimen>
+    <dimen name="trade_more_margin_top">30.7dp</dimen>
+    <dimen name="trade_position_gap">2dp</dimen>
+    <dimen name="trade_position_listview_tab_height">20dp</dimen>
+    <dimen name="trade_position_listview_tab_item_height">62.7dp</dimen>
+    <dimen name="trade_position_margin_A">10dp</dimen>
+    <dimen name="trade_position_margin_B">17.3dp</dimen>
+    <dimen name="trade_position_margin_C">29.3dp</dimen>
+    <dimen name="trade_query_listview_item_padding_height">4.5dp</dimen>
+    <dimen name="trade_query_listview_item_tab_height">33.3dp</dimen>
+    <dimen name="trade_query_listview_tab_height">20dp</dimen>
+    <dimen name="trade_query_margin_A">10dp</dimen>
+    <dimen name="trade_query_radiogroup_height">26.7dp</dimen>
+    <item name="click_remove" type="id"/>
+    <item name="drag_handle" type="id"/>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+    <string name="IDS_BCZXSJ">保持在线时间</string>
+    <string name="IDS_Back">返回</string>
+    <string name="IDS_Bank">银行</string>
+    <string name="IDS_BaoCun">保存</string>
+    <string name="IDS_BaoZhengJinYuE">保证金余额</string>
+    <string name="IDS_BeiDui">备兑</string>
+    <string name="IDS_BeiDuiSDJS">备兑锁定/解锁</string>
+    <string name="IDS_BeiDuiZhengQuanCC">备兑证券持仓</string>
+    <string name="IDS_BeiDuiZhengQuanWT">备兑锁定委托</string>
+    <string name="IDS_BeiZhu">备注</string>
+    <string name="IDS_BianJi">编辑</string>
+    <string name="IDS_BiaoDi">标的</string>
+    <string name="IDS_BiaoDiJuanShouFuShuLiang">标的劵收付数量</string>
+    <string name="IDS_BiaoDiWu">标的物     :</string>
+    <string name="IDS_BoDongYuQi">波动预期</string>
+    <string name="IDS_BuHuoYue">不活跃</string>
+    <string name="IDS_BuyEr">买2</string>
+    <string name="IDS_BuyJia">买价</string>
+    <string name="IDS_BuyKai">买开</string>
+    <string name="IDS_BuyLiang">买量</string>
+    <string name="IDS_BuyPing">买平</string>
+    <string name="IDS_BuySan">买3</string>
+    <string name="IDS_BuySi">买4</string>
+    <string name="IDS_BuyWu">买5</string>
+    <string name="IDS_BuyYi">买1</string>
+    <string name="IDS_CangCha">仓差</string>
+    <string name="IDS_ChaXun">查询</string>
+    <string name="IDS_CheDan">撤单 </string>
+    <string name="IDS_CheDanShuLiang">撤单数量</string>
+    <string name="IDS_ChengJiaoBianMa">成交编码</string>
+    <string name="IDS_ChengJiaoJia">成交价</string>
+    <string name="IDS_ChengJiaoJiaGe">成交价格</string>
+    <string name="IDS_ChengJiaoJinE">成交金额</string>
+    <string name="IDS_ChengJiaoRiQi">成交日期</string>
+    <string name="IDS_ChengJiaoShiJian">成交时间</string>
+    <string name="IDS_ChengJiaoShuLiang">成交数量</string>
+    <string name="IDS_ChiCang">持仓</string>
+    <string name="IDS_ChiCangKeYong">持仓/可用</string>
+    <string name="IDS_ChiCangLiang">持仓量</string>
+    <string name="IDS_ChiCangShiZhi">持仓市值</string>
+    <string name="IDS_DSJ">对手价 </string>
+    <string name="IDS_DanZhangChengBen">单张成本 </string>
+    <string name="IDS_DangRiYingKui">当日盈亏</string>
+    <string name="IDS_DaoQiRi">到期日</string>
+    <string name="IDS_DaoQiYueFen">到期月份:</string>
+    <string name="IDS_Delta">Delta</string>
+    <string name="IDS_DengLu">登录</string>
+    <string name="IDS_FaShengGaiLv">发生概率</string>
+    <string name="IDS_FenShiTu">分时图</string>
+    <string name="IDS_FengXianDu">风险度</string>
+    <string name="IDS_FuDongYingKui">浮动盈亏</string>
+    <string name="IDS_GJJYANSX">高级交易按钮顺序</string>
+    <string name="IDS_GJJYANSX_ARRAY">买开  买平   卖开  买平    </string>
+    <string name="IDS_Gamma">Gamma</string>
+    <string name="IDS_GangGanBeiShu">杠杆倍数:</string>
+    <string name="IDS_GangGanLv">杠杆率</string>
+    <string name="IDS_GangGang">--</string>
+    <string name="IDS_Gaojijiaoyimoshi">高级交易模式</string>
+    <string name="IDS_GengDuo">更多</string>
+    <string name="IDS_GuSuanSunYiBi"> 估算损益比</string>
+    <string name="IDS_GuanBi">关闭</string>
+    <string name="IDS_HangQing">行情</string>
+    <string name="IDS_HeYueBianMa">合约编码</string>
+    <string name="IDS_HeYueDaiMa">合约代码</string>
+    <string name="IDS_HeYueMingCheng">合约名称</string>
+    <string name="IDS_HeYueShaiXuanQi">合约筛选器</string>
+    <string name="IDS_HuaTaiZhengQuan">华泰证券</string>
+    <string name="IDS_HuoYue">活跃</string>
+    <string name="IDS_HuoYueDu">活跃度</string>
+    <string name="IDS_HuoYueDuDian">活跃度:</string>
+    <string name="IDS_JYSLMRJL">交易数量默认加量</string>
+    <string name="IDS_JiaGe">价格</string>
+    <string name="IDS_JiaZaiZhongQingShaohou">加载中，请稍候……</string>
+    <string name="IDS_JiaZiXuan">加自选</string>
+    <string name="IDS_JianPanBaoJia">键盘报价</string>
+    <string name="IDS_JiaoTongYinHang">交通银行（人民币）</string>
+    <string name="IDS_JiaoYi">交易</string>
+    <string name="IDS_JiaoYiMiMa">交易密码</string>
+    <string name="IDS_JiaoYiSheZhi">交易设置</string>
+    <string name="IDS_JiaoYiSuo">交易所</string>
+    <string name="IDS_JiaoYiZhangHao">交易帐号</string>
+    <string name="IDS_JieSuanJinE">结算金额</string>
+    <string name="IDS_JinQiKeXingQuanHeYue">行权合约</string>
+    <string name="IDS_JuLie">剧烈 </string>
+    <string name="IDS_JunJiaXianJia">均价/现价 </string>
+    <string name="IDS_KJFSMRWTJG">快捷反手默认委托价格</string>
+    <string name="IDS_KJFSZDCDSJ">快捷反手自动撤单时间 </string>
+    <string name="IDS_KaiPing">开平</string>
+    <string name="IDS_KaiShiShaiXuan">开始筛选  </string>
+    <string name="IDS_KanDieFuDu">看跌幅度:</string>
+    <string name="IDS_KanZhangDieFuDu">看涨跌幅度:</string>
+    <string name="IDS_KanZhangFuDu">看涨幅度:</string>
+    <string name="IDS_KeChe">可撤</string>
+    <string name="IDS_KeHuZhangHao">客户帐号</string>
+    <string name="IDS_KeQuZiJin">可取资金</string>
+    <string name="IDS_KeSuoDingSL">可锁定数量</string>
+    <string name="IDS_KeYongZiJin">可用资金</string>
+    <string name="IDS_KeZhuanJinE">可转金额</string>
+    <string name="IDS_KeZhuanJinE_Content">98138.1</string>
+    <string name="IDS_KuaiSuBaoJia">快速报价</string>
+    <string name="IDS_LeiXing">类型</string>
+    <string name="IDS_LiLunJia">理论价</string>
+    <string name="IDS_LiShiBoDong">历史波动   :</string>
+    <string name="IDS_LiShiChaXun">历史指派</string>
+    <string name="IDS_LiShiChengJiao">历史成交</string>
+    <string name="IDS_LiShiWeiTuo">历史委托</string>
+    <string name="IDS_MINUTE">10分钟 </string>
+    <string name="IDS_MRCDSL">默认拆单手数 </string>
+    <string name="IDS_MaiMai">买卖</string>
+    <string name="IDS_MaiMaiLeiBieMingCheng">买卖类别名称</string>
+    <string name="IDS_MiMaLeiXing">密码类型</string>
+    <string name="IDS_MingXi">明细</string>
+    <string name="IDS_MoRenJiaoYiMoShi">默认交易模式（买开+卖平）</string>
+    <string name="IDS_NeiZaiJiaZhi">内在价值</string>
+    <string name="IDS_PTJYMS">普通交易模式</string>
+    <string name="IDS_PingHuan">平缓</string>
+    <string name="IDS_PingJunYingLi">平均盈利</string>
+    <string name="IDS_PingJunYingLi1">-70%</string>
+    <string name="IDS_PingJunYingLi2">-2160.00</string>
+    <string name="IDS_PingJunYingLi3">-0.01%</string>
+    <string name="IDS_QBPCMRWTJG">全部平仓默认委托价格</string>
+    <string name="IDS_QHJYMS">切换交易模式</string>
+    <string name="IDS_QTSZ">其他 </string>
+    <string name="IDS_QiQuanBiaoDi">期权标的:</string>
+    <string name="IDS_QiQuanBiaoDiDaiMa">期权标的代码</string>
+    <string name="IDS_QiQuanLeiBie">期权类别</string>
+    <string name="IDS_QiQuanName">期权名称</string>
+    <string name="IDS_QiQuanSouSuo">期权搜索</string>
+    <string name="IDS_QingShuRuShuLiang">请输入数量</string>
+    <string name="IDS_QingShuRuXINGQUANSHULIANG">请输入行权数量</string>
+    <string name="IDS_QingShuRuXinJiaoYiMiMa">请输入新交易密码</string>
+    <string name="IDS_QingShuRuYuanJiaoYiMiMa">请输入原交易密码</string>
+    <string name="IDS_QingXuanZe">请选择</string>
+    <string name="IDS_QingZaiShuRuYiCi">请在输入一次</string>
+    <string name="IDS_QuXiao">取消</string>
+    <string name="IDS_QuanBu">全部</string>
+    <string name="IDS_QuanBuBiaoDi">全部标的</string>
+    <string name="IDS_QuanBuRiQi">全部日期</string>
+    <string name="IDS_QueDing">确定</string>
+    <string name="IDS_QueRenChengGong">确认成功</string>
+    <string name="IDS_ReChaoHeYue">热炒合约</string>
+    <string name="IDS_RenGou">认购</string>
+    <string name="IDS_RenGouLeiBie">认购类别</string>
+    <string name="IDS_RenGu">认沽</string>
+    <string name="IDS_RenZhengKouLing">认证口令</string>
+    <string name="IDS_Rho">Rho</string>
+    <string name="IDS_RiXian">日线</string>
+    <string name="IDS_RuMeiYouKeBuShu">如没有可不输</string>
+    <string name="IDS_SECOND">10秒</string>
+    <string name="IDS_SZCZ">深证成指</string>
+    <string name="IDS_SZWL">上证50</string>
+    <string name="IDS_SZZS">上证指数</string>
+    <string name="IDS_SellEr">卖2</string>
+    <string name="IDS_SellJia">卖价</string>
+    <string name="IDS_SellKai">卖开</string>
+    <string name="IDS_SellLiang">卖量</string>
+    <string name="IDS_SellPing">卖平</string>
+    <string name="IDS_SellSan">卖3</string>
+    <string name="IDS_SellSi">卖4</string>
+    <string name="IDS_SellWu">卖5</string>
+    <string name="IDS_Sellyi">卖1</string>
+    <string name="IDS_ShaiXuan">筛选</string>
+    <string name="IDS_ShanChu">删除</string>
+    <string name="IDS_ShangHaiDaZhong">上海大众</string>
+    <string name="IDS_ShangQiJiTuan">上汽集团</string>
+    <string name="IDS_ShangQiJiTuanGou">上汽集团购4月1900A(100201)</string>
+    <string name="IDS_SheZhi">设置</string>
+    <string name="IDS_ShenQingLeiBie">申请类别</string>
+    <string name="IDS_ShengYuTianShu">2014-12-12到期(剩余14天)</string>
+    <string name="IDS_ShiHeRiNeiJiaoYiZhe">（买开+卖平+卖开+买平）</string>
+    <string name="IDS_ShiJian">时间</string>
+    <string name="IDS_ShiJianJiaZhi">时间价值</string>
+    <string name="IDS_ShiJianLiZi">10:22:1</string>
+    <string name="IDS_ShiXuZhi">实虚值</string>
+    <string name="IDS_ShouYi">收益</string>
+    <string name="IDS_ShouYiLv">收益率</string>
+    <string name="IDS_ShuLiang">数量</string>
+    <string name="IDS_ShuZiNum">1.248</string>
+    <string name="IDS_SouSuo">搜索</string>
+    <string name="IDS_TXingBaoJia">T型报价</string>
+    <string name="IDS_Theta">Theta</string>
+    <string name="IDS_TiShi">提示</string>
+    <string name="IDS_TouZhiFangXiang">投资方向:</string>
+    <string name="IDS_TuPianMiaoShu">图片的描述</string>
+    <string name="IDS_TuiChuZhangHu">退出账户 </string>
+    <string name="IDS_TuoDong">拖动</string>
+    <string name="IDS_VERSON">版本号</string>
+    <string name="IDS_VERSON_CONTENT">v 1.0 汇点期权 </string>
+    <string name="IDS_Vega">Vega</string>
+    <string name="IDS_Warning">警告</string>
+    <string name="IDS_WeiTuo">委托 </string>
+    <string name="IDS_WeiTuoBianHao">委托编号</string>
+    <string name="IDS_WeiTuoJia">委托价</string>
+    <string name="IDS_WeiTuoJiaGe">委托价格</string>
+    <string name="IDS_WeiTuoMiaoShu">委托描述</string>
+    <string name="IDS_WeiTuoRiQi">委托日期</string>
+    <string name="IDS_WeiTuoShiJian">委托时间</string>
+    <string name="IDS_WeiTuoShuLiang">委托数量</string>
+    <string name="IDS_WeiTuoZhuangTai">委托状态</string>
+    <string name="IDS_WoShiXinWenGongGaoXiangXiYe">我是新闻公告详细页</string>
+    <string name="IDS_Wu">无 </string>
+    <string name="IDS_WuDang">五档</string>
+    <string name="IDS_XDWXQR">下单无需确认</string>
+    <string name="IDS_XiaDan">下单</string>
+    <string name="IDS_XianLiang">现量</string>
+    <string name="IDS_XianShou">现手</string>
+    <string name="IDS_XiaoXi">消息</string>
+    <string name="IDS_XinJiaoYiMiMa">新交易密码</string>
+    <string name="IDS_XinMiMaQueRen">新密码确认</string>
+    <string name="IDS_XinWenGongGao">新闻公告</string>
+    <string name="IDS_XingQuan">行权</string>
+    <string name="IDS_XingQuanJia">行权价</string>
+    <string name="IDS_XingQuanJiaGe">行权价格</string>
+    <string name="IDS_XingQuanJiaZhi">行权价值</string>
+    <string name="IDS_XingQuanShuLiang">行权数量</string>
+    <string name="IDS_XingQuanWeiTuo">行权委托</string>
+    <string name="IDS_XingQuanZhiPai">行权指派</string>
+    <string name="IDS_XiuGaiChengGone">密码修改成功，请用新密码重新登录！</string>
+    <string name="IDS_XiuGaiMiMa">修改密码 </string>
+    <string name="IDS_XiuGaiRenZhengKouLing">修改认证口令</string>
+    <string name="IDS_XiuGaiShaiXuanTiaoJian">修改筛选条件</string>
+    <string name="IDS_XiuGaiTiaojian">修改条件</string>
+    <string name="IDS_XuanZeJiaoYiMoShi">选择交易模式</string>
+    <string name="IDS_XuanZheYinHang">选择银行 </string>
+    <string name="IDS_YanJiuBaoGao">研究报告</string>
+    <string name="IDS_YanZhengMa">验证码</string>
+    <string name="IDS_YiBan">一般 </string>
+    <string name="IDS_YiChengJiao">已成交</string>
+    <string name="IDS_YiJiaLv">溢价率</string>
+    <string name="IDS_YiSuoDingSL">已锁定数量</string>
+    <string name="IDS_YiWuCangTiShi">该合约需要切换到高级模式进行交易，可在设置>切换交易模式>选择“高级交易模式”</string>
+    <string name="IDS_YinHanBoDongLv">隐含波动率</string>
+    <string name="IDS_YinHangMiMa">银行密码 </string>
+    <string name="IDS_YinHangYuE">银行余额</string>
+    <string name="IDS_YinHangZhuanZhengQuan">银行转证券</string>
+    <string name="IDS_YinZhengZhuanZheng">银衍转账</string>
+    <string name="IDS_YingKuiFenXi">盈亏分析</string>
+    <string name="IDS_YingLiGaiLv">盈利概率</string>
+    <string name="IDS_YingYeTing">营业厅</string>
+    <string name="IDS_Yuan">元 </string>
+    <string name="IDS_YuanJiaoYiMiMa">原交易密码 </string>
+    <string name="IDS_ZhangDieE">涨跌额</string>
+    <string name="IDS_ZhangDieFu">涨跌幅</string>
+    <string name="IDS_ZhangHuLeiXing">账户类型</string>
+    <string name="IDS_ZhenShiGangGanLv">真实杠杆率</string>
+    <string name="IDS_ZhengChang">正常</string>
+    <string name="IDS_ZhengQuan">证券</string>
+    <string name="IDS_ZhengQuanDaiMa">证券代码</string>
+    <string name="IDS_ZhengQuanGongSi">交易站点</string>
+    <string name="IDS_ZhengQuanMingCheng">证券名称</string>
+    <string name="IDS_ZhengQuanZhuanYinHang">证券转银行</string>
+    <string name="IDS_ZhiDaoLe">知道了</string>
+    <string name="IDS_ZhiXuan">自选</string>
+    <string name="IDS_ZhuanZhang">转账</string>
+    <string name="IDS_ZhuanZhangJinE">转账金额</string>
+    <string name="IDS_ZhuanZhangLeiXing">转账类型</string>
+    <string name="IDS_ZhuangTai">状态 </string>
+    <string name="IDS_ZiJinMiMa">资金密码</string>
+    <string name="IDS_ZongLiang">总量</string>
+    <string name="IDS_ZongQuanYi">总资产</string>
+    <string name="IDS_ZongShou">总手</string>
+    <string name="IDS_ZuiDi">最低</string>
+    <string name="IDS_ZuiGao">最高</string>
+    <string name="IDS_ZuiXinJia">最新价</string>
+    <string name="IDS_zq_drcj">当日成交</string>
+    <string name="IDS_zq_lscj">历史成交</string>
+    <string name="IDS_zq_lswt">历史委托</string>
+    <string name="IDS_zq_xgjymm">修改交易密码</string>
+    <string name="IDS_zq_xgsged">新股申购额度</string>
+    <string name="IDS_zq_yhzz">银证转账</string>
+    <string name="IDS_zq_zjls">资金流水</string>
+    <string name="ZQ_BaoCun">保存</string>
+    <string name="ZQ_CJL">成交量1130.12万</string>
+    <string name="ZQ_CaiYGC">财衍观察</string>
+    <string name="ZQ_ChangAnTuoDong">长按拖动</string>
+    <string name="ZQ_CheDan">撤单</string>
+    <string name="ZQ_ChengBenXianJia">成本/现价</string>
+    <string name="ZQ_ChengJiaoE">成交额</string>
+    <string name="ZQ_ChengJiaoLiang">成交量</string>
+    <string name="ZQ_ChiCangKeYong">持仓/可用</string>
+    <string name="ZQ_DanPinName">中国重工(601989)</string>
+    <string name="ZQ_DanPinNum">7.79(+1.28%)</string>
+    <string name="ZQ_Di">低:</string>
+    <string name="ZQ_FenShi">分时</string>
+    <string name="ZQ_FenZhong">分钟</string>
+    <string name="ZQ_GXSJ">更新时间 11:30</string>
+    <string name="ZQ_Gao">高:</string>
+    <string name="ZQ_GengDuo">更多</string>
+    <string name="ZQ_GuPiaoShiZhi">股票/市值</string>
+    <string name="ZQ_GuanYu">关于</string>
+    <string name="ZQ_HQFWQDZ">行情服务器: </string>
+    <string name="ZQ_HangQing">行情</string>
+    <string name="ZQ_HuanShouLv">换手率</string>
+    <string name="ZQ_JXCSSZ">均线参数设置</string>
+    <string name="ZQ_JYFWQDZ">交易服务器: </string>
+    <string name="ZQ_JiaZiXuan">加自选</string>
+    <string name="ZQ_JinKai">今开</string>
+    <string name="ZQ_Kai">开:</string>
+    <string name="ZQ_KeQu">可取</string>
+    <string name="ZQ_KeYong">可用</string>
+    <string name="ZQ_LiuTongShiZhi">流通市值</string>
+    <string name="ZQ_MaiChu">卖出</string>
+    <string name="ZQ_MaiRu">买入</string>
+    <string name="ZQ_MingCheng">名称</string>
+    <string name="ZQ_NeiPan">内盘</string>
+    <string name="ZQ_OneMinute">1分钟</string>
+    <string name="ZQ_PrePage">上一页</string>
+    <string name="ZQ_QYZNJP">启用智能键盘</string>
+    <string name="ZQ_RiXian">日线</string>
+    <string name="ZQ_ShiJian">时间:</string>
+    <string name="ZQ_ShiJianZhi">2015-10-27</string>
+    <string name="ZQ_ShiYingLv">市盈率</string>
+    <string name="ZQ_Shou">收:</string>
+    <string name="ZQ_TuPianMiaoShu">图片描述</string>
+    <string name="ZQ_WLJ">未连接</string>
+    <string name="ZQ_WaiPan">外盘</string>
+    <string name="ZQ_WeiTuo">委托</string>
+    <string name="ZQ_XDWXQR">下单无需确认</string>
+    <string name="ZQ_XinWenGongGao">新闻公告</string>
+    <string name="ZQ_YanJiuBaoGao">研究报告</string>
+    <string name="ZQ_YingKui">盈亏</string>
+    <string name="ZQ_YueK">月K</string>
+    <string name="ZQ_ZhangDie">涨跌:</string>
+    <string name="ZQ_ZhangFu">涨幅:</string>
+    <string name="ZQ_ZhenFu">振幅</string>
+    <string name="ZQ_ZhiDing">置顶</string>
+    <string name="ZQ_ZhouK">周K</string>
+    <string name="ZQ_ZongShiZhi">总市值</string>
+    <string name="ZQ_ZongYinKui">总盈亏</string>
+    <string name="ZQ_ZongZiChan">总资产</string>
+    <string name="ZQ_ZuiDi">最低</string>
+    <string name="ZQ_ZuiGao">最高</string>
+    <string name="ZQ_ZuiXin">最新</string>
+    <string name="ZQ_ZuoShou">昨收</string>
+    <string name="ZQ_app_name">东北证券</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，应用程序出现错误，即将退出。\n请提交错误报告，我们会尽快修复这个问题！</string>
+    <string name="app_menu_surelogout">确定退出程序吗？</string>
+    <string name="app_name">期权模拟交易</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+    <string name="cancle">取消</string>
+    <string name="connect_warn">连接服务器失败</string>
+    <string name="connect_warn_btn">重连</string>
+    <string name="connect_warn_login">返回登录</string>
+    <string name="dbactivity">东证活动</string>
+    <string name="dingyue">订阅信息</string>
+    <string name="friday">周五</string>
+    <string name="hangqing">行情</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="home">首页</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <string name="info">通知公告</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="jiaoyi">交易</string>
+    <string name="load_empty">暂无数据</string>
+    <string name="load_error">加载数据出错</string>
+    <string name="load_full">已加载全部</string>
+    <string name="load_ing">加载中···</string>
+    <string name="load_more">更多</string>
+    <string name="maintab_info">消息</string>
+    <string name="maintab_option">自选</string>
+    <string name="maintab_screen">筛选</string>
+    <string name="maintab_set">设置</string>
+    <string name="maintab_trade">交易</string>
+    <string name="monday">周一</string>
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉查看下一页</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后立即请求下一页</string>
+    <string name="pull_to_refresh_pull_label">下拉请求上一页</string>
+    <string name="pull_to_refresh_refreshing_label">加载中\u2026</string>
+    <string name="pull_to_refresh_release_label">松开后立即请求上一页</string>
+    <string name="qiquan">期权市场</string>
+    <string name="reconnect_warn">连接服务器失败，请检查网络连接</string>
+    <string name="saturday">周六</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="submit_report">提交报告</string>
+    <string name="sunday">周日</string>
+    <string name="sure">确定</string>
+    <string name="thursday">周四</string>
+    <string name="title">标题</string>
+    <string name="today_arg">今天 %1$s</string>
+    <string name="todaynews">今日要闻</string>
+    <string name="tuesday">周二</string>
+    <string name="tv_dealprice">成交价</string>
+    <string name="tv_num">数量</string>
+    <string name="tv_optionname">期权名称</string>
+    <string name="tv_state">状态</string>
+    <string name="tv_time">委托时间</string>
+    <string name="tv_type">类型</string>
+    <string name="tv_weituojia">委托价</string>
+    <string name="wednesday">周三</string>
+    <string name="xinwen">新闻</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <string name="yesterday_arg">昨天 %1$s</string>
+    <string name="zhengquan">证券市场</string>
+    <string name="zixuan">自选</string>
+    <string name="zq_BuFuQuan">不复权</string>
+    <string name="zq_HouFuQuan">后复权</string>
+    <string name="zq_QianFuQuan">前复权</string>
+    <string name="zq_bias">BIAS</string>
+    <string name="zq_chuangyeban">创业板</string>
+    <string name="zq_chuangyebanzhi">创业板指</string>
+    <string name="zq_dingzhi">定制板块</string>
+    <string name="zq_dmi">DMI</string>
+    <string name="zq_findmore">查看更多新闻</string>
+    <string name="zq_guijinshu">贵金属</string>
+    <string name="zq_huoquyzm">获取验证码</string>
+    <string name="zq_hushen">沪深个股</string>
+    <string name="zq_hy_note">股票代码</string>
+    <string name="zq_jiaoyimima">密码</string>
+    <string name="zq_jiaoyizhangdian">交易站点</string>
+    <string name="zq_jiaoyizhanghao">账号</string>
+    <string name="zq_kaihu">开户</string>
+    <string name="zq_kdj">KDJ</string>
+    <string name="zq_macd">MACD</string>
+    <string name="zq_quanqiu">全球指数</string>
+    <string name="zq_rsi">RSI</string>
+    <string name="zq_shangzheng">上证</string>
+    <string name="zq_shangzhengzhishu">上证指数</string>
+    <string name="zq_shenzhengchengzhi">深证成指</string>
+    <string name="zq_tongxunmima">通讯密码</string>
+    <string name="zq_trade_login_baochizaixian">保持在线</string>
+    <string name="zq_trade_login_baocun">保存</string>
+    <string name="zq_trade_login_login">登录</string>
+    <string name="zq_trade_login_yzm">验证码</string>
+    <string name="zq_wr">WR</string>
+    <string name="zq_xuantian">(选填)</string>
+    <string name="zq_zhanghaoleixing">账号类型</string>
+    <string name="zq_zhijingzhanghao">资金账号</string>
+    <string name="zq_zhongxiaoban">中小板</string>
+    <string name="zq_zqgsmc">证券公司名称</string>
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+    <style name="ActionSheetDialogAnimationSet" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in_set</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out_set</item>
+    </style>
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <style name="ActionSheetDialogStyleSet" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimationSet</item>
+    </style>
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_left_out</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="AutoText" parent="android:Theme.DeviceDefault.Light">
+        <item name="autoScaleTextViewStyle">@style/autoScaleTextView</item>
+    </style>
+    <style name="BottomTabStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">3dp</item>
+    </style>
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="HangQingTabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:divider">@android:color/black</item>
+    </style>
+    <style name="MiddleTabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="ProgressDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="SwitchButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="TrendDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_right_out</item>
+    </style>
+    <style name="TrendDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/TrendDialogAnimation</item>
+    </style>
+    <style name="ZQTRADELOGINNAME">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/zq_trade_login_O</item>
+        <item name="android:layout_marginTop">@dimen/zq_trade_login_P</item>
+        <item name="android:textColor">@color/zq_707070</item>
+        <item name="android:textSize">@dimen/font_trade_C</item>
+    </style>
+    <style name="autoScaleTextView">
+
+        <!-- some graphical improvements just for the demo. feel free to remove -->
+        <item name="@android:attr/background">@drawable/border</item>
+        <item name="@android:attr/padding">5dp</item>
+        <item name="@android:attr/gravity">center</item>
+
+        <!-- use the next line to alter the minimum text size (uncomment first) -->
+        <!-- <item name="@attr/minTextSize">10dp</item> -->
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <!-- <item name="android:windowBackground">@color/alpha_bg</item>背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+    <style name="dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#FFF</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="themeSetting" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+</resources>

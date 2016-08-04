@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/zq_marketinfo_detail_padding_B"
+        android:layout_marginRight="@dimen/zq_marketinfo_detail_padding_B"
+        android:background="@drawable/zq_shape_kline_right_kuang"
+        android:scrollbars="none" 
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_zq_kline_right_panel_fq"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/zq_kline_right_panel_rb_bfq"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/zq_BuFuQuan"
+                android:textColor="@drawable/zq_classify_text_selector_blue_black"
+                android:textSize="@dimen/custom_font_tab_13sp" />
+
+            <RadioButton
+                android:id="@+id/zq_kline_right_panel_rb_qfq"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                 android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center"
+                android:singleLine="true"
+                android:enabled="false"
+                android:text="@string/zq_QianFuQuan"
+                android:textColor="@drawable/zq_classify_text_selector_blue_black"
+                android:textSize="@dimen/custom_font_tab_13sp" />
+
+            <RadioButton
+                android:id="@+id/zq_kline_right_panel_rb_hfq"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                 android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:enabled="false"
+                android:layout_gravity="center_horizontal|center"
+                android:singleLine="true"
+                android:text="@string/zq_HouFuQuan"
+                android:textColor="@drawable/zq_classify_text_selector_blue_black"
+                android:textSize="@dimen/custom_font_tab_13sp" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/zq_cecece" />
+
+        <RadioGroup
+            android:id="@+id/rg_zq_kline_right_panel_zb"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/zq_marketinfo_detail_padding_B"
+            android:layout_marginRight="@dimen/zq_marketinfo_detail_padding_B"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/zq_kline_right_panel_rb_cjl"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center"
+                android:singleLine="true"
+                android:text="@string/ZQ_ChengJiaoLiang"
+                android:textColor="@drawable/zq_classify_text_selector_blue_black"
+                android:textSize="@dimen/custom_font_tab_13sp" />
+
+            <RadioButton
+                android:id="@+id/zq_kline_right_panel_rb_macd"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                 android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center"
+                android:singleLine="true"
+                android:text="@string/zq_macd"
+                android:textColor="@drawable/zq_classify_text_selector_blue_black"
+                android:textSize="@dimen/custom_font_tab_13sp" />
+
+            <RadioButton
+                android:id="@+id/zq_kline_right_panel_rb_kdj"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                 android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center"
+                android:singleLine="true"
+                android:text="@string/zq_kdj"
+                android:textColor="@drawable/zq_classify_text_selector_blue_black"
+                android:textSize="@dimen/custom_font_tab_13sp" />
+
+            <RadioButton
+                android:id="@+id/zq_kline_right_panel_rb_rsi"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                 android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center"
+                android:singleLine="true"
+                android:text="@string/zq_rsi"
+                android:textColor="@drawable/zq_classify_text_selector_blue_black"
+                android:textSize="@dimen/custom_font_tab_13sp" />
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/zq_kline_right_panel_rb_wr"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                 android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center"
+                android:singleLine="true"
+                android:text="@string/zq_wr"
+                android:textColor="@drawable/zq_classify_text_selector_blue_black"
+                android:textSize="@dimen/custom_font_tab_13sp" />
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/zq_kline_right_panel_rb_bias"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                 android:background="@color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center"
+                android:singleLine="true"
+                android:text="@string/zq_bias"
+                android:textColor="@drawable/zq_classify_text_selector_blue_black"
+                android:textSize="@dimen/custom_font_tab_13sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

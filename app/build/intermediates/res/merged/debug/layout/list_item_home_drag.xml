@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/optional_scroll_tab_item"
+    android:orientation="vertical" >
+
+    <RelativeLayout        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+         >
+
+        <ImageView
+            android:id="@id/drag_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/optional_drag"
+            android:contentDescription="@string/IDS_TuPianMiaoShu" />
+
+        <ImageView
+            android:id="@+id/img_market_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/drag_handle"
+            android:contentDescription="@string/IDS_TuPianMiaoShu" />
+
+        <TextView
+            android:id="@+id/headEditActivity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_market_icon"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4d4d4d"
+            android:textSize="@dimen/font_optional_D" />
+
+        <ImageView
+            android:id="@+id/click_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/xh_zidingyi_cut" />
+
+        <ImageView
+            android:id="@+id/click_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/xh_zidingyi_add"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#f3f3f3" />
+
+</LinearLayout>

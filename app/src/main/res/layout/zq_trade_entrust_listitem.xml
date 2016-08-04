@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/zq_trade_wt_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zq_cc_item_drawable"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/zq_buy_idex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" >
+                </ImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <com.pengbo.mhdzq.view.AutoScaleTextView
+                    android:id="@+id/zq_entrust_item_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/zq_414141"
+                    android:textSize="@dimen/zq_hq_size_C" />
+
+                <com.pengbo.mhdzq.view.AutoScaleTextView
+                    android:id="@+id/zq_entrust_item_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="13.5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/zq_414141"
+                    android:textSize="@dimen/zq_hq_size_D" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/zq_entrust_item_weituojia"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingTop="15dp"
+                android:textColor="@color/blue_demand"
+                android:textSize="@dimen/zq_hq_size_C" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/zq_entrust_item_junjia"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingBottom="13.5dp"
+                android:textColor="@color/blue_demand"
+                android:textSize="@dimen/zq_hq_size_C" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.pengbo.mhdzq.view.AutoScaleTextView
+                    android:id="@+id/zq_entrust_item_weituoliang"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingTop="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_demand"
+                    android:textSize="@dimen/zq_hq_size_C" />
+
+                <com.pengbo.mhdzq.view.AutoScaleTextView
+                    android:id="@+id/zq_entrust_item_chengjiaoliang"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingBottom="13.5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_demand"
+                    android:textSize="@dimen/zq_hq_size_C" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5" >
+
+            <TextView
+                android:id="@+id/zq_entrust_item_zhuangtai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/zq_hq_size_D" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/zq_trade_wt_layout"
+        android:background="@color/zq_ededed" />
+
+</RelativeLayout>

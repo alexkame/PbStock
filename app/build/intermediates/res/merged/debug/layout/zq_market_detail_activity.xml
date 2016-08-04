@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zq_ffffff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true" >
+	<!-- android:fitsSystemWindows="true"
+    android:clipToPadding="true"    处理抬头往上移动 -->
+    
+    
+    <LinearLayout
+        android:id="@+id/llayout_detail_bottom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_marketinfo_detail_rg_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_zq_market_deail_zixuan"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/zq_detail_jiazixuan"
+            android:text="@string/ZQ_JiaZiXuan"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_marketinfo_detail_font_F" />
+
+        <Button
+            android:id="@+id/btn_zq_market_deail_buy"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/zq_detail_mairu"
+            android:text="@string/ZQ_MaiRu"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_marketinfo_detail_font_F" />
+
+        <Button
+            android:id="@+id/btn_zq_market_deail_sell"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/zq_detail_maichu"
+            android:text="@string/ZQ_MaiChu"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_marketinfo_detail_font_F" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/llayout_detail_bottom_btn"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/include_zq_mystock_head"
+            layout="@layout/zq_dbzq_public_head_black" />
+        
+        <include
+            android:id="@+id/include_zq_mystock_zdbj"
+            layout="@layout/zq_market_detail_zd_and_more_textview" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" 
+            android:fadingEdge="none">
+
+           <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+            	android:focusableInTouchMode="true" >
+
+                <include
+                    android:id="@+id/include_zq_mystock_zdbj"
+                    layout="@layout/zq_market_detail_zd_and_more_textview_b" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.1dp"
+                    android:background="@color/zq_999999" />
+
+                <RadioGroup
+                    android:id="@+id/rg_trend_kline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/zq_marketinfo_detail_rg_fenshi_height"
+                    android:background="@color/zq_ededed"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_fenshi"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/zq_marketinfo_detail_rg_fenshi_height"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/zq_selector_bcg_color_kline_rg"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableBottom="@drawable/zq_shape_bottom_heng_select_unselect"
+                        android:gravity="center|center_horizontal"
+                        android:singleLine="true"
+                        android:text="@string/ZQ_FenShi"
+                        android:textColor="@drawable/zq_selector_tv_color_kline_rg"
+                        android:textSize="@dimen/zq_marketinfo_detail_font_C" />
+
+                    <RadioButton
+                        android:id="@+id/rb_rixian"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/zq_marketinfo_detail_rg_fenshi_height"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/zq_selector_bcg_color_kline_rg"
+                        android:button="@null"
+                        android:drawableBottom="@drawable/zq_shape_bottom_heng_select_unselect"
+                        android:gravity="center|center_horizontal"
+                        android:singleLine="true"
+                        android:text="@string/ZQ_RiXian"
+                        android:textColor="@drawable/zq_selector_tv_color_kline_rg"
+                        android:textSize="@dimen/zq_marketinfo_detail_font_C" />
+
+                    <RadioButton
+                        android:id="@+id/rb_zhouxian"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/zq_marketinfo_detail_rg_fenshi_height"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/zq_selector_bcg_color_kline_rg"
+                        android:button="@null"
+                        android:drawableBottom="@drawable/zq_shape_bottom_heng_select_unselect"
+                        android:gravity="center|center_horizontal"
+                        android:singleLine="true"
+                        android:text="@string/ZQ_ZhouK"
+                        android:textColor="@drawable/zq_selector_tv_color_kline_rg"
+                        android:textSize="@dimen/zq_marketinfo_detail_font_C" />
+
+                    <RadioButton
+                        android:id="@+id/rb_yuexian"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/zq_marketinfo_detail_rg_fenshi_height"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/zq_selector_bcg_color_kline_rg"
+                        android:button="@null"
+                        android:drawableBottom="@drawable/zq_shape_bottom_heng_select_unselect"
+                        android:gravity="center|center_horizontal"
+                        android:singleLine="true"
+                        android:text="@string/ZQ_YueK"
+                        android:textColor="@drawable/zq_selector_tv_color_kline_rg"
+                        android:textSize="@dimen/zq_marketinfo_detail_font_C" />
+
+                    <RadioButton
+                        android:id="@+id/rb_one_minute"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/zq_marketinfo_detail_rg_fenshi_height"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/zq_selector_bcg_color_kline_rg"
+                        android:button="@null"
+                        android:drawableBottom="@drawable/zq_shape_bottom_heng_select_unselect"
+                        android:drawableRight="@drawable/zq_rb_xiala"
+                        android:ellipsize="none"
+                        android:gravity="center|center_horizontal"
+                        android:paddingRight="@dimen/zq_marketinfo_detail_margin_C"
+                        android:singleLine="true"
+                        android:text="@string/ZQ_FenZhong"
+                        android:textColor="@drawable/zq_selector_tv_color_kline_rg"
+                        android:textSize="@dimen/zq_marketinfo_detail_font_C" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.1dp"
+                    android:background="@color/zq_999999" />
+
+                <FrameLayout
+                    android:id="@+id/zq_trend_kline_framelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zq_marketinfo_detail_trend_height"
+                    android:paddingBottom="@dimen/zq_marketinfo_detail_margin_F"
+                    android:paddingTop="@dimen/zq_marketinfo_detail_margin_F" >
+
+                    <ViewFlipper
+                        android:id="@+id/zq_trend_kline_flipper"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center" >
+                    </ViewFlipper>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.1dp"
+                    android:background="@color/zq_999999" />
+
+                <RadioGroup
+                    android:id="@+id/rg_news_report"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/zq_marketinfo_detail_rg_news_height"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_xinwengonggao"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_selector_bcg_color_kline_rg"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableBottom="@drawable/zq_shape_bottom_heng_select_unselect"
+                        android:gravity="center"
+                        android:text="@string/ZQ_XinWenGongGao"
+                        android:textColor="@drawable/zq_selector_tv_color_kline_rg"
+                        android:textSize="@dimen/zq_marketinfo_detail_font_C" />
+
+                    <RadioButton
+                        android:id="@+id/rb_yanjiubaogao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/zq_selector_bcg_color_kline_rg"
+                        android:button="@null"
+                        android:drawableBottom="@drawable/zq_shape_bottom_heng_select_unselect"
+                        android:gravity="center"
+                        android:text="@string/ZQ_YanJiuBaoGao"
+                        android:textColor="@drawable/zq_selector_tv_color_kline_rg"
+                        android:textSize="@dimen/zq_marketinfo_detail_font_C" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.1dp"
+                    android:background="@color/zq_999999" />
+
+                
+                 <com.pengbo.mhdzq.view.ListViewForScrollView
+                    android:id="@+id/zq_news_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="#00000000" >
+                </com.pengbo.mhdzq.view.ListViewForScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- 包裹上面从上到下的布局 -->
+
+</RelativeLayout>

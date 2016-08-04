@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_demand" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trade_query_listview_tab_height"
+        android:background="@drawable/order_bg02"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/IDS_WeiTuoShiJian"
+            android:textColor="@color/demand_8a8a8a"
+            android:textSize="@dimen/font_trade_query_C" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/IDS_QiQuanName"
+            android:textColor="@color/demand_8a8a8a"
+            android:textSize="@dimen/font_trade_query_C" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/IDS_LeiXing"
+            android:textColor="@color/demand_8a8a8a"
+            android:textSize="@dimen/font_trade_query_C" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="@string/IDS_WeiTuoJia"
+            android:textColor="@color/demand_8a8a8a"
+            android:textSize="@dimen/font_trade_query_C" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/IDS_ShuLiang"
+            android:textColor="@color/demand_8a8a8a"
+            android:textSize="@dimen/font_trade_query_C" />
+
+        <TextView
+            android:id="@+id/trade_detail_head_title_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/IDS_ZhuangTai"
+            android:textColor="@color/demand_8a8a8a"
+            android:textSize="@dimen/font_trade_query_C"
+            android:visibility="visible" />
+        <TextView 
+            android:id="@+id/trade_detail_head_title_alreadydeal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/IDS_ChengJiaoJia"
+            android:textColor="@color/demand_8a8a8a"
+            android:textSize="@dimen/font_trade_query_C" 
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</LinearLayout>

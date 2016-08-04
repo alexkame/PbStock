@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pbmarkets version="2.4" updateDate="2015-11-26">
+    <pbmarket name="沪深个股" id="800" default="1">
+        <image normal="yinhang.png" focus="yinhang.png" />
+        <Rules>
+            <Rule Category="Market" MarketID="1000"/>
+            <Rule Category="Market" MarketID="1001"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="全球指数" id="810" default="1">
+        <image normal="language.png" focus="language.png" />
+        <Rules>
+            <Rule Category="Market" MarketID="13000"/>
+            <Rule Category="Market" MarketID="13001"/>
+            <Rule Category="Market" MarketID="13002"/>
+            <Rule Category="Market" MarketID="13003"/>
+            <Rule Category="Market" MarketID="13004"/>
+            <Rule Category="Market" MarketID="13005"/>
+            <Rule Category="Market" MarketID="13006"/>
+            <Rule Category="Market" MarketID="13007"/>
+            <Rule Category="Market" MarketID="13008"/>
+            <Rule Category="Market" MarketID="13009"/>
+            <Rule Category="Market" MarketID="13010"/>
+            <Rule Category="Market" MarketID="13011"/>
+            <Rule Category="Market" MarketID="13012"/>
+            <Rule Category="Market" MarketID="13013"/>
+            <Rule Category="Market" MarketID="13014"/>
+            <Rule Category="Market" MarketID="13015"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="贵金属" id="811" default="1">
+        <image normal="jinshu.png" focus="jinshu.png" />
+        <Rules>
+            <Rule Category="MarketAndGroup" GroupCode="GJS1" MarketID="12000"/>
+            <Rule Category="MarketAndGroup" GroupCode="GJS2" MarketID="12000"/>
+            <Rule Category="MarketAndGroup" GroupCode="GJS3" MarketID="12000"/>
+            <Rule Category="MarketAndGroup" GroupCode="GJS4" MarketID="12000"/>
+            <Rule Category="MarketAndGroup" GroupCode="GJS5" MarketID="12000"/>
+            <Rule Category="MarketAndGroup" GroupCode="GJS6" MarketID="12000"/>
+            <Rule Category="MarketAndGroup" GroupCode="GJS7" MarketID="12000"/>
+            <Rule Category="MarketAndGroup" GroupCode="GJS8" MarketID="12000"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="定制板块" id="606" default="1">
+    </pbmarket>
+    <pbmarket name="国际外汇" id="809" parentid="606" default="1">
+        <image normal="waihui.png" focus="waihui.png" />
+        <Rules>
+            <Rule Category="MarketAndGroup" GroupCode="FEX1" MarketID="11000" />
+            <Rule Category="MarketAndGroup" GroupCode="FEX2" MarketID="11000" />
+            <Rule Category="MarketAndGroup" GroupCode="FEX3" MarketID="11000" />
+        </Rules>
+    </pbmarket>
+    <pbmarket name="CME" id="814" parentid="606">
+        <image normal="cme.png" focus="cme.png" />
+        <Rules>
+            <Rule Category="MarketAndGroup" GroupCode="COMEX1" MarketID="5000"/>
+            <Rule Category="MarketAndGroup" GroupCode="COMEX2" MarketID="5000"/>
+            <Rule Category="MarketAndGroup" GroupCode="COMEX3" MarketID="5000"/>
+            <Rule Category="MarketAndGroup" GroupCode="COMEX4" MarketID="5000"/>
+            <Rule Category="MarketAndGroup" GroupCode="COMEX5" MarketID="5000"/>
+            <Rule Category="MarketAndGroup" GroupCode="NYMEYY" MarketID="5001"/>
+            <Rule Category="MarketAndGroup" GroupCode="NYMERY" MarketID="5001"/>
+            <Rule Category="MarketAndGroup" GroupCode="CBOT1" MarketID="5002"/>
+            <Rule Category="MarketAndGroup" GroupCode="CBOT2" MarketID="5002"/>
+            <Rule Category="MarketAndGroup" GroupCode="CBOT3" MarketID="5002"/>
+            <Rule Category="MarketAndGroup" GroupCode="HBQH" MarketID="5005"/>
+            <Rule Category="MarketAndGroup" GroupCode="CMEQZ" MarketID="5006"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="LME" id="812" parentid="606">
+        <image normal="lme.png" focus="lme.png" />
+        <Rules>
+            <Rule Category="MarketAndGroup" GroupCode="LMEDZ" MarketID="4000"/>
+            <Rule Category="MarketAndGroup" GroupCode="LMECW" MarketID="4000"/>
+            <Rule Category="MarketAndGroup" GroupCode="LMEXH" MarketID="4000"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="ICE" id="813" parentid="606">
+        <image normal="ice.png" focus="ice.png" />
+        <Rules>
+            <Rule Category="MarketAndGroup" GroupCode="NYMEXMH" MarketID="5003"/>
+            <Rule Category="MarketAndGroup" GroupCode="NYMEXBT" MarketID="5004"/>
+            <Rule Category="MarketAndGroup" GroupCode="ICEQZ" MarketID="4002"/>
+            <Rule Category="MarketAndGroup" GroupCode="BLTYY" MarketID="4001"/>
+            <Rule Category="MarketAndGroup" GroupCode="BLTCY" MarketID="4001"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="日本期货" id="815" parentid="606">
+        <image normal="tocom.png" focus="tocom.png" />
+        <Rules>
+            <Rule Category="MarketAndGroup" GroupCode="TOCM1" MarketID="7000"/>
+            <Rule Category="MarketAndGroup" GroupCode="TOCM2" MarketID="7000"/>
+            <Rule Category="MarketAndGroup" GroupCode="TOCM3" MarketID="7000"/>
+            <Rule Category="MarketAndGroup" GroupCode="TOCM4" MarketID="7000"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="马来期货" id="816" parentid="606">
+        <image normal="bmd.png" focus="bmd.png" />
+        <Rules>
+            <Rule Category="MarketAndGroup" GroupCode="ZLY" MarketID="8000"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="国债利率" id="817" parentid="606">
+        <image normal="gzll.png" focus="gzll.png" />
+        <Rules>
+            <Rule Category="MarketAndGroup" GroupCode="TYCJ" MarketID="14000"/>
+            <Rule Category="MarketAndGroup" GroupCode="ZZGGZ" MarketID="14000"/>
+            <Rule Category="MarketAndGroup" GroupCode="YHJGZ" MarketID="14000"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="上期所" id="806" parentid="606">
+        <image normal="sh.png" focus="sh.png" />
+        <Rules>
+            <Rule Category="MarketAndGroup" GroupCode="SHJSZS" MarketID="22001"/>
+            <Rule Category="MarketAndCode" MarketID="21005" Code="0100*"/>
+            <Rule Category="MarketAndCode" MarketID="2001" Code="0100*"/>
+            <Rule Category="MarketAndCode" MarketID="21005" Code="0101*"/>
+            <Rule Category="MarketAndCode" MarketID="2001" Code="0101*"/>
+            <Rule Category="MarketAndCode" MarketID="21005" Code="0103*"/>
+            <Rule Category="MarketAndCode" MarketID="2001" Code="0103*"/>
+            <Rule Category="MarketAndCode" MarketID="21005" Code="0109*"/>
+            <Rule Category="MarketAndCode" MarketID="2001" Code="0109*"/>
+            <Rule Category="MarketAndCode" MarketID="21005" Code="0107*"/>
+            <Rule Category="MarketAndCode" MarketID="2001" Code="0107*"/>
+            <Rule Category="MarketAndCode" MarketID="21001" Code="0102*"/>
+            <Rule Category="MarketAndCode" MarketID="2000" Code="0102*"/>
+            <Rule Category="MarketAndCode" MarketID="21005" Code="0106*"/>
+            <Rule Category="MarketAndCode" MarketID="2001" Code="0106*"/>
+            <Rule Category="MarketAndCode" MarketID="21001" Code="0108*"/>
+            <Rule Category="MarketAndCode" MarketID="2000" Code="0108*"/>
+            <Rule Category="MarketAndCode" MarketID="21005" Code="0105*"/>
+            <Rule Category="MarketAndCode" MarketID="2001" Code="0105*"/>
+            <Rule Category="MarketAndCode" MarketID="21005" Code="0110*"/>
+            <Rule Category="MarketAndCode" MarketID="2001" Code="0110*"/>
+            <Rule Category="MarketAndCode" MarketID="21005" Code="0111*"/>
+            <Rule Category="MarketAndCode" MarketID="21005" Code="0121*"/>
+            <Rule Category="MarketAndCode" MarketID="2001" Code="0111*"/>
+            <Rule Category="MarketAndCode" MarketID="2001" Code="0121*"/>
+            <Rule Category="MarketAndCode" MarketID="21005" Code="0130*"/>
+            <Rule Category="MarketAndCode" MarketID="2001" Code="0130*"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="大商所" id="807" parentid="606">
+        <image normal="dalian.png" focus="dalian.png" />
+        <Rules>
+            <Rule Category="MarketAndGroup" GroupCode="DLNCPZS" MarketID="22002"/>
+            <Rule Category="MarketAndCode" MarketID="21006" Code="0210*"/>
+            <Rule Category="MarketAndCode" MarketID="21006" Code="0220*"/>
+            <Rule Category="MarketAndCode" MarketID="2101" Code="0210*"/>
+            <Rule Category="MarketAndCode" MarketID="2101" Code="0220*"/>
+            <Rule Category="MarketAndCode" MarketID="21006" Code="0230*"/>
+            <Rule Category="MarketAndCode" MarketID="2101" Code="0230*"/>
+            <Rule Category="MarketAndCode" MarketID="21002" Code="0203*"/>
+            <Rule Category="MarketAndCode" MarketID="2100" Code="0203*"/>
+            <Rule Category="MarketAndCode" MarketID="21006" Code="0201*"/>
+            <Rule Category="MarketAndCode" MarketID="2101" Code="0201*"/>
+            <Rule Category="MarketAndCode" MarketID="21006" Code="0202*"/>
+            <Rule Category="MarketAndCode" MarketID="2101" Code="0202*"/>
+            <Rule Category="MarketAndCode" MarketID="21006" Code="0205*"/>
+            <Rule Category="MarketAndCode" MarketID="2101" Code="0205*"/>
+            <Rule Category="MarketAndCode" MarketID="21002" Code="0204*"/>
+            <Rule Category="MarketAndCode" MarketID="2100" Code="0204*"/>
+            <Rule Category="MarketAndCode" MarketID="21002" Code="0206*"/>
+            <Rule Category="MarketAndCode" MarketID="2100" Code="0206*"/>
+            <Rule Category="MarketAndCode" MarketID="21006" Code="0207*"/>
+            <Rule Category="MarketAndCode" MarketID="2101" Code="0207*"/>
+            <Rule Category="MarketAndCode" MarketID="21006" Code="0208*"/>
+            <Rule Category="MarketAndCode" MarketID="2101" Code="0208*"/>
+            <Rule Category="MarketAndCode" MarketID="21006" Code="0231*"/>
+            <Rule Category="MarketAndCode" MarketID="2101" Code="0231*"/>
+            <Rule Category="MarketAndCode" MarketID="21002" Code="0209*"/>
+            <Rule Category="MarketAndCode" MarketID="2100" Code="0209*"/>
+            <Rule Category="MarketAndCode" MarketID="21002" Code="0232*"/>
+            <Rule Category="MarketAndCode" MarketID="2100" Code="0232*"/>
+            <Rule Category="MarketAndCode" MarketID="21002" Code="0233*"/>
+            <Rule Category="MarketAndCode" MarketID="2100" Code="0233*"/>
+            <Rule Category="MarketAndCode" MarketID="21002" Code="0234*"/>
+            <Rule Category="MarketAndCode" MarketID="2100" Code="0234*"/>
+            <Rule Category="MarketAndCode" MarketID="21002" Code="0235*"/>
+            <Rule Category="MarketAndCode" MarketID="2100" Code="0235*"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="郑商所" id="808" parentid="606">
+        <image normal="zhengzhou.png" focus="zhengzhou.png" />
+        <Rules>
+            <Rule Category="MarketAndCode" MarketID="21003" Code="0303*"/>
+            <Rule Category="MarketAndCode" MarketID="2200" Code="0303*"/>
+            <Rule Category="MarketAndCode" MarketID="21003" Code="0306*"/>
+            <Rule Category="MarketAndCode" MarketID="2200" Code="0306*"/>
+            <Rule Category="MarketAndCode" MarketID="21007" Code="0313*"/>
+            <Rule Category="MarketAndCode" MarketID="21007" Code="0323*"/>
+            <Rule Category="MarketAndCode" MarketID="2201" Code="0313*"/>
+            <Rule Category="MarketAndCode" MarketID="2201" Code="0323*"/>
+            <Rule Category="MarketAndCode" MarketID="21007" Code="0305*"/>
+            <Rule Category="MarketAndCode" MarketID="2201" Code="0305*"/>
+            <Rule Category="MarketAndCode" MarketID="21007" Code="0307*"/>
+            <Rule Category="MarketAndCode" MarketID="2201" Code="0307*"/>
+            <Rule Category="MarketAndCode" MarketID="21003" Code="0308*"/>
+            <Rule Category="MarketAndCode" MarketID="2200" Code="0308*"/>
+            <Rule Category="MarketAndCode" MarketID="21003" Code="0309*"/>
+            <Rule Category="MarketAndCode" MarketID="2200" Code="0309*"/>
+            <Rule Category="MarketAndCode" MarketID="21007" Code="0304*"/>
+            <Rule Category="MarketAndCode" MarketID="2201" Code="0304*"/>
+            <Rule Category="MarketAndCode" MarketID="21003" Code="0330*"/>
+            <Rule Category="MarketAndCode" MarketID="2200" Code="0330*"/>
+            <Rule Category="MarketAndCode" MarketID="21003" Code="0331*"/>
+            <Rule Category="MarketAndCode" MarketID="2200" Code="0331*"/>
+            <Rule Category="MarketAndCode" MarketID="21007" Code="0332*"/>
+            <Rule Category="MarketAndCode" MarketID="2201" Code="0332*"/>
+            <Rule Category="MarketAndCode" MarketID="21003" Code="0333*"/>
+            <Rule Category="MarketAndCode" MarketID="2200" Code="0333*"/>
+            <Rule Category="MarketAndCode" MarketID="21003" Code="0334*"/>
+            <Rule Category="MarketAndCode" MarketID="2200" Code="0334*"/>
+            <Rule Category="MarketAndCode" MarketID="21003" Code="0335*"/>
+            <Rule Category="MarketAndCode" MarketID="2200" Code="0335*"/>
+            <Rule Category="MarketAndCode" MarketID="21003" Code="0336*"/>
+            <Rule Category="MarketAndCode" MarketID="21003" Code="0337*"/>
+            <Rule Category="MarketAndCode" MarketID="2200" Code="0336*"/>
+            <Rule Category="MarketAndCode" MarketID="2200" Code="0337*"/>
+        </Rules>
+    </pbmarket>
+    <pbmarket name="中金所" id="805" parentid="606">
+        <image normal="zhongjingsuo.png" focus="zhongjingsuo.png" />
+        <Rules>
+            <Rule Category="MarketAndCode" MarketID="1000" Code="000300"/>
+            <Rule Category="MarketAndCode" MarketID="21004" Code="0401*"/>
+            <Rule Category="MarketAndCode" MarketID="2300" Code="0401*"/>
+            <Rule Category="MarketAndCode" MarketID="1000" Code="000016"/>
+            <Rule Category="MarketAndCode" MarketID="21004" Code="0403*"/>
+            <Rule Category="MarketAndCode" MarketID="2300" Code="0403*"/>
+            <Rule Category="MarketAndCode" MarketID="1000" Code="000905"/>
+            <Rule Category="MarketAndCode" MarketID="21004" Code="0404*"/>
+            <Rule Category="MarketAndCode" MarketID="2300" Code="0404*"/>
+            <Rule Category="MarketAndCode" MarketID="2300" Code="0402*"/>
+            <Rule Category="MarketAndCode" MarketID="2300" Code="0405*"/>
+            <Rule Category="MarketAndCode" MarketID="2300" Code="0406*"/>
+        </Rules>
+    </pbmarket>
+</pbmarkets>

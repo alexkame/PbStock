@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.pengbo.mhdzq.view.AutoScaleTextView
+        android:id="@+id/tv_detail_now_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="----"
+        android:textColor="@color/zq_212121"
+        android:textSize="@dimen/zq_detail_font_A" />
+
+    
+    <com.pengbo.mhdzq.view.AutoScaleTextView
+            android:id="@+id/tv_detail_zd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="-- --"
+            android:textColor="@color/zq_212121"
+            android:textSize="@dimen/zq_detail_font_F"
+            />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:paddingTop="14dp" 
+    android:paddingBottom="11dp" >
+
+    <TextView
+        android:id="@+id/tv_news"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxWidth="@dimen/zq_homepager_listview_250dp"
+        android:paddingLeft="@dimen/zq_homepager_listview_24dp"
+        android:singleLine="true"
+        android:textColor="@color/zq_2d3e50"
+        android:textSize="@dimen/zq_font_D" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/zq_mainhome_clock"
+        android:maxLines="1"
+        android:paddingRight="@dimen/zq_homepager_listview_8dp"
+        android:text="11.11"
+        android:textColor="@color/zq_2d3e50"
+        android:textSize="@dimen/zq_font_D" />
+
+</LinearLayout>

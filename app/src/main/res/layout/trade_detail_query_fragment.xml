@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_demand"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/tradequery_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trade_query_radiogroup_height"
+        android:layout_marginBottom="@dimen/trade_query_margin_A"
+        android:layout_marginLeft="@dimen/trade_query_margin_A"
+        android:layout_marginRight="@dimen/trade_query_margin_A"
+        android:layout_marginTop="@dimen/trade_query_margin_A"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tradequery_rb_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_white_left_selected_unselected"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/IDS_QuanBu"
+            android:textColor="@drawable/classify_text_selector_2"
+            android:textSize="@dimen/font_trade_query_B" />
+
+        <RadioButton
+            android:id="@+id/tradequery_rb_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_white_middle_selected_unselected"
+            android:checked="true"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/IDS_KeChe"
+            android:textColor="@drawable/classify_text_selector_2"
+            android:textSize="@dimen/font_trade_query_B" />
+
+        <RadioButton
+            android:id="@+id/tradequery_rb_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_white_right_selected_unselected"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/IDS_YiChengJiao"
+            android:textColor="@drawable/classify_text_selector_2"
+            android:textSize="@dimen/font_trade_query_B" />
+    </RadioGroup>
+
+    <include layout="@layout/trade_detail_query_head_title" />
+
+    <ListView
+        android:id="@+id/trade_detail_query_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="#00000000" >
+    </ListView>
+
+</LinearLayout>

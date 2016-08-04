@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zq_f5f5f5" >
+
+    <RelativeLayout
+        android:id="@+id/zq_news_activity_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_public_head_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black" >
+
+        <RadioGroup
+            android:id="@+id/rgroup_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <RadioButton
+                android:id="@+id/rbutton_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zq_shape_white_left_selected_unselected"
+                android:gravity="center"
+                android:button="@null"
+                android:checked="true"
+                android:text=""
+                android:textSize="1sp"
+                 />
+
+            <RadioButton
+                android:id="@+id/rbutton_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zq_shape_white_right_selected_unselected"
+                android:gravity="center"
+                android:button="@null"
+                android:text=""
+                android:textSize="1sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/zq_news_activity_head"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider"
+        android:orientation="vertical" >
+
+        <com.pengbo.mhdzq.widget.HorizontalListView
+            android:id="@+id/news_hlv_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim_80px" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#d2d2d2" />
+
+        <ListView
+            android:id="@+id/lv_news_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/zq_hangqing_navbar_height"
+            android:divider="@null" >
+        </ListView>
+
+        <WebView
+            android:id="@+id/webView_yanbao"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/zq_hangqing_navbar_height" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rb_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zq_hangqing_navbar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/zq_mainhome_radiobutton"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/zq_btn_home_pressed_selector"
+            android:drawableTop="@drawable/zq_btn_home_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_qiquan"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/zq_btn_home_pressed_selector"
+            android:drawableTop="@drawable/zq_btn_qiquan_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_zhengquan"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/zq_btn_home_pressed_selector"
+            android:drawableTop="@drawable/zq_btn_zhengquan_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selecter_tab_background"
+            android:drawableTop="@drawable/zq_btn_xinwen_selector" />
+    </RadioGroup>
+
+</RelativeLayout>

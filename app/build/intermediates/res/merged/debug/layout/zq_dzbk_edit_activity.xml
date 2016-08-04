@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <include
+        android:id="@+id/homeEditActivity_header"
+        layout="@layout/zq_dbzq_public_head_black" />
+
+    <RelativeLayout
+        android:id="@+id/homeEditActivity_title_name"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_zixuan_title_height"
+        android:layout_below="@id/homeEditActivity_header"
+        android:background="@color/zq_515151"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="定制板块"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_A" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/ZQ_ChangAnTuoDong"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_A" />
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/lv_home_fixed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:clickable="false"
+        android:layout_below="@id/homeEditActivity_title_name"
+        android:visibility="gone">
+        
+    </ListView>
+
+    <com.pengbo.mhdzq.dslv.DragSortListView
+        xmlns:dslv="http://schemas.android.com/apk/res/com.pengbo.mhdzq"
+        android:id="@+id/dslvList"
+        android:layout_below="@id/lv_home_fixed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"
+        android:paddingTop="3dp"
+        android:scrollbars="none"
+        dslv:click_remove_id="@id/click_remove"
+        dslv:collapsed_height="1px"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@id/drag_handle"
+        dslv:drag_scroll_start="0.33"
+        dslv:drag_start_mode="onDown"
+        dslv:float_alpha="0.6"
+        dslv:remove_enabled="true"
+        dslv:remove_mode="clickRemove"
+        dslv:slide_shuffle_speed="0.3" />
+        
+
+
+</RelativeLayout>

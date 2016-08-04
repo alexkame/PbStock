@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbzqmarkets version="1.4" updateDate="2015-12-18">
+    <dbzqmarket name="证券自选" id="600" default="1">
+        <image normal="zq_zqzx.png" focus="zq_zqzx.png" />
+    </dbzqmarket>
+    <dbzqmarket name="沪深个股" id="800" default="1">
+        <image normal="zq_hsgg.png" focus="zq_hsgg.png" />
+    </dbzqmarket>
+    <dbzqmarket name="全球指数" id="810" default="1">
+        <image normal="zq_qqgz.png" focus="zq_qqgz.png" />
+    </dbzqmarket>
+    <dbzqmarket name="贵金属" id="811" default="1">
+        <image normal="zq_gsj.png" focus="zq_gsj.png" />
+    </dbzqmarket>
+    <dbzqmarket name="证券交易" id="607" default="1">
+        <image normal="zq_zqjy.png" focus="zq_zqjy.png" />
+    </dbzqmarket>
+    <dbzqmarket name="期权交易" id="608" default="1">
+        <image normal="zq_qqjy.png" focus="zq_qqjy.png" />
+    </dbzqmarket>
+    <dbzqmarket name="东证之衍" id="609" default="1">
+        <image normal="zq_dzzy.png" focus="zq_dzzy.png" />
+        <link url="http://222.168.95.186/dzzypc"/>
+    </dbzqmarket>
+    <dbzqmarket name="证券开户" id="610" default="1">
+        <image normal="zq_sdkh.png" focus="zq_sdkh.png" />
+    </dbzqmarket>
+</dbzqmarkets>

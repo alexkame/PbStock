@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_hangqing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_hushen"
+            style="@style/HangQingTabStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zq_btn_vphome_selector"
+            android:text="@string/zq_hushen"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_B" />
+
+        <RadioButton
+            android:id="@+id/rb_quanqiu"
+            style="@style/HangQingTabStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zq_btn_vphome_selector"
+            android:text="@string/zq_quanqiu"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_B" />
+
+        <RadioButton
+            android:id="@+id/rb_guijinshu"
+            style="@style/HangQingTabStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zq_btn_vphome_selector"
+            android:text="@string/zq_guijinshu"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_B" />
+
+        <RadioButton
+            android:id="@+id/rb_dingzhi"
+            style="@style/HangQingTabStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zq_btn_vphome_selector"
+            android:text="@string/zq_dingzhi"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_B" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/layout_hangqing_others"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/zq_hangqing_top_padding"
+            android:paddingBottom="@dimen/zq_hangqing_bottom_padding"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/llayout_zhishu1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_name0"
+                    android:padding="@dimen/zq_hangqing_tv_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/zq_shangzhengzhishu"
+                    android:textColor="@color/zq_515151"
+                    android:textSize="@dimen/zq_detail_font_F" />
+
+                <include
+                    android:id="@+id/layout_auto_textview_shangzhengzhishu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/zq_layout_auto_textview" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_zhishu2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_name1"
+                    android:padding="@dimen/zq_hangqing_tv_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/zq_shenzhengchengzhi"
+                    android:textColor="@color/zq_515151"
+                    android:textSize="@dimen/zq_detail_font_F" />
+
+                <include
+                    android:id="@+id/layout_auto_textview_shenzhengchengzhi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/zq_layout_auto_textview" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_zhishu3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_name2"
+                    android:padding="@dimen/zq_hangqing_tv_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/zq_chuangyebanzhi"
+                    android:textColor="@color/zq_515151"
+                    android:textSize="@dimen/zq_detail_font_F" />
+
+                <include
+                    android:id="@+id/layout_auto_textview_chuangyebanzhi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/zq_layout_auto_textview" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ExpandableListView
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:childDivider="#c8c7cc"
+                android:divider="@null"
+                android:dividerHeight="1px"
+                android:gravity="center"
+                android:groupIndicator="@null"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <include
+        android:id="@+id/layout_hangqing_quanqiuzhishu"
+        layout="@layout/zq_layout_hangqing_quanqiuzhishu"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_hangqing_dingzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/zq_layout_hangqing_dingzhi"
+        android:visibility="gone" />
+
+</LinearLayout>

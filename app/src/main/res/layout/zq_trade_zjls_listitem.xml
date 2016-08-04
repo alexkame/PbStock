@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/zq_trade_zjls_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zq_cc_item_drawable"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/trade_query_listview_item_padding_height"
+        android:paddingTop="@dimen/trade_query_listview_item_padding_height" >
+
+        <TextView
+            android:id="@+id/zq_zj_fsrq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/zq_0d7aff"
+            android:textSize="@dimen/zq_hq_size_C" />
+
+        <TextView
+            android:id="@+id/zq_zj_ywbs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/zq_0d7aff"
+            android:textSize="@dimen/zq_hq_size_C" />
+
+        <TextView
+            android:id="@+id/zq_zj_ywje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/zq_0d7aff"
+            android:textSize="@dimen/zq_hq_size_C" />
+
+        <TextView
+            android:id="@+id/zq_zj_zjdqye"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/zq_0d7aff"
+            android:textSize="@dimen/zq_hq_size_C" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/zq_trade_wt_layout"
+        android:background="@color/zq_ededed" />
+
+</RelativeLayout>

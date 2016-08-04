@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trade_xh_buy_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zq_trade_gray" >
+
+    <LinearLayout
+        android:id="@+id/order_hq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/zq_xd_codetext_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zq_gudong_choose_biankuang"
+                android:orientation="horizontal" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/zq_daima_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:hint="@string/zq_hy_note"
+                    android:maxLength="6"
+                    android:paddingBottom="11dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/zq_515151"
+                    android:textColorHint="@color/zq_7f7f7f"
+                    android:textSize="@dimen/zq_jy_size_C" />
+
+                <TextView
+                    android:id="@+id/zq_daima_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="股票名称"
+                    android:textColor="@color/zq_515151"
+                    android:textColorHint="@color/zq_7f7f7f"
+                    android:textSize="@dimen/zq_jy_size_C" >
+                </TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/zq_zh_choose_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/zq_gudong_choose_biankuang"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/img_choose_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/zq_choose_gudong_option_btn" />
+
+                <TextView
+                    android:id="@+id/zq_chose_gudong"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/img_choose_option"
+                    android:background="@null"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:hint="股东代码"
+                    android:paddingBottom="11dp"
+                    android:paddingTop="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/zq_515151"
+                    android:textColorHint="@color/zq_7f7f7f"
+                    android:textSize="@dimen/zq_jy_size_C" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlayout_order_choose_option2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/zq_gudong_choose_biankuang" >
+
+                <LinearLayout
+                    android:id="@+id/zq_reduceprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/zq_xiadan_price_reduce"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textSize="@dimen/zq_trade_detail_G" />
+
+                    <TextView
+                        android:id="@+id/zqupmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="0.01"
+                        android:textSize="@dimen/zq_trade_detail_G" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/zq_addprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/zq_xiadan_price_add"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textSize="@dimen/zq_trade_detail_G" />
+
+                    <TextView
+                        android:id="@+id/zqdownmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="0.01"
+                        android:textSize="@dimen/zq_trade_detail_G" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/zq_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_toLeftOf="@id/zq_addprice"
+                    android:layout_toRightOf="@id/zq_reduceprice"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:numeric="decimal"
+                    android:text=""
+                    android:textColor="@color/zq_515151"
+                    android:textColorHint="@color/zq_7f7f7f"
+                    android:textSize="@dimen/zq_jy_size_C" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="6dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/zqdownlimit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="跌停价"
+                    android:textColor="@color/demand_29b462"
+                    android:textSize="@dimen/zq_trade_detail_B" />
+
+                <TextView
+                    android:id="@+id/zquplimit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="涨停价"
+                    android:textColor="@color/demand_d42626"
+                    android:textSize="@dimen/zq_trade_detail_B" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/zq_gudong_choose_biankuang"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/zq_mairu_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@null"
+                    android:hint="买入数量"
+                    android:numeric="integer"
+                    android:paddingBottom="11dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="12dp"
+                    android:textColor="@color/zq_515151"
+                    android:textColorHint="@color/zq_7f7f7f"
+                    android:textSize="@dimen/zq_jy_size_C" />
+
+                <TextView
+                    android:id="@+id/zq_km_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:paddingBottom="11dp"
+                    android:textColor="@color/blue_demand"
+                    android:textSize="@dimen/zq_trade_detail_F" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/zq_mairu_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zq_trade_edit_height"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/zq_buy_btn"
+                android:text="买入"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/zq_fiveprice_panel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            layout="@layout/trade_zq_fiveprice_order" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayout_order_list_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_hq"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="14dp"
+            android:text="股票/市值"
+            android:textColor="@color/demand_212121"
+            android:textSize="@dimen/zq_jy_size_C" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/demand_cc00ff" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="14dp"
+            android:text="盈亏"
+            android:textColor="@color/demand_212121"
+            android:textSize="@dimen/zq_jy_size_C" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/demand_cc00ff" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="14dp"
+            android:text="持仓/可用"
+            android:textColor="@color/demand_212121"
+            android:textSize="@dimen/zq_jy_size_C" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/demand_cc00ff" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="14dp"
+            android:text="成本/现价"
+            android:textColor="@color/demand_212121"
+            android:textSize="@dimen/zq_jy_size_C" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dp"
+        android:layout_below="@id/lLayout_order_list_header" />
+
+    <ListView
+        android:id="@+id/zq_trade_cc_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/divider"
+        android:clickable="true"
+        android:divider="@null"
+        android:fadingEdge="none" >
+    </ListView>
+
+</RelativeLayout>

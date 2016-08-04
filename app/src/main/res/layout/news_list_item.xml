@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_color_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zq_news_item_height"
+        android:layout_marginLeft="@dimen/optional_margin_A"
+        android:layout_marginRight="@dimen/optional_margin_A"
+        android:paddingBottom="@dimen/zq_shouye_margin_A"
+        android:paddingTop="@dimen/zq_shouye_margin_B" >
+
+        <TextView
+            android:id="@+id/news_report_head"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical|center"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:lineSpacingExtra="@dimen/zq_shouye_margin_C"
+            android:maxLength="50"
+            android:maxLines="2"
+            android:text="----"
+            android:textColor="@color/zq_2d3e50"
+            android:textSize="@dimen/zq_shouye_news_A" />
+
+        <TextView
+            android:id="@+id/news_report_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/zq_shouye_clock"
+            android:drawablePadding="@dimen/zq_shouye_margin_C"
+            android:paddingBottom="@dimen/zq_shouye_margin_A"
+            android:text="2015-10-7"
+            android:textColor="@color/zq_5d5d5d"
+            android:textSize="@dimen/zq_shouye_news_B" />
+    </RelativeLayout>
+
+    <!-- android:ellipsize="end"显示不完的时候 用 。。。代表 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/zq_f3f3f3" />
+
+</LinearLayout>

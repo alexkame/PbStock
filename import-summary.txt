@@ -1,0 +1,206 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* build.xml
+* customlayout\
+* customlayout\AndroidManifest.txt
+* customlayout\activity_mainhomesetting.txt
+* customlayout\activity_setting.txt
+* customlayout\head_edit_activity.txt
+* customlayout\home_edit_activity.txt
+* customlayout\zq_dzbk_edit_activity.txt
+* customlayout\zq_zixuan_edit_activity.txt
+* ic_launcher-web.png
+* proguard-project.txt
+* proguard.cfg
+* project_antbuild.properties
+* theme\
+* theme\app\
+* theme\app\boyihdfz\
+* theme\app\boyihdfz\assets\
+* theme\app\boyihdfz\assets\DBZQHomeActivityMarket.xml
+* theme\app\boyihdfz\assets\MbUserMarket.xml
+* theme\app\boyihdfz\assets\defaultConfig.ini
+* theme\app\boyihdfz\assets\downloadList.ini
+* theme\app\boyihdfz\assets\introduce_of_company.txt
+* theme\app\boyihdfz\assets\main.cfg
+* theme\app\boyihdfz\assets\trade_addr.ini
+* theme\app\boyihdfz\res\
+* theme\app\boyihdfz\res\drawable-hdpi\
+* theme\app\boyihdfz\res\drawable-hdpi\icon.png
+* theme\app\boyihdfz\res\drawable-hdpi\loading.png
+* theme\app\boyihdfz\res\drawable-mdpi\
+* theme\app\boyihdfz\res\drawable-mdpi\icon.png
+* theme\app\boyihdfz\res\drawable-mdpi\loading.png
+* theme\app\boyihdfz\res\drawable-xhdpi\
+* theme\app\boyihdfz\res\drawable-xhdpi\icon.png
+* theme\app\boyihdfz\res\drawable-xhdpi\loading.png
+* theme\app\boyihdfz\res\drawable-xxhdpi\
+* theme\app\boyihdfz\res\drawable-xxhdpi\icon.png
+* theme\app\boyihdfz\res\drawable-xxhdpi\loading.png
+* theme\app\boyihdfz\res\drawable\
+* theme\app\boyihdfz\res\drawable\icon.png
+* theme\app\boyihdfz\res\drawable\loading.png
+* theme\app\boyihdfz\res\layout\
+* theme\app\boyihdfz\res\layout\zq_trade_login.xml
+* theme\app\boyihdfz\res\values\
+* theme\app\boyihdfz\res\values\strings.xml
+* theme\app\boyihdfz\src\
+* theme\app\boyihdfz\src\com\
+* theme\app\boyihdfz\src\com\pengbo\
+* theme\app\boyihdfz\src\com\pengbo\mhdzq\
+* theme\app\boyihdfz\src\com\pengbo\mhdzq\constant\
+* theme\app\boyihdfz\src\com\pengbo\mhdzq\constant\AppConstants.java
+* theme\app\caitongzqzs\
+* theme\app\caitongzqzs\assets\
+* theme\app\caitongzqzs\assets\DBZQHomeActivityMarket.xml
+* theme\app\caitongzqzs\assets\MbUserMarket.xml
+* theme\app\caitongzqzs\assets\defaultConfig.ini
+* theme\app\caitongzqzs\assets\downloadList.ini
+* theme\app\caitongzqzs\assets\introduce_of_company.txt
+* theme\app\caitongzqzs\assets\main.cfg
+* theme\app\caitongzqzs\assets\trade_addr.ini
+* theme\app\caitongzqzs\res\
+* theme\app\caitongzqzs\res\drawable-hdpi\
+* theme\app\caitongzqzs\res\drawable-hdpi\icon.png
+* theme\app\caitongzqzs\res\drawable-hdpi\loading.png
+* theme\app\caitongzqzs\res\drawable-mdpi\
+* theme\app\caitongzqzs\res\drawable-mdpi\icon.png
+* theme\app\caitongzqzs\res\drawable-mdpi\loading.png
+* theme\app\caitongzqzs\res\drawable-xhdpi\
+* theme\app\caitongzqzs\res\drawable-xhdpi\icon.png
+* theme\app\caitongzqzs\res\drawable-xhdpi\loading.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\
+* theme\app\caitongzqzs\res\drawable-xxhdpi\ee.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\icon.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\loading.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\rr.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\zq_cygc.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\zq_gsj.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\zq_lcsc.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\zq_qqjy.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\zq_qqzx.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\zq_sdkh.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\zq_zqjy.png
+* theme\app\caitongzqzs\res\drawable-xxhdpi\zq_zqzx.png
+* theme\app\caitongzqzs\res\drawable\
+* theme\app\caitongzqzs\res\drawable\icon.png
+* theme\app\caitongzqzs\res\drawable\loading.png
+* theme\app\caitongzqzs\res\values\
+* theme\app\caitongzqzs\res\values\strings.xml
+* theme\app\caitongzqzs\src\
+* theme\app\caitongzqzs\src\com\
+* theme\app\caitongzqzs\src\com\pengbo\
+* theme\app\caitongzqzs\src\com\pengbo\mhdzq\
+* theme\app\caitongzqzs\src\com\pengbo\mhdzq\constant\
+* theme\app\caitongzqzs\src\com\pengbo\mhdzq\constant\AppConstants.java
+* theme\app\dongbeizq\
+* theme\app\dongbeizq\assets\
+* theme\app\dongbeizq\assets\DBZQHomeActivityMarket.xml
+* theme\app\dongbeizq\assets\MbUserMarket.xml
+* theme\app\dongbeizq\assets\defaultConfig.ini
+* theme\app\dongbeizq\assets\downloadList.ini
+* theme\app\dongbeizq\assets\introduce_of_company.txt
+* theme\app\dongbeizq\assets\main.cfg
+* theme\app\dongbeizq\assets\trade_addr.ini
+* theme\app\dongbeizq\res\
+* theme\app\dongbeizq\res\drawable-hdpi\
+* theme\app\dongbeizq\res\drawable-hdpi\icon.png
+* theme\app\dongbeizq\res\drawable-hdpi\loading.png
+* theme\app\dongbeizq\res\drawable-mdpi\
+* theme\app\dongbeizq\res\drawable-mdpi\icon.png
+* theme\app\dongbeizq\res\drawable-mdpi\loading.png
+* theme\app\dongbeizq\res\drawable-xhdpi\
+* theme\app\dongbeizq\res\drawable-xhdpi\icon.png
+* theme\app\dongbeizq\res\drawable-xhdpi\loading.png
+* theme\app\dongbeizq\res\drawable-xxhdpi\
+* theme\app\dongbeizq\res\drawable-xxhdpi\icon.png
+* theme\app\dongbeizq\res\drawable-xxhdpi\loading.png
+* theme\app\dongbeizq\res\drawable\
+* theme\app\dongbeizq\res\drawable\icon.png
+* theme\app\dongbeizq\res\drawable\loading.png
+* theme\app\dongbeizq\res\values\
+* theme\app\dongbeizq\res\values\strings.xml
+* theme\app\dongbeizq\src\
+* theme\app\dongbeizq\src\com\
+* theme\app\dongbeizq\src\com\pengbo\
+* theme\app\dongbeizq\src\com\pengbo\mhdzq\
+* theme\app\dongbeizq\src\com\pengbo\mhdzq\constant\
+* theme\app\dongbeizq\src\com\pengbo\mhdzq\constant\AppConstants.java
+* theme\app\dongbeizqzs\
+* theme\app\dongbeizqzs\assets\
+* theme\app\dongbeizqzs\assets\DBZQHomeActivityMarket.xml
+* theme\app\dongbeizqzs\assets\MbUserMarket.xml
+* theme\app\dongbeizqzs\assets\defaultConfig.ini
+* theme\app\dongbeizqzs\assets\downloadList.ini
+* theme\app\dongbeizqzs\assets\introduce_of_company.txt
+* theme\app\dongbeizqzs\assets\main.cfg
+* theme\app\dongbeizqzs\assets\trade_addr.ini
+* theme\app\dongbeizqzs\res\
+* theme\app\dongbeizqzs\res\drawable-hdpi\
+* theme\app\dongbeizqzs\res\drawable-hdpi\icon.png
+* theme\app\dongbeizqzs\res\drawable-hdpi\loading.png
+* theme\app\dongbeizqzs\res\drawable-mdpi\
+* theme\app\dongbeizqzs\res\drawable-mdpi\icon.png
+* theme\app\dongbeizqzs\res\drawable-mdpi\loading.png
+* theme\app\dongbeizqzs\res\drawable-xhdpi\
+* theme\app\dongbeizqzs\res\drawable-xhdpi\icon.png
+* theme\app\dongbeizqzs\res\drawable-xhdpi\loading.png
+* theme\app\dongbeizqzs\res\drawable-xxhdpi\
+* theme\app\dongbeizqzs\res\drawable-xxhdpi\icon.png
+* theme\app\dongbeizqzs\res\drawable-xxhdpi\loading.png
+* theme\app\dongbeizqzs\res\drawable\
+* theme\app\dongbeizqzs\res\drawable\icon.png
+* theme\app\dongbeizqzs\res\drawable\loading.png
+* theme\app\dongbeizqzs\res\values\
+* theme\app\dongbeizqzs\res\values\strings.xml
+* theme\app\dongbeizqzs\src\
+* theme\app\dongbeizqzs\src\com\
+* theme\app\dongbeizqzs\src\com\pengbo\
+* theme\app\dongbeizqzs\src\com\pengbo\mhdzq\
+* theme\app\dongbeizqzs\src\com\pengbo\mhdzq\constant\
+* theme\app\dongbeizqzs\src\com\pengbo\mhdzq\constant\AppConstants.java
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\armeabi\libSSLEncrypt.so => app\src\main\jniLibs\armeabi\libSSLEncrypt.so
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

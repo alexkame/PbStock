@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" 
+    android:orientation="vertical">
+
+   <com.pengbo.mhdcx.view.Ctrl_Trend_FivePrice
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_fiveprice"
+        android:layout_width="fill_parent"
+       	android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            
+             <TextView
+                android:id="@+id/maic5"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="@string/IDS_SellWu" 
+                android:textColor="@color/demand_b1b1b1"
+                android:textSize="@dimen/font_screen_F"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:id="@+id/maic5_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/font_screen_F"
+                    android:color="@color/red" />
+
+                <TextView
+                    android:id="@+id/maic5_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_screen_F" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 卖4 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maic4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/IDS_SellSi"
+                android:layout_gravity="center_vertical"
+               	android:textColor="@color/demand_b1b1b1"
+                android:textSize="@dimen/font_screen_F"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maic4_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/font_screen_F"
+                    android:color="@color/red"  />
+
+                <TextView
+                    android:id="@+id/maic4_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_screen_F"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 卖3 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maic3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/IDS_SellSan"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/demand_b1b1b1"
+                android:textSize="@dimen/font_screen_F" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maic3_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/font_screen_F"
+                    android:color="@color/red" />
+
+                <TextView
+                    android:id="@+id/maic3_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                   android:textColor="@color/black"
+                    android:textSize="@dimen/font_screen_F" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 卖2 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maic2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/IDS_SellEr"
+                android:layout_gravity="center_vertical"
+               android:textColor="@color/demand_b1b1b1"
+                android:textSize="@dimen/font_screen_F" />
+
+            <LinearLayout
+               android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maic2_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/font_screen_F"
+                    android:color="@color/red"  />
+
+                <TextView
+                    android:id="@+id/maic2_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_screen_F" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 卖1 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maic1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/IDS_Sellyi"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/demand_b1b1b1"
+                android:textSize="@dimen/font_screen_F" />
+
+            <LinearLayout
+               android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maic1_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                   android:textSize="@dimen/font_screen_F"
+                    android:color="@color/red" />
+
+                <TextView
+                    android:id="@+id/maic1_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_screen_F" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 分割线 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/stockinfo_fiveprice_gap" 
+            android:layout_marginTop="@dimen/stockinfo_fiveprice_gap">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="@string/IDS_TuPianMiaoShu" />
+        </LinearLayout>
+        <!-- 买1 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maij1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="@string/IDS_BuyYi"
+               android:textColor="@color/demand_b1b1b1"
+                android:textSize="@dimen/font_screen_F" />
+
+            <LinearLayout
+               android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maij1_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/font_screen_F"
+                    android:color="@color/red" />
+
+                <TextView
+                    android:id="@+id/maij1_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_screen_F" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 买2 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/stockinfo_fiveprice_gap"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maij2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/IDS_BuyEr"
+                android:layout_gravity="center_vertical"
+               android:textColor="@color/demand_b1b1b1"
+                android:textSize="@dimen/font_screen_F" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maij2_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/font_screen_F"
+                    android:color="@color/red"  />
+
+                <TextView
+                    android:id="@+id/maij2_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_screen_F" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 买三 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maij3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/IDS_BuySan"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/demand_b1b1b1"
+                android:textSize="@dimen/font_screen_F"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maij3_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                   android:textSize="@dimen/font_screen_F"
+                    android:color="@color/red"  />
+
+                <TextView
+                    android:id="@+id/maij3_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_screen_F" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 买四 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/stockinfo_fiveprice_gap"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maij4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/IDS_BuySi"
+                android:layout_gravity="center_vertical"
+               android:textColor="@color/demand_b1b1b1"
+                android:textSize="@dimen/font_screen_F"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maij4_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/font_screen_F"
+                    android:color="@color/red"  />
+
+                <TextView
+                    android:id="@+id/maij4_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_screen_F" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 买五 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/maij5"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/IDS_BuyWu"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/demand_b1b1b1"
+                android:textSize="@dimen/font_screen_F" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maij5_price"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="@dimen/font_screen_F"
+                    android:color="@color/red"  />
+
+                <TextView
+                    android:id="@+id/maij5_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_screen_F" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.pengbo.mhdcx.view.Ctrl_Trend_FivePrice>
+
+</LinearLayout>

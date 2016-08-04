@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background_demand">
+
+    <LinearLayout
+        android:id="@+id/llayout_zqtobank"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llayout_zqtobank_choosebank"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bank_item_height"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/trade_left_item_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/trade_margin_B"
+                android:layout_weight="0.0"
+                android:gravity="left"
+                android:textColor="@color/demand_9b9b9b"
+                android:textSize="@dimen/font_bank_C"
+                android:text="@string/IDS_XuanZheYinHang"
+                />
+
+            <TextView
+                android:id="@+id/tv_zqtobank_yhmc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:text="@string/IDS_Wu"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_bank_C" />
+
+            <ImageView
+                android:id="@+id/img_zqtobank_choosebank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="0.0"
+                android:src="@drawable/chevron_default" 
+                android:contentDescription="@string/IDS_TuPianMiaoShu"
+                android:layout_marginRight="@dimen/trade_margin_B"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_zqtobank_div1"
+           android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="@dimen/trade_margin_B"
+            android:layout_marginRight="@dimen/trade_margin_B"
+            android:background="@color/gray_demand_one"  />
+        
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bank_item_height"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/trade_left_item_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/trade_margin_B"
+                android:layout_weight="0.0"
+                android:gravity="left"
+                android:textColor="@color/demand_9b9b9b"
+                android:textSize="@dimen/font_bank_C"
+                android:text="@string/IDS_KeZhuanJinE"
+                 />
+
+            <TextView
+                android:id="@+id/tv_zqtobank_kzje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+            
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_bank_C" 
+                android:text="@string/IDS_ShuZiNum"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_zqtobank_div2"
+           android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="@dimen/trade_margin_B"
+            android:layout_marginRight="@dimen/trade_margin_B"
+            android:background="@color/gray_demand_one" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bank_item_height"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/trade_left_item_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/trade_margin_B"
+                android:layout_weight="0.0"
+                android:gravity="left"
+                android:textColor="@color/demand_9b9b9b"
+                android:textSize="@dimen/font_bank_C"
+                android:text="@string/IDS_ZhuanZhangJinE"
+                 />
+
+            <EditText
+                android:id="@+id/edit_zqtobank_zzje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_bank_C" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/trade_margin_B"
+                android:layout_weight="0.0"
+                android:text="@string/IDS_Yuan"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_zqtobank_div3"
+            android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="@dimen/trade_margin_B"
+            android:layout_marginRight="@dimen/trade_margin_B"
+            android:background="@color/gray_demand_one" />
+        
+        <LinearLayout
+            android:id="@+id/llayout_zqtobank_yhmm"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bank_item_height"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/trade_left_item_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/trade_margin_B"
+                android:layout_weight="0.0"
+                android:gravity="left"
+                android:textColor="@color/demand_9b9b9b"
+                android:textSize="@dimen/font_bank_C"
+                android:text="@string/IDS_YinHangMiMa"
+                 />
+
+            <EditText
+                android:id="@+id/edit_zqtobank_yhmm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:inputType="numberPassword"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_bank_C" />
+        </LinearLayout>
+        
+        
+        <View
+            android:id="@+id/view_zqtobank_div4"
+           android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="@dimen/trade_margin_B"
+            android:layout_marginRight="@dimen/trade_margin_B"
+            android:background="@color/gray_demand_one"  />
+        
+        <LinearLayout
+            android:id="@+id/llayout_zqtobank_zjmm"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bank_item_height"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/trade_left_item_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/trade_margin_B"
+                android:layout_weight="0.0"
+                android:gravity="left"
+                android:textColor="@color/demand_9b9b9b"
+                android:textSize="@dimen/font_bank_C"
+                android:text="@string/IDS_ZiJinMiMa"
+                 />
+
+            <EditText
+                android:id="@+id/edit_zqtobank_zjmm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:inputType="numberPassword"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_bank_C" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_zqtobank_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"       
+        android:background="@drawable/all_blue_btn_press_selector"
+        android:gravity="center"
+        android:text="@string/IDS_ZhuanZhang"
+        android:layout_marginLeft="@dimen/trade_margin_B"
+        android:layout_marginRight="@dimen/trade_margin_B"
+        android:layout_marginTop="@dimen/trade_margin_B"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_bank_A"  />
+
+</LinearLayout>

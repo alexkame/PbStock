@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zq_ededed" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/zq_dbzq_public_head_black" />
+
+    <LinearLayout
+        android:id="@+id/llayout_title_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:background="@color/zq_515151"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/zq_hangqing_top_padding"
+            android:layout_marginTop="@dimen/zq_hangqing_top_padding"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:paddingLeft="@dimen/zq_hangqing_more_margin_left"
+            android:text="@string/ZQ_MingCheng"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_A" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/zq_hangqing_top_padding"
+            android:layout_marginTop="@dimen/zq_hangqing_top_padding"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/ZQ_ZuiXin"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_A" />
+
+        <TextView
+            android:id="@+id/tv_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/zq_hangqing_top_padding"
+            android:layout_marginTop="@dimen/zq_hangqing_top_padding"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="涨幅"
+            android:textColor="@color/zq_ffffff"
+            android:textSize="@dimen/zq_detail_font_A" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_paiming"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llayout_title_name"
+        android:background="@color/zq_ffffff"
+        android:divider="@null"
+        android:fadingEdge="none" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zq_trade_gray" >
+
+    <LinearLayout
+        android:id="@+id/lLayout_order_list_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="14dp"
+            android:text="委托时间"
+            android:textColor="@color/demand_212121"
+            android:textSize="10.5sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/demand_cc00ff" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="14dp"
+            android:text="委托/均价"
+            android:textColor="@color/demand_212121"
+            android:textSize="10.5sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/demand_cc00ff" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="14dp"
+            android:text="委托/成交"
+            android:textColor="@color/demand_212121"
+            android:textSize="10.5sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dp"
+        android:layout_below="@id/lLayout_order_list_header" />
+
+    <ListView
+        android:id="@+id/trade_order_listview_cancell"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:clickable="true"
+        android:divider="@null"
+        android:fadingEdge="none" >
+    </ListView>
+
+</RelativeLayout>

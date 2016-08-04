@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.pengbo.mhdzq"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_demand" >
+
+    <include
+        android:id="@+id/setting_activity_title"
+        layout="@layout/maintab_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/setting_activity_title" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/setting_activity_linearlayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/set_height"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/trade_margin_B"
+                    android:gravity="center_vertical"
+                    android:text="@string/IDS_JiaoYiSheZhi"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_set_B"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_demand_one" />
+
+            <LinearLayout
+                android:id="@+id/setting_activity_linearlayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:background="@drawable/linearlayout_bkg_setting_selector"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="@dimen/trade_margin_B"
+                    android:layout_weight="0.0"
+                    android:text="@string/IDS_QHJYMS"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_set_C" />
+
+                <TextView
+                    android:id="@+id/trade_activity_tv_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:text="@string/IDS_PTJYMS"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/font_set_C" />
+
+                <ImageView
+                    android:id="@+id/setting_activity_image_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/trade_margin_B"
+                    android:layout_weight="0.0"
+                    android:contentDescription="@string/IDS_TuPianMiaoShu"
+                    android:src="@drawable/chevron_default" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_demand_one" />
+
+            <LinearLayout
+                android:id="@+id/setting_activity_linearlayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:background="@drawable/linearlayout_bkg_setting_selector"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="@dimen/trade_margin_B"
+                    android:layout_weight="0.0"
+                    android:text="@string/IDS_BCZXSJ"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_set_C" />
+
+                <TextView
+                    android:id="@+id/trade_activity_tv_online_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:text="@string/IDS_MINUTE"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/font_set_C" />
+
+                <ImageView
+                    android:id="@+id/setting_activity_image_online_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/trade_margin_B"
+                    android:layout_weight="0.0"
+                    android:contentDescription="@string/IDS_TuPianMiaoShu"
+                    android:src="@drawable/chevron_default" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_demand_one" />
+
+            <RelativeLayout
+                android:id="@+id/setting_activity_relativelayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:background="@drawable/linearlayout_bkg_setting_selector"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/trade_margin_B"
+                    android:text="@string/IDS_XDWXQR"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_set_C" />
+
+                <com.pengbo.mhdcx.widget.SwitchButton
+                    android:id="@+id/sb_default"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/trade_margin_B"
+                    android:gravity="right"
+                    app:onColor="#43d95d" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_activity_middle_out_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/gray_demand_one"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/setting_activity_alltradeprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/set_item_height"
+                    android:background="@drawable/linearlayout_bkg_setting_selector"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/trade_margin_B"
+                        android:layout_weight="0.0"
+                        android:text="@string/IDS_QBPCMRWTJG"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/font_set_C" />
+
+                    <TextView
+                        android:id="@+id/trade_activity_tv_alltradedefaultprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:text="@string/IDS_DSJ"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/font_set_C" />
+
+                    <ImageView
+                        android:id="@+id/setting_activity_image_default_nn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/trade_margin_B"
+                        android:layout_weight="0.0"
+                        android:contentDescription="@string/IDS_TuPianMiaoShu"
+                        android:src="@drawable/chevron_default" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/gray_demand_one"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/setting_activity_fastdefaultprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/set_item_height"
+                    android:background="@drawable/linearlayout_bkg_setting_selector"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/trade_margin_B"
+                        android:layout_weight="0.0"
+                        android:text="@string/IDS_KJFSMRWTJG"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/font_set_C" />
+
+                    <TextView
+                        android:id="@+id/setting_activity_tv_fastdefaultprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:text="@string/IDS_DSJ"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/font_set_C" />
+
+                    <ImageView
+                        android:id="@+id/setting_activity_image_default_ss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/trade_margin_B"
+                        android:layout_weight="0.0"
+                        android:contentDescription="@string/IDS_TuPianMiaoShu"
+                        android:src="@drawable/chevron_default" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/gray_demand_one"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/setting_activity_fastautoprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/set_item_height"
+                    android:background="@drawable/linearlayout_bkg_setting_selector"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/trade_margin_B"
+                        android:layout_weight="0.0"
+                        android:text="@string/IDS_KJFSZDCDSJ"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/font_set_C" />
+
+                    <TextView
+                        android:id="@+id/setting_activity_tv_fastautoprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:text="@string/IDS_SECOND"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/font_set_C" />
+
+                    <ImageView
+                        android:id="@+id/setting_activity_image_default_333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/trade_margin_B"
+                        android:layout_weight="0.0"
+                        android:contentDescription="@string/IDS_TuPianMiaoShu"
+                        android:src="@drawable/chevron_default" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_demand_one" />
+
+            <LinearLayout
+                android:id="@+id/setting_activity_default_add_num"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:background="@drawable/linearlayout_bkg_setting_selector"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="@dimen/trade_margin_B"
+                    android:layout_weight="0.0"
+                    android:singleLine="true"
+                    android:text="@string/IDS_JYSLMRJL"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_set_C" />
+
+                <TextView
+                    android:id="@+id/trade_activity_tv_default_add_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="1.0"
+                    android:contentDescription="@string/IDS_TuPianMiaoShu"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/font_set_C" />
+
+                <ImageView
+                    android:id="@+id/setting_activity_image_default_add_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/trade_margin_B"
+                    android:layout_weight="0.0"
+                    android:contentDescription="@string/IDS_TuPianMiaoShu"
+                    android:src="@drawable/chevron_default" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_activity_middle_out_layout_other"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/gray_demand_one"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/setting_activity_advancedtradebtnarray"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/set_item_height"
+                    android:background="@drawable/linearlayout_bkg_setting_selector"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/trade_margin_B"
+                        android:layout_weight="0.0"
+                        android:text="@string/IDS_GJJYANSX"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/font_set_C" />
+
+                    <TextView
+                        android:id="@+id/setting_activity_tv_advancedtradebtnarray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/IDS_TuPianMiaoShu"
+                        android:gravity="right"
+                        android:text="@string/IDS_GJJYANSX_ARRAY"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/font_set_C" />
+
+                    <ImageView
+                        android:id="@+id/setting_activity_image_default_ww"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/trade_margin_B"
+                        android:layout_weight="0.0"
+                        android:contentDescription="@string/IDS_TuPianMiaoShu"
+                        android:src="@drawable/chevron_default" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_demand_one" />
+
+            <LinearLayout
+                android:id="@+id/setting_activity_chaidan"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:background="@drawable/linearlayout_bkg_setting_selector"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="@dimen/trade_margin_B"
+                    android:layout_weight="0.0"
+                    android:singleLine="true"
+                    android:text="@string/IDS_MRCDSL"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_set_C" />
+
+                <TextView
+                    android:id="@+id/trade_activity_tv_chaidan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="1.0"
+                    android:contentDescription="@string/IDS_TuPianMiaoShu"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/font_set_C" />
+
+                <ImageView
+                    android:id="@+id/setting_activity_image_chaidan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/trade_margin_B"
+                    android:layout_weight="0.0"
+                    android:contentDescription="@string/IDS_TuPianMiaoShu"
+                    android:src="@drawable/chevron_default" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_demand_one" />
+
+            <LinearLayout
+                android:id="@+id/setting_activity_linearlayout6"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/set_height"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/trade_margin_B"
+                    android:gravity="center_vertical"
+                    android:text="@string/IDS_QTSZ"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_set_B"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_demand_one" />
+
+            <LinearLayout
+                android:id="@+id/setting_activity_linearlayout7"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:background="@drawable/linearlayout_bkg_setting_selector"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="@dimen/trade_margin_B"
+                    android:layout_weight="0.0"
+                    android:text="@string/IDS_VERSON"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_set_C" />
+
+                <TextView
+                    android:id="@+id/trade_activity_tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/trade_margin_B"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:text="@string/IDS_VERSON_CONTENT"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/font_set_C" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_demand_one" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

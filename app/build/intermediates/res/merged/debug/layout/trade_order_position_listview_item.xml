@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/list_item_color_bg"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim_145px"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal" >
+
+        
+
+            <TextView
+                android:id="@+id/tv_position_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/position_quanli"
+                android:drawablePadding="@dimen/trade_position_gap"
+                android:maxLines="2"
+                android:text="上汽集团购4月1900"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_36px" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_36px" />
+
+            <TextView
+                android:id="@+id/tv_canuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_36px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.587"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_36px" />
+
+            <TextView
+                android:id="@+id/tv_nowprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.784"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_36px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_fudongyingkui_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-10.45%"
+                android:maxLines="1"
+                android:textColor="@color/green_demand"
+                android:textSize="@dimen/font_36px" />
+
+            <TextView
+                android:id="@+id/tv_fudongyingkui_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-3452543.3"
+                android:maxLines="1"
+                android:textColor="@color/green_demand"
+                android:textSize="@dimen/font_36px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/order_position_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_fanshou" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

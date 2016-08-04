@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pengbo.mhdzq"
+    android:versionCode="104"
+    android:versionName="1.0.4" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.pengbo.mhdzq.app.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.pengbo.mhdzq.main_activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.ZhengQuanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.PaiMingMoreActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.ZQSetAverageParamActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.pengbo.mhdzq.main_activity.NewsDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.ZQDetailNewsDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pengbo.mhdzq.zq_trade_activity.ZQTradeAccountTypeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.pengbo.mhdzq.zq_trade_activity.ZqTradeDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.main_activity.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.WelcomeGuideActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.main_activity.MainTabActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.main_activity.MyStockActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.main_activity.ScreenActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.main_activity.TOfferActivity"
+            android:exported="false"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.main_activity.HotOptionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.main_activity.MarketInfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.main_activity.TradeGroupTabActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.main_activity.TradeLoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.main_activity.AccountRegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.main_activity.InfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.main_activity.SettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.CorrectHotOptionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.HeadEditActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.HeadOptionListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.HeadSearchOptionListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.SetModelActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.SetOnLineTimeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.AllTradePrice"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.FastTradePrice"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.FastAutoOrderCancelTime"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.DefaultAddNum"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.AdvancedModelBtnAry"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.ScreenDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.GainLossAnalysisActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.trade_activity.TradeDetailActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.trade_activity.TradeAccountTypeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.trade_activity.TradeQSListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.NewsDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.trade_activity.OrderTrendActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.activity.TradeHeadOptionListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.trade_activity.BankSecuritiesTransferActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.trade_activity.EditPassWordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.trade_activity.EditIdentifyPassword"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.trade_activity.TradeMoreChooseBankActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.trade_activity.TradeLiShiWTActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.trade_activity.TradeLiShiCJActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdcx.ui.trade_activity.TradeBeiDuiSuoDingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.DZBKEditActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.ZQAboutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.ZQMarketDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <service
+            android:name="com.pengbo.mhdzq.service.UnderService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.pengbo.mhdzq.service.UnderService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.pengbo.mhdzq.main_activity.ZiXuanFastSearchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.MyStockEditActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.ZQLandscapeViewActivity"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.main_activity.HomeEditActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.ZQDongZZYWebActivity"
+            android:exported="false"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- android:screenOrientation="portrait" -->
+
+        <activity
+            android:name="com.pengbo.mhdzq.main_activity.NewsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.ZQDRCJActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_trade_activity.ZQTradeQSListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.ZQLSWTActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.ZQLSCJActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_activity.ZQZJLSActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_trade_activity.ZQBankToSecutityActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_trade_activity.ZQEditTradePassWordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_trade_activity.ZQTradeMoreChooseBankActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.zq_trade_activity.ZQTradeTimeOutSetActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.pengbo.mhdzq.main_activity.ObserverActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeSetting"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+    </application>
+
+</manifest>

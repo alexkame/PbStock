@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/order_control_gap"
+    android:paddingLeft="@dimen/order_control_gap"
+    android:paddingRight="@dimen/order_control_gap"
+    android:paddingBottom="@dimen/trade_position_gap"
+    >
+
+    <Button
+        android:id="@+id/jiazixuan"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/t_offer_order_button"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/optional_margin_A"
+        android:text="@string/IDS_JiaZiXuan"
+        android:textColor="@color/t_offer_737e89"
+        android:textSize="@dimen/font_t_offer_D" />
+
+    <Button
+        android:id="@+id/buykai"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/t_offer_order_button"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/optional_margin_A"
+        android:text="@string/IDS_BuyKai"
+        android:textColor="@color/t_offer_737e89"
+        android:textSize="@dimen/font_t_offer_D" />
+
+    <Button
+        android:id="@+id/sellping"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/t_offer_order_button"
+        android:gravity="center"
+        android:text="@string/IDS_SellPing"
+        android:textColor="@color/t_offer_737e89"
+        android:textSize="@dimen/font_t_offer_D"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/sellkai"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/optional_margin_A"
+        android:layout_marginRight="@dimen/optional_margin_A"
+        android:background="@drawable/t_offer_order_button"
+        android:gravity="center"
+        android:text="@string/IDS_SellKai"
+        android:textColor="@color/t_offer_737e89"
+        android:textSize="@dimen/font_t_offer_D"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/buyping"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/t_offer_order_button"
+        android:gravity="center"
+        android:text="@string/IDS_BuyPing"
+        android:textColor="@color/t_offer_737e89"
+        android:textSize="@dimen/font_t_offer_D" />
+
+</LinearLayout>

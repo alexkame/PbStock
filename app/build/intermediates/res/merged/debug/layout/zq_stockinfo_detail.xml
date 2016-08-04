@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <com.pengbo.mhdzq.view.ZQ_Ctrl_Trend_Detail
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:text="@string/IDS_ShiJian"
+                android:textColor="@color/black"
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/IDS_JiaGe"
+                android:textColor="@color/black"
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/IDS_XianLiang"
+                android:textColor="@color/black"
+                android:textSize="@dimen/zq_font_wudang_detail" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/stockinfo_fiveprice_gap"
+            android:layout_marginTop="@dimen/stockinfo_fiveprice_gap"
+            android:background="@android:color/darker_gray"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView011"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView012"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView013"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView021"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView022"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView023"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView031"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView032"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView033"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView041"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView042"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView043"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView051"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView052"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView053"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView061"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView062"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView063"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView071"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView072"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView073"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView081"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView082"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView083"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView091"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView092"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+
+            <com.pengbo.mhdzq.view.AutoScaleTextView
+                android:id="@+id/textView093"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textSize="@dimen/zq_font_wudang_detail" />
+        </LinearLayout>
+
+    </com.pengbo.mhdzq.view.ZQ_Ctrl_Trend_Detail>
+
+</LinearLayout>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_demand"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/xingquan_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trade_query_radiogroup_height"
+        android:layout_marginLeft="@dimen/trade_query_margin_A"
+        android:layout_marginRight="@dimen/trade_query_margin_A"
+        android:layout_marginTop="@dimen/trade_query_margin_A"
+        android:layout_marginBottom="@dimen/trade_query_margin_A"
+        android:orientation="horizontal"
+        android:gravity="center"
+         >
+
+        <RadioButton
+            android:id="@+id/jinqikexingquanheyue"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_white_left_selected_unselected"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/IDS_JinQiKeXingQuanHeYue"
+            android:textColor="@drawable/classify_text_selector_2"
+            android:textSize="@dimen/font_trade_query_B" 
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:checked="true"/>
+
+
+        <RadioButton
+            android:id="@+id/xingquanweituo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_white_middle_selected_unselected"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/IDS_XingQuanWeiTuo"
+            android:textColor="@drawable/classify_text_selector_2"
+            android:textSize="@dimen/font_trade_query_B"
+            android:singleLine="true"
+            android:ellipsize="none" />
+        
+        <RadioButton
+            android:id="@+id/xingquanzhipai"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_white_middle_selected_unselected"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/IDS_XingQuanZhiPai"
+            android:textColor="@drawable/classify_text_selector_2"
+            android:textSize="@dimen/font_trade_query_B"
+            android:singleLine="true"
+            android:ellipsize="none" />
+        <RadioButton
+            android:id="@+id/lishichaxun"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_white_right_selected_unselected"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/IDS_LiShiChaXun"
+            android:textColor="@drawable/classify_text_selector_2"
+            android:textSize="@dimen/font_trade_query_B"
+            android:singleLine="true"
+            android:ellipsize="none" />
+    </RadioGroup>
+    
+    <LinearLayout
+        android:id="@+id/llayout_xingquan_chaxun"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/edit_qsrq"
+            android:layout_marginLeft="@dimen/trade_query_margin_A"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:textSize="@dimen/qq_xing_quan_font_B"
+             >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:text="至"
+            android:textSize="@dimen/qq_xing_quan_font_B" />
+
+        <EditText
+            android:id="@+id/edit_zzrq"
+            android:layout_marginRight="@dimen/trade_query_margin_A"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:textSize="@dimen/qq_xing_quan_font_B" >
+        </EditText>
+    </LinearLayout>
+     
+    <Button
+        android:id="@+id/btn_xingquan_chaxun"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/trade_query_margin_A"
+        android:layout_marginBottom="@dimen/trade_margin_B"
+        android:layout_marginLeft="@dimen/trade_margin_B"
+        android:layout_marginRight="@dimen/trade_margin_B"
+        android:background="@drawable/all_blue_btn_press_selector"
+        android:text="@string/IDS_ChaXun"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_trade_A"
+        android:visibility="gone" />
+    
+    <LinearLayout
+        android:id="@+id/lLayout_xqheader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trade_position_listview_tab_height"
+        android:background="@drawable/order_bg02"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/IDS_QiQuanName"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/IDS_ChiCangKeYong"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/IDS_JunJiaXianJia"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/IDS_XingQuanJiaZhi"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lLayout_xqcdheader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trade_position_listview_tab_height"
+        android:background="@drawable/order_bg02"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/IDS_WeiTuoShiJian"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/IDS_QiQuanName"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/IDS_ShuLiang"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/IDS_ZhuangTai"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lLayout_xqzpheader"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/trade_position_listview_tab_height"
+        android:background="@drawable/order_bg02"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="@string/IDS_JiaoYiSuo"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="@string/IDS_HeYueDaiMa"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="@string/IDS_QiQuanName"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="@string/IDS_QiQuanLeiBie"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="@string/IDS_BeiDui"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="@string/IDS_MaiMai"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="@string/IDS_QiQuanBiaoDiDaiMa"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="@string/IDS_XingQuanJiaGe"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="@string/IDS_XingQuanShuLiang"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="@string/IDS_BiaoDiJuanShouFuShuLiang"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="@string/IDS_JieSuanJinE"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_position_B" />
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/lv_xingquan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:fadingEdge="none" >
+    </ListView>
+    
+    <ListView
+        android:id="@+id/lv_xingquan_cd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:fadingEdge="none" >
+    </ListView>
+    
+    <com.pengbo.mhdcx.view.HVListView
+        android:id="@+id/lv_xingquan_zp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:clickable="true"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </com.pengbo.mhdcx.view.HVListView>
+
+</LinearLayout>

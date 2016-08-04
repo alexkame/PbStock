@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <!-- background color eeeeee -->
+
+    <include
+        android:id="@+id/head_option_list_actiity_relativelayout"
+        layout="@layout/head_option_list_activity_head_title" />
+
+    <LinearLayout
+        android:id="@+id/head_option_list_activity_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trade_more_item_height"
+        android:layout_below="@id/head_option_list_actiity_relativelayout"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/trade_query_margin_A"
+            android:layout_weight="0.0"
+            android:text="@string/IDS_QiQuanBiaoDi"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_more_B" />
+
+        <TextView
+            android:id="@+id/head_option_list_activity_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/IDS_QuanBuBiaoDi"
+            android:textColor="@color/black_demand"
+            android:textSize="@dimen/font_trade_more_B" />
+        <TextView
+            android:id="@+id/head_option_list_activity_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/black_demand"
+            android:textSize="@dimen/font_trade_more_B" />
+
+        <ImageView
+            android:id="@+id/head_option_list_activity_default_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/trade_query_margin_A"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/chevron_default" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@id/head_option_list_activity_layout1"
+        android:layout_marginLeft="@dimen/trade_query_margin_A"
+        android:layout_marginRight="@dimen/trade_query_margin_A"
+        android:background="@color/gray_demand_one" />
+
+    <LinearLayout
+        android:id="@+id/head_option_list_activity_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trade_more_item_height"
+        android:layout_below="@id/divider1"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/trade_query_margin_A"
+            android:layout_weight="0.0"
+            android:text="@string/IDS_DaoQiYueFen"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_more_B" />
+
+        <TextView
+            android:id="@+id/head_option_list_activity_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/IDS_QuanBuRiQi"
+            android:textColor="@color/black_demand"
+            android:textSize="@dimen/font_trade_more_B" />
+
+        <ImageView
+            android:id="@+id/head_option_list_activity_default_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/trade_query_margin_A"
+            android:contentDescription="@string/IDS_TuPianMiaoShu"
+            android:src="@drawable/chevron_default" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@id/head_option_list_activity_layout2"
+        android:layout_marginLeft="@dimen/trade_query_margin_A"
+        android:layout_marginRight="@dimen/trade_query_margin_A"
+        android:background="@color/gray_demand_one" />
+
+    <!-- 投资方向 -->
+
+    <LinearLayout
+        android:id="@+id/head_option_list_activity_layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trade_more_item_height"
+        android:layout_below="@id/divider2"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/trade_query_margin_A"
+            android:layout_weight="0.0"
+            android:text="@string/IDS_TouZhiFangXiang"
+            android:textColor="@color/gray_demand_one"
+            android:textSize="@dimen/font_trade_more_B" />
+
+        <RadioGroup
+            android:id="@+id/head_option_list_actiity_radiogroup2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/trade_query_listview_item_padding_height"
+            android:layout_marginLeft="@dimen/trade_query_margin_A"
+            android:layout_marginRight="@dimen/trade_query_margin_A"
+            android:layout_marginTop="@dimen/trade_query_listview_item_padding_height"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_head_option_list_activity_3"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/shape_white_left_selected_unselected"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/IDS_RenGou"
+                android:textColor="@drawable/classify_text_selector_2"
+                android:textSize="@dimen/font_trade_more_B" />
+
+            <RadioButton
+                android:id="@+id/rb_head_option_list_activity_4"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/shape_white_right_selected_unselected"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/IDS_RenGu"
+                android:textColor="@drawable/classify_text_selector_2"
+                android:textSize="@dimen/font_trade_more_B" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_item1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/head_option_list_activity_layout3"
+        android:background="@android:color/darker_gray" />
+
+    <com.pengbo.mhdcx.view.PullToRefreshView
+        android:id="@+id/optionlist_pull_refreshview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/divider_item1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:divider="@null"
+            android:fadingEdge="none">
+        </ListView>
+    </com.pengbo.mhdcx.view.PullToRefreshView>
+
+</RelativeLayout>

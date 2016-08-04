@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_digit_600"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="600"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <Button
+                android:id="@+id/btn_digit_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="1"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <Button
+                android:id="@+id/btn_digit_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="2"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <Button
+                android:id="@+id/btn_digit_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="3"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <RelativeLayout
+                android:id="@+id/btn_digit_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_function_selector"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/zq_xd_code_zm_back_img" >
+                </ImageView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_digit_601"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="601"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <Button
+                android:id="@+id/btn_digit_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="4"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <Button
+                android:id="@+id/btn_digit_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="5"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <Button
+                android:id="@+id/btn_digit_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="6"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <Button
+                android:id="@+id/btn_digit_002"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="002"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_digit_000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="000"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <Button
+                android:id="@+id/btn_digit_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="7"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <Button
+                android:id="@+id/btn_digit_8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="8"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <Button
+                android:id="@+id/btn_digit_9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="9"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+
+            <Button
+                android:id="@+id/btn_digit_300"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_selector"
+                android:text="300"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_A" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_digit_ABC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_function_selector"
+                android:text="ABC"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_D" />
+
+            <Button
+                android:id="@+id/btn_digit_hide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_function_selector"
+                android:text="隐藏"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_D" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_digit_0"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:background="@drawable/zq_xd_code_key_selector"
+                    android:textColor="@color/zq_515151"
+                    android:textSize="@dimen/zq_trade_xd_A" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_digit_xt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_function_selector"
+                android:text="系统键盘"
+                android:textColor="@color/zq_515151"
+                android:textSize="@dimen/zq_trade_xd_D" />
+
+            <Button
+                android:id="@+id/btn_digit_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zq_xd__keyboard_space"
+                android:layout_marginLeft="@dimen/zq_xd__keyboard_space"
+                android:layout_marginRight="@dimen/zq_xd__keyboard_space"
+                android:layout_marginTop="@dimen/zq_xd__keyboard_space"
+                android:layout_weight="1"
+                android:background="@drawable/zq_xd_code_key_confirm_selector"
+                android:text="确认"
+                android:textColor="@color/white"
+                android:textSize="@dimen/zq_trade_xd_D" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
